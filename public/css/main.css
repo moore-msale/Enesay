@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Coiny";
+    src: local('Coiny'), local('Coiny'),
+    url('/fonts/Coiny-Cyrillic.ttf') format('truetype');
+}
