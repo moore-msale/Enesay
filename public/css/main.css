@@ -1,5 +1,166 @@
 @font-face {
-    font-family: "Coiny";
-    src: local('Coiny'), local('Coiny'),
-    url('/fonts/Coiny-Cyrillic.ttf') format('truetype');
+    font-family: "RobotoBold";
+    src: local('RobotoBold'), local('RobotoBold'),
+    url('/fonts/RobotoBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "RobotoLight";
+    src: local('RobotoLight'), local('RobotoLight'),
+    url('/fonts/RobotoLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: "RobotoRegular";
+    src: local('RobotoRegular'), local('RobotoRegular'),
+    url('/fonts/RobotoRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "TTNormsBold";
+    src: local('TTNormsBold'), local('TTNormsBold'),
+    url('/fonts/TTNormsBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "TTNormsExtraBold";
+    src: local('TTNormsExtraBold'), local('TTNormsExtraBold'),
+    url('/fonts/TTNormsExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "TTNormsLight";
+    src: local('TTNormsLight'), local('TTNormsLight'),
+    url('/fonts/TTNormsLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: "TTNormsMedium";
+    src: local('TTNormsMedium'), local('TTNormsMedium'),
+    url('/fonts/TTNormsMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: "TTNormsRegular";
+    src: local('TTNormsRegular'), local('TTNormsRegular'),
+    url('/fonts/TTNormsRegular.ttf') format('truetype');
+}
+
+.TTRegular {
+    font-family: "TTNormsRegular";
+}
+.TTMedium {
+    font-family: "TTNormsMedium";
+}
+.TTLight {
+    font-family: "TTNormsLight";
+}
+.TTExtraBold {
+    font-family: "TTNormsExtraBold";
+}
+.TTBold {
+    font-family: "TTNormsBold";
+}
+
+.btn {
+    background: linear-gradient(270deg, #C6972A 1.04%, #EFBB42 51.04%, #C6972A 100%);
+    border-radius: 40px;
+}
+.btn a {
+    font-family: TTNormsBold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-main-block {
+    width: 195px;
+    height: 48px;
+}
+.text-white {
+    color: #fff;
+}
+.text-black {
+    color: #000;
+}
+.text-position-abs {
+
+}
+.module-border-wrap{
+    transform: translateX(-13%);
+    width: 19em;
+    padding-left: 15%;
+    padding-right: 5%;
+    padding-top: 10%;
+    height: 20em;
+    margin: auto;
+    background: transparent;
+    border: 13px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top left, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);
+    border-image: linear-gradient(to bottom right, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);
+    border-image-slice: 1;
+}
+#gallery .item img{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+}
+#gallery .owl-stage-outer {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    transform: translateX(15%);
+}
+#gallery {
+    overflow: hidden;
+}
+.blokincarousel {
+    background: #FFFFFF;
+    box-shadow: 0px 34px 54px rgba(0, 0, 0, 0.25);
+    width: 21em;
+    height: 19em;
+    position: absolute;
+    z-index: -2;
+    margin-left: 9%;
+}
+.counter {
+    transform: translateY(-1em);
+    margin-left: 7em;
+}
+@keyframes pulse_animation {
+    0% { box-shadow: 0 0 0 0 rgba(208, 160, 48, 0.56); }
+    100% { box-shadow: 0 0 0 12px rgba(254, 206, 104, 0) }
+}
+
+#pulse-wrapper {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+}
+#pulse-wrapper #pulse {
+    margin: auto;
+}
+#pulse-wrapper #pulse span {
+    position: absolute;
+    margin-top: -25px; /* = height / 2 */
+    margin-left: -25px; /* = width / 2 */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fece68;
+    animation: pulse_animation 1.8s infinite;
+}
+#pulse-wrapper1 #pulse span {
+
+}
+#pulse-wrapper #pulse span:nth-child(2) {
+    animation-delay: 0.3s; /* Start the second wave with some delay */
+}
+.anim1 {
+    position: absolute;
+    top: 5em;
+    left: 25em;
+}
+.anim2 {
+    position: absolute;
+    top: 8em;
+    left: 15em;
+}
+.anim3 {
+    position: absolute;
+    top: 18em;
+    right: 15em;
 }
