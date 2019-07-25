@@ -55,7 +55,9 @@
 .TTBold {
     font-family: "TTNormsBold";
 }
-
+.robotobold {
+    font-family: "RobotoBold";
+}
 .btn {
     background: linear-gradient(270deg, #C6972A 1.04%, #EFBB42 51.04%, #C6972A 100%);
     border-radius: 40px;
@@ -162,5 +164,20 @@
 .anim3 {
     position: absolute;
     top: 18em;
+    right: 15em;
+}
+.anim4 {
+    position: absolute;
+    top: 18em;
+    left: 15em;
+}
+.anim5 {
+    position: absolute;
+    top: 25em;
+    right: 5em;
+}
+.anim6 {
+    position: absolute;
+    top: 5em;
     right: 15em;
 }

@@ -167,8 +167,70 @@
                     <span></span> <!-- Wave 2 -->
                 </div>
             </div>
+            <div id="pulse-wrapper" class="anim4">
+                <div id="pulse">
+                    <span></span> <!-- Wave 1 -->
+                    <span></span> <!-- Wave 2 -->
+                </div>
+            </div>
+            <div id="pulse-wrapper" class="anim5">
+                <div id="pulse">
+                    <span></span> <!-- Wave 1 -->
+                    <span></span> <!-- Wave 2 -->
+                </div>
+            </div>
+            <div id="pulse-wrapper" class="anim6">
+                <div id="pulse">
+                    <span></span> <!-- Wave 1 -->
+                    <span></span> <!-- Wave 2 -->
+                </div>
+            </div>
         </div>
         <div class="col-2"></div>
+    </div>
+    <div class="row mt-lg-5 pl-lg-3 pr-lg-3">
+        <div class="col-lg-2 d-flex">
+            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">01</h3>
+            <div class="descr pl-lg-3">
+                <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Бутики</h5>
+                <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex">
+            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">02</h3>
+            <div class="descr pl-lg-3">
+                <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Кофейня</h5>
+                <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex">
+            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">03</h3>
+            <div class="descr pl-lg-3">
+                <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Концерт Холл</h5>
+                <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex">
+            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">04</h3>
+            <div class="descr pl-lg-3">
+                <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Паркинг</h5>
+                <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex">
+            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">05</h3>
+            <div class="descr pl-lg-3">
+                <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Апартаменты</h5>
+                <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
+            </div>
+        </div>
+        <div class="col-lg-2 d-flex">
+            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>
+            <div class="descr pl-lg-3">
+                <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Автомойка</h5>
+                <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
+            </div>
+        </div>
     </div>
 </div>
 
