@@ -3,7 +3,7 @@
 @endpush
 @section('content')
 
-<div class="container-fluid align-items-center pt-5" id="first-block" style="background-image: url({{ asset('images/bg1.png') }});">
+<div class="container-fluid align-items-center pt-5 example-classname" id="first-block" style="background-image: url({{ asset('images/bg1.png') }});">
     <div class="row align-items-center pt-5 mt-5 pl-5">
         <div class="col-lg-8">
             <div class="row">
@@ -61,7 +61,7 @@
     </div>
 </div>
 
-<div class="container-fluid" id="about_us">
+<div class="container-fluid example-classname" id="about_us">
     <div class="row">
         <div class="col-lg-4 p-5 d-flex align-items-center">
             <img class="img-fluid" src="{{asset('images/pic1.png')}}" alt="">
@@ -105,7 +105,7 @@
     </div>
 </div>
 
-<div class="container-fluid pl-lg-5 pt-lg-5 pb-lg-5" id="gallery">
+<div class="container-fluid pl-lg-5 pt-lg-5 pb-lg-5 example-classname" id="gallery">
     <div class="row">
         <div class="col-lg-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;">Галлерея</h5>
@@ -143,7 +143,7 @@
     </div>
 </div>
 
-<div class="container-fluid pt-lg-5 pb-lg-5" id="plan" style="background-image:url({{ asset('images/bg4.png') }});">
+<div class="container-fluid pt-lg-5 pb-lg-5 example-classname" id="plan" style="background-image:url({{ asset('images/bg4.png') }});">
     <h3 class="TTBold text-white pt-2 text-center pb-lg-5 pt-lg-5" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный план</h3>
     <div class="row">
         <div class="col-2"></div>
@@ -234,11 +234,114 @@
     </div>
 </div>
 
+<div class="container-fluid example-classname p-lg-5" id="advantages" style="background-image: url({{ asset('images/bg5.png') }});">
+    <div class="row align-items-end">
+        <div class="col-lg-6 pr-lg-5">
+            <h3 class="TTBold text-black pt-2 pb-lg-4 pt-lg-5" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Будьте счастливым обладателем собственности в люксовом поселке Эне-Сай</h3>
+            <p class="TTRegular text-black pb-3" style="font-size: 17px; line-height: 25px;">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
+            <form>
+                <div class="form-group d-flex">
+                    <input class="form-control" type="text" placeholder="Введите номер телефона">
+                    <button type="submit" class="btn-submit" style="border: 0; background: transparent;"><img src="{{asset('images/Arrow.png')}}" alt=""></button>
+                </div>
 
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4 class="TTRegular text-black text-center">Продано</h4>
+                    <div class="line"></div>
+                    <div class="numbers"><div class="number-item text-center"><span class="value">31</span></div></div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="TTRegular text-black text-center">Резерв</h4>
+                    <div class="line"></div>
+                    <div class="numbers"><div class="number-item text-center"><span class="value">40</span></div></div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="TTRegular text-black text-center">Свободно</h4>
+                    <div class="line"></div>
+                    <div class="numbers"><div class="number-item text-center"><span class="value">28</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pr-lg-5 pl-lg-5 mt-lg-5 pt-lg-5">
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Преимущество</h5>
+            <p class="TTRegular text-black" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читае</p>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Преимущество</h5>
+            <p class="TTRegular text-black" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читае</p>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Преимущество</h5>
+            <p class="TTRegular text-black" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читае</p>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Преимущество</h5>
+            <p class="TTRegular text-black" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читае</p>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Преимущество</h5>
+            <p class="TTRegular text-black" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читае</p>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Преимущество</h5>
+            <p class="TTRegular text-black" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читае</p>
+        </div>
+    </div>
+</div>
 
 
 
 
     @push('scripts')
+        <script>
+            $(window).scroll(testScroll);
+            var viewed = false;
+
+            function isScrolledIntoView(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+
+                var elemTop = $(elem).offset().top;
+                var elemBottom = elemTop + $(elem).height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            function testScroll() {
+                if (isScrolledIntoView($(".numbers")) && !viewed) {
+                    viewed = true;
+                    $('.value').each(function () {
+                        $(this).prop('Counter',0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 1000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    });
+                }
+            }
+        </script>
+        <script>
+            $(function() {
+                $.scrollify({
+                    section : ".example-classname",
+                });
+            });
+        </script>
     @endpush
 @endsection
