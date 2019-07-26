@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 pl-lg-5">
+        <div class="col-lg-3">
             <img src="{{asset('images/play-btn.png')}}" alt="">
             <p style="font-family: TTNormsRegular; font-size: 15px; text-decoration: underline;color: #ffffff;margin-top: 5%;">Смотреть видео</p>
         </div>
@@ -30,6 +30,12 @@
 
         </div>
     </div>
+        <div style="transform: rotate(90deg);position: absolute;top: 50%;right: -12%; display: flex;">
+            <div class="text-white px-3 TTMedium" style="text-transform: uppercase; font-size: 14px;">Главная</div>
+            <div class="text-white px-3 TTMedium" style="text-transform: uppercase; font-size: 14px;">О проекте</div>
+            <div class="text-white px-3 TTMedium" style="text-transform: uppercase; font-size: 14px;">Расположение</div>
+            <div class="text-white px-3 TTMedium" style="text-transform: uppercase; font-size: 14px;">Контакты</div>
+        </div>
 
     <div class="row mt-5 align-items-center">
         <div class="col-lg-8 p-5" style="background: rgba(6, 6, 6, 0.9);">
@@ -106,7 +112,7 @@
 </div>
 
 <div class="container-fluid pl-lg-5 pt-lg-5 pb-lg-5 example-classname" id="gallery">
-    <div class="row">
+    <div class="row mt-lg-5 pt-lg-5">
         <div class="col-lg-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;">Галлерея</h5>
             <h3 class="TTBold text-black pt-2" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
@@ -117,6 +123,7 @@
                 </div>
                 <div class="col-7">
                     <p class="TTRegular text-black pt-2 pb-2" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, a </p>
+                    <button class="btn btn-pictures"><a href="#">Смотреть все фото</a></button>
                 </div>
             </div>
         </div>
@@ -238,14 +245,15 @@
     <div class="row align-items-end">
         <div class="col-lg-6 pr-lg-5">
             <h3 class="TTBold text-black pt-2 pb-lg-4 pt-lg-5" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Будьте счастливым обладателем собственности в люксовом поселке Эне-Сай</h3>
-            <p class="TTRegular text-black pb-3" style="font-size: 17px; line-height: 25px;">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
-            <form>
-                <div class="form-group d-flex">
-                    <input class="form-control" type="text" placeholder="Введите номер телефона">
-                    <button type="submit" class="btn-submit" style="border: 0; background: transparent;"><img src="{{asset('images/Arrow.png')}}" alt=""></button>
-                </div>
-
-            </form>
+            <div class="col-lg-9 p-0">
+                <p class="TTRegular text-black pb-3" style="font-size: 17px; line-height: 25px;">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
+                <form>
+                    <div class="form-group d-flex">
+                        <input class="form-control" type="text" placeholder="Введите номер телефона">
+                        <button type="submit" class="btn-submit" style="border: 0; background: transparent;"><img src="{{asset('images/Arrow.png')}}" alt=""></button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="col-lg-6">
             <div class="row">
@@ -301,6 +309,81 @@
     </div>
 </div>
 
+<div class="container-fluid pt-lg-5 pb-lg-3 example-classname" id="news">
+    <div class="row pt-lg-5">
+        <div class="col-lg-7 p-0">
+            <img class="img-fluid" src="{{asset('images/pic2.png')}}" alt="">
+        </div>
+        <div class="col-lg-5 p-0 transformblock">
+            <h3 class="TTExtraBold text-black pt-2" style="font-size: 2.9em; line-height: 1.2em; text-transform: uppercase;">Последние новости</h3>
+            <div class="row pt-4 pl-lg-5">
+                <div class="col-2 pl-0">
+                    <img class="img-fluid" style="" src="{{asset('images/line-black.png')}}" alt="">
+                </div>
+                <div class="col-8 p-0">
+                    <p class="TTRegular text-black pt-2 pb-2" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</p>
+                    <button class="btn btn-pictures"><a href="#">Читать все новости</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-4 pt-lg-5 pb-lg-5">
+       <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
+            <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
+            <div class="row align-items-center">
+                <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
+                <div class="col-10 align-items-center"> <h4 class="TTBold text-black mb-0" style="font-size: 13px; line-height: 19px;">Читать полностью</h4></div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
+            <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
+            <div class="row align-items-center">
+                <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
+                <div class="col-10 align-items-center"> <h4 class="TTBold text-black mb-0" style="font-size: 13px; line-height: 19px;">Читать полностью</h4></div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
+            <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
+            <div class="row align-items-center">
+                <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
+                <div class="col-10 align-items-center"> <h4 class="TTBold text-black mb-0" style="font-size: 13px; line-height: 19px;">Читать полностью</h4></div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
+            <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
+            <div class="row align-items-center">
+                <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
+                <div class="col-10 align-items-center"> <h4 class="TTBold text-black mb-0" style="font-size: 13px; line-height: 19px;">Читать полностью</h4></div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
+            <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
+            <div class="row align-items-center">
+                <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
+                <div class="col-10 align-items-center"> <h4 class="TTBold text-black mb-0" style="font-size: 13px; line-height: 19px;">Читать полностью</h4></div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
+            <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
+            <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
+            <div class="row align-items-center">
+                <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
+                <div class="col-10 align-items-center"> <h4 class="TTBold text-black mb-0" style="font-size: 13px; line-height: 19px;">Читать полностью</h4></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

@@ -61,17 +61,25 @@
 .btn {
     background: linear-gradient(270deg, #C6972A 1.04%, #EFBB42 51.04%, #C6972A 100%);
     border-radius: 40px;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    background: linear-gradient(200deg, #C6972A 1.04%, #EFBB42 51.04%, #C6972A 100%);
 }
 .btn a {
     font-family: TTNormsBold;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
 }
 .btn-main-block {
-    width: 195px;
-    height: 48px;
+    width: 175px;
+    height: 40px;
+}
+.btn-pictures {
+    width: 200px;
+    height: 40px;
 }
 .text-white {
     color: #fff;
@@ -79,8 +87,12 @@
 .text-black {
     color: #000;
 }
-.text-position-abs {
-
+#first-block .col-lg-3 {
+    padding-left: 8%;
+    text-align: center;
+}
+#first-block .col-lg-3 img {
+    width: 35%;
 }
 .module-border-wrap{
     transform: translateX(-13%);
@@ -196,7 +208,7 @@
 }
 .btn-submit {
     position: absolute;
-    right: 6%;
+    right: 0;
 }
 #advantages .col-lg-6 h4 {
     font-size: 25px;
@@ -214,4 +226,35 @@
     font-size: 100px;
     line-height: 100px;
     color: #C6972A;
+}
+.transformblock {
+    transform: translateX(-13%);
+}
+.padleft {
+    padding-left: 10%;
+}
+.form .form-control {
+    background: transparent;
+    border-bottom: 1px solid #DFDFDF;
+    font-family: TTNormsLight;
+    margin-top:5%;
+}
+.form .form-control:focus {
+    background-color: transparent;
+    border-color: #c6972a;
+}
+.form .btn-submit {
+    position: relative;
+    width: 150px;
+}
+.form form {
+    width: 70%;
+}
+.nav-item.button {
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding-top: 6px!important;
+    padding-bottom: 10px!important;
+    height: 39px;
+    margin-top: 9px;
 }

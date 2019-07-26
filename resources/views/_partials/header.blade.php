@@ -1,32 +1,23 @@
 
-<nav class="navbar menuse navbar-expand-xl py-0 w-100 pr-0 d-md-block d-none" style="z-index: 999; background: rgba(0,0,0,0); position: fixed;">
+<nav class="navbar menuse navbar-expand-xl py-0 w-100 pr-0 d-md-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: absolute;">
     <div class="container">
         <div class="row w-100">
             <div class="col-md-1 col-4 px-4 logs logs3 pt-3">
                 <a href="/" style="">
-                    <img class="logo main-logo" src="{{asset('images/logo.png')}}" alt="">
+                    <img class="logo main-logo img-fluid" src="{{asset('images/logo.png')}}" alt="">
                 </a>
             </div>
             <div class="col-md-11 col-8 collapse navbar-collapse"  id="navbarSupportedContent">
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a href="/" class="text-white text-fut-bold menu-point" style="text-decoration: none;">Главная</a>
+                            <a href="/" class="text-white TTMedium menu-point" style="text-decoration: none;font-size: 14px;">+996 312 880 575</a>
                         </li>
                         <li class="nav-item p-3" id="pick">
-                            <a href="#about_us" class="text-white text-fut-bold menu-point" style="text-decoration: none;">О нас</a>
+                            <a href="#about_us" class="text-white TTMedium  menu-point" style="text-decoration: none;font-size: 14px;">+996 552 880 575</a>
                         </li>
-                        <li class="nav-item p-3">
-                            <a href="/lessons" class="text-white text-fut-bold menu-point" style="text-decoration: none;">Список занятий</a>
-                        </li>
-                        <li class="nav-item p-3">
-                            <a href="/gallery" class="text-white text-fut-bold menu-point" style="text-decoration: none;">Галерея</a>
-                        </li>
-                        <li class="nav-item p-3" id="pick">
-                            <a href="#event" class="text-white text-fut-bold menu-point" style="text-decoration: none;">Мероприятия</a>
-                        </li>
-                        <li class="nav-item p-3" id="pick">
-                            <a href="#footer" class="text-white text-fut-bold menu-point" style="text-decoration: none;">Контакты</a>
+                        <li class="nav-item p-3 button">
+                            <a href="/lessons" class="text-white TTMedium menu-point" style="text-decoration: none;font-size: 14px; text-transform: uppercase;">Заказать звонок</a>
                         </li>
                     </ul>
                 </nav>
