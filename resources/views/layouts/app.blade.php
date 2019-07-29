@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Enesay</title>
+    <title>Современный жилой комплекс Эне-Сай Luxury Village</title>
     <link rel="shortcut icon" href="/images/logo.png" type="image/png">
 
     <!-- Scripts -->
@@ -44,7 +44,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pick").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 500);
+        });
+    });
+</script>
 @stack('scripts')
 <script>
     var owl = $('.owl-carousel');
@@ -100,6 +109,7 @@
     $('#ajax-message').click(e => {
         e.preventDefault();
         let name = $('#form-name');
+        let email = $('#form-email');
         let phone = $('#form-phone');
         let message = $('#form-message');
 
@@ -110,11 +120,13 @@
                 "_token": "{{ csrf_token() }}",
                 "name": name.val(),
                 "phone": phone.val(),
+                "email": email.val(),
                 "message": message.val()
             },
             success: data => {
                 $('#form-name').val('');
                 $('#form-phone').val('');
+                $('#form-email').val('');
                 $('#form-message').val('');
                 $(".send-success-mail").removeClass('d-none');
             },
@@ -122,6 +134,45 @@
             }
         });
     })
+</script>
+<script>
+    $('#ajax-message2').click(e => {
+        e.preventDefault();
+        let name = $('#form-name2');
+        let email = $('#form-email2');
+        let phone = $('#form-phone2');
+        let message = $('#form-message2');
+
+        $.ajax({
+            url: '{{ route('mail') }}',
+            method: 'POST',
+            data: {
+                "_token": "{{ csrf_token() }}",
+                "name": name.val(),
+                "phone": phone.val(),
+                "email": email.val(),
+                "message": message.val()
+            },
+            success: data => {
+                $('#form-name2').val('');
+                $('#form-phone2').val('');
+                $('#form-email2').val('');
+                $('#form-message2').val('');
+                $(".send-success-mail2").removeClass('d-none');
+            },
+            error: () => {
+            }
+        });
+    })
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.right = "0px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-300px";
+    }
 </script>
 </body>
 </html>

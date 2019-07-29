@@ -1,11 +1,18 @@
-<div class="container-fluid pt-5 pb-4 pl-5 pr-5 example-classname" id="footer" style="background-image: url({{ asset('images/footer.png') }});">
+<div class="container-fluid pt-5 pb-4 pl-5 pr-5 example-classname" id="7" style="background-image: url({{ asset('images/footer.png') }});">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
             <h2 class="TTBold text-white pb-4" style="font-size: 2em; text-transform: uppercase;">Контакты</h2>
-            <div class="contacts pt-4 pb-3 d-flex justify-content-between" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
-                <a href="#" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;">+996 312 880 575</a>
-                <a href="#" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;">+996 552 880 575</a>
-                <p class="text-white TTMedium" style="font-size: 16px;">7/6, Аалы Токомбаев</p>
+            <div class="contacts pt-4 pb-3 d-lg-flex justify-content-between d-none" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
+                <a href="tel: +996312880575" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;">+996 312 880 575</a>
+                <a href="tel: +996552880575" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;">+996 552 880 575</a>
+                <a class="text-white TTMedium" style="font-size: 16px;">7/6, Аалы Токомбаев</a>
+                <a href="#" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;"><img class="mr-2" src="{{asset('images/insta.svg')}}" alt="">Instagram</a>
+
+            </div>
+            <div class="contacts pt-4 pb-3 d-lg-none d-block" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
+                <a href="tel: +996312880575" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;"><p>+996 312 880 575</p></a>
+                <a href="tel: +996552880575" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;"><p>+996 552 880 575</p></a>
+                <a class="text-white TTMedium" style="font-size: 16px;">7/6, Аалы Токомбаев</a>
                 <a href="#" class="text-white TTMedium" style="font-size: 16px; text-decoration: underline;"><img class="mr-2" src="{{asset('images/insta.svg')}}" alt="">Instagram</a>
 
             </div>
@@ -14,23 +21,23 @@
             </div>
         </div>
         <div class="col-lg-6 padleft">
-            <h2 class="TTBold text-white pb-4" style="font-size: 2em; text-transform: uppercase;">Напишите  нам</h2>
+            <h2 class="TTBold text-white pb-4 pt-lg-0 pt-3" style="font-size: 2em; text-transform: uppercase;">Напишите  нам</h2>
             <div class="form pt-4 pb-3" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
                 <p class="text-white TTMedium" style="font-size: 18px;">Свяжитесь с нами и мы ответим на все ваши вопросы</p>
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя">
+                        <input type="text" class="form-control" id="form-name" placeholder="Ваше имя">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ваш e-mail">
+                        <input type="text" class="form-control" id="form-email" placeholder="Ваш e-mail">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ваш телефон">
+                        <input type="text" class="form-control" id="form-phone" placeholder="Ваш телефон">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ваше сообщение"></textarea>
+                        <textarea class="form-control" id="form-message" rows="3" placeholder="Ваше сообщение"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-submit"><a href="#">Отправить</a></button>
+                    <button id="ajax-message" class="btn btn-submit"><a href="#">Отправить</a></button>
                 </form>
             </div>
         </div>
@@ -38,5 +45,50 @@
     <div class="row justify-content-between align-items-end pt-3 mt-4 ml-1 mr-1" id="copyright" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
         <img class="img-fluid" style="height: 100%; width: 5%;" src="{{asset('images/logo.png')}}" alt="">
         <p class="TTLight" style="font-size: 16px;color: #959595;">© copyright 2019</p>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="callModal" tabindex="15" role="form"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content feedback-content" style="background: #fefefe;">
+            <div>
+                <div class="modal-body p-5 text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="mb-3" style="font-size: 25px; line-height: 120%; color: #000000;">
+                        Оставьте нам свой отзыв
+                    </h2>
+                    <div class="send-success-mail2 p-4 d-none" >
+                        <i class="fas fa-check-circle" style="color:#00d920;"></i><span class="pl-2 text-fut-bold" style="color:#000000;">Отзыв успешно отправлен!</span>
+                    </div>
+                    <div class="send-error-mail2 p-4 d-none">
+                        <i class="fas fa-exclamation-circle text-fut-bold text-white" style="color:#00d920;"></i><span class="pl-2" style="color:#000000;">Отзыв не был отправлен!</span>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input class="w-100 mb-2 p-2" name="name" type="text" id="form-name2" placeholder="Ваше имя*" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="w-100 mb-2 p-2" name="phone" type="tel" id="form-phone2" placeholder="Ваш номер телефона*" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="w-100 mb-2 p-2" name="email" type="email" id="form-email2" placeholder="Введите E-mail*" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="w-100 mb-2 p-2" name="message" type="message" id="form-message2" placeholder="Сообщение*" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button id="ajax-message2" class="btn"><a href="#">Отправить</a></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>

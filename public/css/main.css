@@ -138,16 +138,16 @@
     100% { box-shadow: 0 0 0 12px rgba(254, 206, 104, 0) }
 }
 
-#pulse-wrapper {
+.pulse-wrapper {
     display: flex;
     width: 20%;
     height: 20%;
     overflow: hidden;
 }
-#pulse-wrapper #pulse {
+.pulse-wrapper #pulse {
     margin: auto;
 }
-#pulse-wrapper #pulse span {
+.pulse-wrapper #pulse span {
     position: absolute;
     margin-top: -25px; /* = height / 2 */
     margin-left: -25px; /* = width / 2 */
@@ -157,41 +157,54 @@
     background: #fece68;
     animation: pulse_animation 1.8s infinite;
 }
-#pulse-wrapper1 #pulse span {
+.pulse-wrapper1 #pulse span {
 
 }
-#pulse-wrapper #pulse span:nth-child(2) {
+.pulse-wrapper #pulse span:nth-child(2) {
     animation-delay: 0.3s; /* Start the second wave with some delay */
+}
+.point-border
+{
+    border-radius: 10px;
+    background: white!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.point-border .text-white
+{
+    color: #C6972A!important;
 }
 .anim1 {
     position: absolute;
-    top: 5em;
-    left: 25em;
+    top: 22%;
+    left: 49%;
 }
 .anim2 {
     position: absolute;
-    top: 8em;
-    left: 15em;
+    top: 30%;
+    left: 22%;
 }
 .anim3 {
     position: absolute;
-    top: 18em;
-    right: 15em;
+    top: 59%;
+    right: 32%;
 }
 .anim4 {
     position: absolute;
-    top: 18em;
-    left: 15em;
+    top: 65%;
+    left: 10%;
 }
 .anim5 {
     position: absolute;
-    top: 25em;
-    right: 5em;
+    top: 52%;
+    right: 9%;
 }
 .anim6 {
     position: absolute;
-    top: 5em;
-    right: 15em;
+    top: 0;
+    right: 6%;
 }
 .btn-submit:focus {
     outline: none!important;
@@ -221,7 +234,7 @@
     margin-right: auto;
     margin-left: auto;
 }
-.number-item span {
+    .number-item span {
     font-family: TTNormsExtraBold;
     font-size: 100px;
     line-height: 100px;
@@ -257,4 +270,70 @@
     padding-bottom: 10px!important;
     height: 39px;
     margin-top: 9px;
+}
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: -300px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 120px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.shadow-hover
+{
+    transition: 0.5s;
+}
+.shadow-hover:hover
+{
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 700px){
+    .text-main
+    {
+        background-image: url('/images/about_us.png');
+        font-size:200%!important;
+        padding: 15% 10%;
+    }
+    .text-first
+    {
+        font-size:180%!important;
+    }
+    .trans
+    {
+        transform: translateX(0%);
+    }
+    .owl-nav
+    {
+        display:none;
+    }
+    .transformblock
+    {
+        transform: translateX(0%);
+    }
 }

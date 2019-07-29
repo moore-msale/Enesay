@@ -1,6 +1,6 @@
 
-<nav class="navbar menuse navbar-expand-xl py-0 w-100 pr-0 d-md-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: absolute;">
-    <div class="container">
+<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 d-md-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: absolute;">
+    <div class="container-fluid">
         <div class="row w-100">
             <div class="col-md-1 col-4 px-4 logs logs3 pt-3">
                 <a href="/" style="">
@@ -11,13 +11,16 @@
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a href="/" class="text-white TTMedium menu-point" style="text-decoration: none;font-size: 14px;">+996 312 880 575</a>
+                            <a href="tel: +996312880575" class="TTMedium menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 312 880 575</a>
                         </li>
-                        <li class="nav-item p-3" id="pick">
-                            <a href="#about_us" class="text-white TTMedium  menu-point" style="text-decoration: none;font-size: 14px;">+996 552 880 575</a>
+                        <li class="nav-item p-3">
+                            <a href="tel: +996552880575" class="TTMedium  menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 552 880 575</a>
                         </li>
-                        <li class="nav-item p-3 button">
-                            <a href="/lessons" class="text-white TTMedium menu-point" style="text-decoration: none;font-size: 14px; text-transform: uppercase;">Заказать звонок</a>
+                        <li class="nav-item p-3 button" data-toggle="modal" data-target="#callModal">
+                            <a class="TTMedium menu-point" style="color:#fefefe; text-decoration: none;font-size: 14px; text-transform: uppercase;">Заказать звонок</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <i class="fas fa-bars fa-lg menu-point" style="color:#fefefe;" onclick="openNav()"></i>
                         </li>
                     </ul>
                 </nav>
@@ -45,19 +48,13 @@
                             <a href="/" class="text-dark text-fut-bold" style="text-decoration: none;">Главная</a>
                         </li>
                         <li class="nav-item p-2 ">
-                            <a href="/#about_us" class="text-dark text-fut-bold" style="text-decoration: none;">О нас</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a href="/lessons" class="text-dark text-fut-bold" style="text-decoration: none;">Список занятий</a>
+                            <a href="/about_us" class="text-dark text-fut-bold" style="text-decoration: none;">О нас</a>
                         </li>
                         <li class="nav-item p-2">
                             <a href="/gallery" class="text-dark text-fut-bold" style="text-decoration: none;">Галерея</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a href="/#event" class="text-dark text-fut-bold" style="text-decoration: none;">Мероприятия</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a href="#footer" class="text-dark text-fut-bold" style="text-decoration: none;">Контакты</a>
+                            <a href="/news" class="text-dark text-fut-bold" style="text-decoration: none;">Новости</a>
                         </li>
                     </ul>
                 </nav>
@@ -65,5 +62,23 @@
         </div>
     </div>
 </nav>
+<div id="mySidenav" class="sidenav d-md-block d-none">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="sf-medium pl-5" href="/">  Главная</a>
+    <a class="sf-medium pl-5" href="/about_us"> О нас</a>
+    <a class="sf-medium pl-5" href="/gallery"> Галерея</a>
+    <a class="sf-medium pl-5" href="/news">Новости</a>
+    <div class="container-fluid pt-5 pl-4 ml-2">
+        <div class="row">
+            <div class="col-3 p-0">
+                <a href="#" class="ics" target="_blank">
+                    <p>
+                        <i class="fab fa-instagram fa-sm"></i>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
