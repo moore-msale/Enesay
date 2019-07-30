@@ -15,7 +15,7 @@
 
     <div style="padding-top: 10%; padding-bottom: 10%;">
         <div class="container">
-            <div class="col-12 pt-lg-0 pt-5 px-0 mb-4">
+            <div class="col-12 pt-lg-0 pt-5 px-0 mb-4" data-aos="flip-up">
                         <span>
                         <a href="/"  style="color:#000000;">Главная</a>
                         </span>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3">
+                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3" data-aos="flip-up">
                     <a href="{{ asset('images/item1.png') }}"  data-fancybox="gallery1">
                     <div class="shadow-hover">
                         <img class="w-100" src="{{ asset('images/item1.png') }}" alt="">
@@ -39,7 +39,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3">
+                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3" data-aos="flip-up">
                     <a href="{{ asset('images/item2.png') }}"  data-fancybox="gallery1">
                         <div class="shadow-hover">
                             <img class="w-100" src="{{ asset('images/item2.png') }}" alt="">
@@ -47,7 +47,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3">
+                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3" data-aos="flip-up">
                     <a href="{{ asset('images/item3.png') }}"  data-fancybox="gallery1">
                         <div class="shadow-hover">
                             <img class="w-100" src="{{ asset('images/item3.png') }}" alt="">
@@ -55,7 +55,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3">
+                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3" data-aos="flip-up">
                     <a href="{{ asset('images/item1.png') }}"  data-fancybox="gallery1">
                         <div class="shadow-hover">
                             <img class="w-100" src="{{ asset('images/item1.png') }}" alt="">
@@ -63,7 +63,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3">
+                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3" data-aos="flip-up">
                     <a href="{{ asset('images/item2.png') }}"  data-fancybox="gallery1">
                         <div class="shadow-hover">
                             <img class="w-100" src="{{ asset('images/item2.png') }}" alt="">
@@ -71,7 +71,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3">
+                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3 mb-3" data-aos="flip-up">
                     <a href="{{ asset('images/item3.png') }}"  data-fancybox="gallery1">
                         <div class="shadow-hover">
                             <img class="w-100" src="{{ asset('images/item3.png') }}" alt="">
