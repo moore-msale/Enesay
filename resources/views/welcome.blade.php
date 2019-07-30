@@ -141,7 +141,7 @@
     </div>
 </div>
 
-<div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 example-classname" id="gallery">
+<div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname" id="gallery">
     <div class="row mt-lg-5 pt-lg-5">
         <div class="col-lg-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="flip-down">Галлерея</h5>
@@ -157,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-7 col-12 d-lg-block d-md-none d-none"  data-aos="flip-down">
+        <div class="col-lg-7 col-12 pb-md-5 pb-5 mb-5 d-lg-block d-md-none d-none">
             <div class="carousel">
                 <div class="blokincarousel">
 
@@ -177,7 +177,7 @@
             </div>
 
         </div>
-        <div class="col-12 d-lg-none d-md-block pt-md-5 pt-5 pb-md-5 pb-5" data-aos="flip-down">
+        <div class="col-12 d-lg-none d-md-block pt-md-5 pt-5 pb-md-5 pb-5">
             <div class="carousel">
                 <div class="owl-carousel owl-two w-100">
                     <div class="item">
@@ -277,7 +277,7 @@
                 <p class="TTRegular text-white" style="font-size: 15px;line-height: 18px;">30 магазинов на территории</p>
             </div>
         </div>
-        <div class="col-lg-2 col-12 d-flex 15 pt-3" data-aos="flip-up">
+        <div class="col-lg-2 col-12 d-flex 15 pt-3 pb-4" data-aos="flip-up">
             <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>
             <div class="descr pl-lg-3 pl-3">
                 <h5 class="TTBold text-white" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">Автомойка</h5>
@@ -500,7 +500,7 @@
             </div>
             </a>
         </div>
-        <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="flip-up">
+        <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5 pb-lg-0 pb-md-0 pb-5" data-aos="flip-up">
             <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
             <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
             <p class="TTRegular text-black pt-2" style="font-size: 13px;line-height: 17px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение</p>
