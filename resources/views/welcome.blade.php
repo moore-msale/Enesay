@@ -177,7 +177,7 @@
             </div>
 
         </div>
-        <div class="col-12 d-lg-none d-md-block pt-md-5 pt-5 pb-md-5 pb-5">
+        <div class="col-12 d-lg-none d-md-block d-block pt-md-5 pt-5 pb-md-5 pb-5">
             <div class="carousel">
                 <div class="owl-carousel owl-two w-100">
                     <div class="item">
