@@ -12,7 +12,7 @@
                 эне-сай luxury village
             </h1>
 
-            <div class="TTLight bg-white shadow p-5 mt-lg-5 mt-0 mb-lg-0 mb-5" style="font-size: 112%; line-height: 140%; color: #000000;">
+            <div class="TTLight bg-white p-5 mt-lg-5 mt-0 mb-lg-0 mb-5" style="font-size: 112%; line-height: 140%; color: #000000; box-shadow: 0px -33px 50px rgba(0, 0, 0, 0.25);">
                 <p>
                     Эне - Сай Luxury Village – современный, элитный жилой комплекс, оснащенный всем необходимым для комфортного время провождения. Неповторимая аура и уникальная концепция формата и архитектуры доставляет исключительное удовольствие наслаждаться моментом.
                 </p>

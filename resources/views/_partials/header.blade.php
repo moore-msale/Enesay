@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 d-md-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: absolute;">
+<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 d-lg-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: absolute;">
     <div class="container-fluid">
         <div class="row w-100">
             <div class="col-md-1 col-4 px-4 logs logs3 pt-3">
@@ -11,16 +11,16 @@
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a href="tel: +996312880575" class="TTMedium menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 312 880 575</a>
+                            <a href="tel: +996312880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 312 880 575</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a href="tel: +996552880575" class="TTMedium  menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 552 880 575</a>
+                            <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 552 880 575</a>
                         </li>
-                        <li class="nav-item p-3 button" data-toggle="modal" data-target="#callModal">
-                            <a class="TTMedium menu-point" style="color:#fefefe; text-decoration: none;font-size: 14px; text-transform: uppercase;">Заказать звонок</a>
+                        <li class="nav-item px-3 py-1 mx-5 button" data-toggle="modal" data-target="#callModal">
+                            <a class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
                         </li>
                         <li class="nav-item p-3">
-                            <i class="fas fa-bars fa-lg menu-point" style="color:#fefefe;" onclick="openNav()"></i>
+                            <img class="w-75" src="{{ asset('images/hamburger.png') }}" onclick="openNav()" alt="">
                         </li>
                     </ul>
                 </nav>
@@ -28,10 +28,10 @@
         </div>
     </div>
 </nav>
-<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 bg-white d-md-none d-block" style="z-index: 999; background: rgba(0,0,0,0); position: fixed;">
+<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 bg-white d-lg-none d-block" style="z-index: 999; background: rgba(0,0,0,0); position: fixed;">
     <div class="container-fluid">
         <div class="row w-100">
-            <div class="col-md-1 col-4 px-4 py-2">
+            <div class="col-md-4 text-center col-4 px-4 py-2">
                 <a href="/">
                     <img class="w-50" src="{{asset('images/logo.png')}}" alt="">
                 </a>
@@ -41,9 +41,9 @@
                     <i class="fas fa-bars fa-lg"></i>
                 </button>
             </div>
-            <div class="collapse navbar-collapse col-md-11 col-8"  id="navbarSupportedContent">
+            <div class="collapse navbar-collapse col-md-11 col-8 pt-md-4 pt-0 pb-md-4 pb-0"  id="navbarSupportedContent">
                 <nav class="ml-md-auto ml-0">
-                    <ul class="navbar-nav" id="pick">
+                    <ul class="navbar-nav">
                         <li class="nav-item p-2">
                             <a href="/" class="text-dark text-fut-bold" style="text-decoration: none;">Главная</a>
                         </li>

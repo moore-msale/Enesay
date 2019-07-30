@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Современный жилой комплекс Эне-Сай Luxury Village</title>
+    <title>Эне-Сай - Современный жилой комплекс Эне-Сай Luxury Village</title>
     <link rel="shortcut icon" href="/images/logo.png" type="image/png">
 
     <!-- Scripts -->
@@ -56,12 +56,16 @@
 </script>
 @stack('scripts')
 <script>
-    var owl = $('.owl-carousel');
+    var owl = $('.owl-one');
     owl.owlCarousel({
         margin: 10,
         loop: true,
         autoplay: true,
         nav: true,
+        onInitialized: function(e) {
+            $('.counter').text('1 из ' + this.items().length)
+            console.log();
+        },
         smartSpeed: 1000,
         autoplayTimeout: 5000,
         responsive: {
@@ -76,7 +80,21 @@
             }
         }
     });
-
+    owl.on('changed.owl.carousel', function(e) {
+        $('.counter').text(++e.page.index + ' из ' + e.item.count)
+    });
+</script>
+<script>
+    var owl = $('.owl-two');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    })
 </script>
 <script>
     $(document).ready(function() {
