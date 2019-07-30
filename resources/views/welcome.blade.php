@@ -550,12 +550,12 @@
             </script>
         <script>
             $(function() {
-                // var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-                // if(width > 800){
+                var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                if(width > 800){
                 $.scrollify({
                     section : ".example-classname",
                 });
-                    // }
+                    }
             });
         </script>
             <script>
