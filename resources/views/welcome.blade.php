@@ -141,7 +141,7 @@
     </div>
 </div>
 
-<div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname" id="gallery">
+<div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname" id="gallery" >
     <div class="row mt-lg-5 pt-lg-5">
         <div class="col-lg-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="flip-down">Галлерея</h5>
