@@ -33,7 +33,7 @@
         <div class="row w-100">
             <div class="col-md-4 text-center col-4 px-4 py-2">
                 <a href="/">
-                    <img class="w-50" src="{{asset('images/logo.png')}}" alt="">
+                    <img class="w-100" src="{{asset('images/logo.png')}}" alt="">
                 </a>
             </div>
             <div class="col-auto my-auto ml-auto d-xl-none px-0">
