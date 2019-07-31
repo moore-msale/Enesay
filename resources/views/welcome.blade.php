@@ -126,14 +126,14 @@
                     <img class="img-fluid w-50" data-aos="flip-down" src="{{asset('images/brazil.png')}}" alt="">
                     <p class="TTBold text-black" data-aos="flip-down" style="font-size: 18px;">10,000 км2</p>
 
-                    <img class="img-fluid mt-4 w-25 pt-lg-0 pt-md-5" data-aos="flip-up" src="{{asset('images/parking.png')}}" alt="">
+                    <img class="img-fluid mt-lg-2 mt-md-4 mt-2 w-25 pt-lg-0 pt-md-5" data-aos="flip-up" src="{{asset('images/parking.png')}}" alt="">
                     <p class="TTBold text-black pt-3" data-aos="flip-up" style="font-size: 18px;">500 парковочных мест</p>
                 </div>
                 <div class="col-lg-6 col-md-6 text-center ">
                     <img class="img-fluid w-25" data-aos="flip-down" src="{{asset('images/shop.png')}}" alt="">
                     <p class="TTBold text-black pt-2" data-aos="flip-down" style="font-size: 18px;">50 магазинов</p>
 
-                    <img class="img-fluid mt-4 w-25 pt-lg-0 pt-md-5" data-aos="flip-up" src="{{asset('images/amphitheatre.png')}}" alt="">
+                    <img class="img-fluid mt-lg-2 mt-md-4 mt-2 w-25 pt-lg-0 pt-md-5" data-aos="flip-up" src="{{asset('images/amphitheatre.png')}}" alt="">
                     <p class="TTBold text-black" data-aos="flip-up" style="font-size: 18px;">1 амфитеатр</p>
                 </div>
             </div>
