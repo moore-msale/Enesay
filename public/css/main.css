@@ -390,6 +390,10 @@
     {
         font-size:180%!important;
     }
+    .text-second
+    {
+        font-size: 130%!important;
+    }
     .trans
     {
         transform: translateX(0%);

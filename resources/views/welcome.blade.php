@@ -145,7 +145,7 @@
     <div class="row mt-lg-5 pt-lg-5">
         <div class="col-lg-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="flip-down">Галлерея</h5>
-            <h3 class="TTBold text-black pt-2" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;" data-aos="flip-up">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
+            <h3 class="TTBold text-black pt-2 d-lg-block d-md-block d-none" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;" data-aos="flip-up">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
 
             <div class="row pt-4">
                 <div class="col-lg-3 col-md-2 d-md-block d-none">
@@ -196,11 +196,10 @@
 </div>
 
 <div class="container-fluid pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname" id="4" style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
-    <h3 class="TTBold text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 pl-3" data-aos="flip-up" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный план</h3>
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8 d-lg-block d-none">
-            <img class="img-fluid" style="" data-aos="fade-up" src="{{asset('images/plan.png')}}" alt="">
+    <h3 class="TTBold text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3" data-aos="flip-up" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный план</h3>
+    <div class="row justify-content-center">
+        <div class="col-8 d-lg-block d-none text-center">
+            <img class="img-fluid w-75" style="" data-aos="fade-up" src="{{asset('images/plan.png')}}" alt="">
             <div id="10" class="anim1 dot pulse-wrapper">
                 <div id="pulse">
                     <span></span> <!-- Wave 1 -->
@@ -238,7 +237,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-2"></div>
     </div>
     <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none">
         <div class="row pl-lg-0 pl-4">
@@ -345,7 +343,7 @@
 <div class="container-fluid example-classname p-lg-5 p-5" id="5" style="background-image: url({{ asset('images/bg5.png') }}); background-size: cover; background-position: center;">
     <div class="row align-items-end">
         <div class="col-lg-6 col-md-10 pr-lg-5">
-            <h3 class="TTBold text-black pt-2 pb-lg-4 pt-lg-5 text-first" style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;" data-aos="fade-up">Будьте счастливым обладателем собственности в люксовом поселке Эне-Сай</h3>
+            <h3 class="TTBold text-black pt-2 pb-lg-4 pt-lg-5 text-second" style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;" data-aos="fade-up">Будьте счастливым обладателем собственности в люксовом поселке Эне-Сай</h3>
             <div class="col-lg-9 pt-lg-0 pt-md-5 px-0">
                 <p class="TTLight text-black pb-3" style="font-size: 17px; line-height: 25px;" data-aos="flip-up">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
                 <form>
