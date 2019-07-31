@@ -152,7 +152,7 @@
                     <img class="img-fluid"  data-aos="flip-up" style="" src="{{asset('images/line-black.png')}}" alt="">
                 </div>
                 <div class="col-lg-7 col-md-6">
-                    <p class="TTRegular text-black pt-2 pb-2" data-aos="flip-down" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, a </p>
+                    <p class="TTRegular text-black pt-2 pb-2 d-lg-block d-md-block d-none" data-aos="flip-down" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, a </p>
                     <div data-aos="flip-down"><button class="btn btn-pictures"><a href="/gallery">Смотреть все фото</a></button></div>
                 </div>
             </div>
