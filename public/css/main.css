@@ -337,7 +337,7 @@
     position: absolute;
     width:41px;
     height:17px;
-    background-image: url('/images/arrow.png')!important;
+    background-image: url('/images/Arrow.png')!important;
     background-repeat: no-repeat;
     top:100%;
     right:0%;
@@ -371,7 +371,7 @@
     position: absolute;
     width:41px;
     height:17px;
-    background-image: url('/images/arrow.png')!important;
+    background-image: url('/images/Arrow.png')!important;
     background-repeat: no-repeat;
     top:85%;
     right:65%;

@@ -345,7 +345,7 @@
         <div class="col-lg-6 col-md-10 pr-lg-5">
             <h3 class="TTBold text-black pt-2 pb-lg-4 pt-lg-5 text-second" style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;" data-aos="fade-up">Будьте счастливым обладателем собственности в люксовом поселке Эне-Сай</h3>
             <div class="col-lg-9 pt-lg-0 pt-md-5 px-0">
-                <p class="TTLight text-black pb-3" style="font-size: 17px; line-height: 25px;" data-aos="flip-up">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
+                <p class="TTLight text-black pb-lg-3 pb-md-3 pb-1" style="font-size: 17px; line-height: 25px;" data-aos="flip-up">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
                 <form>
                     <div class="form-group d-flex col-lg-12 col-11 px-0">
                         <input class="form-control" type="text" data-aos="flip-up" placeholder="Введите номер телефона">
