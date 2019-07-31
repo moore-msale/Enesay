@@ -103,7 +103,7 @@
             <div class="text-position-abs">
                 <div class="module-border-wrap">
                     <div class="module">
-                        <h3 class="TTBold text-black" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Нет никого, кто любил бы боль саму по себе</h3>
+                        <h3 class="TTBold text-black text-second" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Нет никого, кто любил бы боль саму по себе</h3>
                     </div>
                 </div>
             </div>
