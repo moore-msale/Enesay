@@ -116,8 +116,8 @@
         </div>
         <div class="col-lg-5 col-md-11 pl-md-5 pl-3 pt-lg-5 mt-lg-5 pt-5 mt-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="flip-down">О проекте</h5>
-            <h3 class="TTBold text-black pt-2" style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;" data-aos="flip-down">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
-            <p class="TTRegular text-black pt-md-2 pt-4 pb-md-2 pb-4" style="font-size: 14px; line-height: 20px;" data-aos="flip-down">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</p>
+            <h3 class="TTBold text-black pt-2 text-second" style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;" data-aos="flip-down">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
+            <p class="TTRegular text-black pt-md-2 pt-2 pb-md-2 pb-2" style="font-size: 14px; line-height: 20px;" data-aos="flip-down">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</p>
             <div data-aos="flip-down">
             <button class="btn btn-main-block"><a href="/about_us">Подробнее</a></button>
             </div>
