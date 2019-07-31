@@ -89,7 +89,7 @@
         </div>
         <div class="col-lg-4 pb-lg-0 pb-5 d-lg-block d-none">
             <div class="row align-items-center">
-                <div class="col-6 pl-5 align-items-center"> <h4 class="TTLight text-white mb-0" data-aos="fade-up" style="font-size: 15px; line-height: 21px;letter-spacing: 0.2em;">Листайте вниз</h4></div>
+                <div class="col-6 pl-5 align-items-center"> <h4 class="TTLight text-white mb-0" style="font-size: 15px; line-height: 21px;letter-spacing: 0.2em;">Листайте вниз</h4></div>
                 <div class="col-6 pl-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line.png')}}" alt=""></div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                 <div class="col-7"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line-black.png')}}" alt=""></div>
             </div>
         </div>
-        <div class="col-lg-5 col-md-11 pl-md-5 pl-3 pt-lg-5 mt-lg-5 pt-2 mt-5 pb-lg-0 pb-5">
+        <div class="col-lg-5 col-md-11 pl-md-5 pl-3 pt-lg-5 mt-lg-5 pt-2 mt-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">О проекте</h5>
             <h3 class="TTBold text-black pt-2 text-second" style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;" data-aos="fade-up">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
             <p class="TTRegular text-black pt-md-2 pt-2 pb-md-2 pb-2" style="font-size: 14px; line-height: 20px;" data-aos="fade-up">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</p>
@@ -145,14 +145,14 @@
     <div class="row mt-lg-5 pt-lg-5">
         <div class="col-lg-5">
             <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">Галлерея</h5>
-            <h3 class="TTBold text-black pt-2 d-lg-block d-md-block d-none" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;" data-aos="fade-up">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
+            <h3 class="TTBold text-black pt-2" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;" data-aos="fade-up">Нет никого, кто любил бы боль саму по себе, кто искал бы ее</h3>
 
             <div class="row pt-4">
                 <div class="col-lg-3 col-md-2 d-md-block d-none">
                     <img class="img-fluid"  data-aos="fade-up" style="" src="{{asset('images/line-black.png')}}" alt="">
                 </div>
                 <div class="col-lg-7 col-md-6">
-                    <p class="TTRegular text-black pt-2 pb-2 d-lg-block d-md-block d-none" data-aos="fade-up" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, a </p>
+                    <p class="TTRegular text-black pt-2 pb-2" data-aos="fade-up" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, a </p>
                     <div data-aos="fade-up"><button class="btn btn-pictures"><a href="/gallery">Смотреть все фото</a></button></div>
                 </div>
             </div>
@@ -546,16 +546,16 @@
                     }
                 }
             </script>
-        <script>
-            $(function() {
-                // var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-                // if(width > 800){
-                $.scrollify({
-                    section : ".example-classname",
-                });
-                    // }
-            });
-        </script>
+        {{--<script>--}}
+            {{--$(function() {--}}
+                {{--// var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;--}}
+                {{--// if(width > 800){--}}
+                {{--$.scrollify({--}}
+                    {{--section : ".example-classname",--}}
+                {{--});--}}
+                    {{--// }--}}
+            {{--});--}}
+        {{--</script>--}}
             <script>
                 $('.dot').mouseenter( function () {
                     var focus_id = this.id;
