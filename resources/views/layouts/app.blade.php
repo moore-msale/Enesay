@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {{--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">--}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,7 +42,7 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.js') }}"></script>
 <script src="{{ asset('js/jquery.scrollify.js') }}"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+{{--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>--}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
@@ -56,9 +56,9 @@
         });
     });
 </script>
-<script>
-    AOS.init();
-</script>
+{{--<script>--}}
+    {{--AOS.init();--}}
+{{--</script>--}}
 @stack('scripts')
 <script>
     var owl = $('.owl-one');
