@@ -121,7 +121,7 @@
             <div data-aos="flip-down">
             <button class="btn btn-main-block"><a href="/about_us">Подробнее</a></button>
             </div>
-            <div class="row pt-5 mt-lg-0 mt-md-5 mt-2 mb-lg-0 mb-md-5 mb-5">
+            <div class="row pt-md-5 pt-3 mt-lg-0 mt-md-5 mt-2 mb-lg-0 mb-md-5 mb-5">
                 <div class="col-lg-6 col-md-6 text-center" >
                     <img class="img-fluid w-50" data-aos="flip-down" src="{{asset('images/brazil.png')}}" alt="">
                     <p class="TTBold text-black" data-aos="flip-down" style="font-size: 18px;">10,000 км2</p>
