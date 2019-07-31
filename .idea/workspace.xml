@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02ad502-24ae-404e-adb5-d4cdfc47b8f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.scrollify.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.scrollify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,16 +103,11 @@
       <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="143" column="118" selection-start-line="143" selection-start-column="118" selection-end-line="143" selection-end-column="118" />
+            <state relative-caret-position="85">
+              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
               <folding>
                 <element signature="e#70#7428#0#HTML" />
-                <element signature="e#7430#10926#0#HTML" />
                 <element signature="e#8881#8951#0#HTML" expanded="true" />
-                <element signature="e#10928#14141#0#HTML" />
-                <element signature="e#14143#23023#0#HTML" />
-                <element signature="e#23025#28605#0#HTML" />
-                <element signature="e#28607#38375#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -411,12 +403,12 @@
       <workItem from="1564382780201" duration="5289000" />
       <workItem from="1564415330007" duration="4602000" />
       <workItem from="1564457218487" duration="24349000" />
-      <workItem from="1564545663531" duration="2980000" />
+      <workItem from="1564545663531" duration="3440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90574000" />
+    <option name="totallyTimeSpent" value="91034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -520,12 +512,7 @@
           <caret line="33" column="107" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
           <folding>
             <element signature="e#70#7428#0#HTML" />
-            <element signature="e#7430#10926#0#HTML" />
             <element signature="e#8881#8951#0#HTML" expanded="true" />
-            <element signature="e#10928#14141#0#HTML" />
-            <element signature="e#14143#23023#0#HTML" />
-            <element signature="e#23025#28605#0#HTML" />
-            <element signature="e#28607#38375#0#HTML" />
           </folding>
         </state>
       </provider>
@@ -592,12 +579,7 @@
           <caret line="334" column="67" selection-start-line="334" selection-start-column="67" selection-end-line="334" selection-end-column="67" />
           <folding>
             <element signature="e#70#7428#0#HTML" />
-            <element signature="e#7430#10926#0#HTML" />
             <element signature="e#8881#8951#0#HTML" expanded="true" />
-            <element signature="e#10928#14141#0#HTML" />
-            <element signature="e#14143#23023#0#HTML" />
-            <element signature="e#23025#28605#0#HTML" />
-            <element signature="e#28607#38375#0#HTML" />
           </folding>
         </state>
       </provider>
@@ -664,12 +646,7 @@
           <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#70#7428#0#HTML" />
-            <element signature="e#7430#10926#0#HTML" />
             <element signature="e#8881#8951#0#HTML" expanded="true" />
-            <element signature="e#10928#14141#0#HTML" />
-            <element signature="e#14143#23023#0#HTML" />
-            <element signature="e#23025#28605#0#HTML" />
-            <element signature="e#28607#38375#0#HTML" />
           </folding>
         </state>
       </provider>
@@ -835,16 +812,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="143" column="118" selection-start-line="143" selection-start-column="118" selection-end-line="143" selection-end-column="118" />
+        <state relative-caret-position="85">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
           <folding>
             <element signature="e#70#7428#0#HTML" />
-            <element signature="e#7430#10926#0#HTML" />
             <element signature="e#8881#8951#0#HTML" expanded="true" />
-            <element signature="e#10928#14141#0#HTML" />
-            <element signature="e#14143#23023#0#HTML" />
-            <element signature="e#23025#28605#0#HTML" />
-            <element signature="e#28607#38375#0#HTML" />
           </folding>
         </state>
       </provider>

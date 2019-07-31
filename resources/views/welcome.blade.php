@@ -3,7 +3,7 @@
 @endpush
 @section('content')
 
-<div class="container-fluid align-items-center pt-5 example-classname"  id="1" style="background-image: url({{ asset('images/bg1.png') }});">
+<div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1  example-classname"  id="1" style="background-image: url({{ asset('images/bg1.png') }});">
     <div class="row align-items-center pt-md-5 pt-0 mt-5 pl-md-5 pl-2">
         <div class="col-lg-8 pt-lg-0 pt-md-5 pt-0 mt-lg-0 mt-md-5 mt-0">
             <div class="row">
@@ -347,7 +347,7 @@
             <div class="col-lg-9 pt-lg-0 pt-md-5 px-0">
                 <p class="TTLight text-black pb-lg-3 pb-md-3 pb-1" style="font-size: 17px; line-height: 25px;" data-aos="flip-up">Оставьте заявку на обратный звонок и мы ответим на все ваши вопросы </p>
                 <form>
-                    <div class="form-group d-flex col-lg-12 col-11 px-0">
+                    <div class="form-group d-flex col-lg-12 col-12 px-0">
                         <input class="form-control" type="text" data-aos="flip-up" placeholder="Введите номер телефона">
                         <button type="submit" class="btn-submit" style="border: 0; background: transparent;"><img src="{{asset('images/Arrow.png')}}" alt=""></button>
                     </div>
