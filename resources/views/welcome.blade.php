@@ -133,7 +133,7 @@
                     <img class="img-fluid w-25" data-aos="flip-down" src="{{asset('images/shop.png')}}" alt="">
                     <p class="TTBold text-black pt-2" data-aos="flip-down" style="font-size: 18px;">50 магазинов</p>
 
-                    <img class="img-fluid mt-lg-2 mt-md-4 mt-2 w-25 pt-lg-0 pt-md-5" data-aos="flip-up" src="{{asset('images/amphitheatre.png')}}" alt="">
+                    <img class="img-fluid mt-lg-2 mt-md-4 mt-2 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="flip-up" src="{{asset('images/amphitheatre.png')}}" alt="">
                     <p class="TTBold text-black" data-aos="flip-up" style="font-size: 18px;">1 амфитеатр</p>
                 </div>
             </div>
