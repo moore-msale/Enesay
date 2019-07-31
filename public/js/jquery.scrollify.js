@@ -82,7 +82,7 @@ if touchScroll is false - update index
       offset: 0,
       scrollbars: true,
       target:"html,body",
-      standardScrollElements: true,
+      standardScrollElements: '',
       setHeights: true,
       overflowScroll:true,
       updateHash: true,
