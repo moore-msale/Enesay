@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-between align-content-center pt-3 mt-4 ml-1 mr-1 pb-md-0 pb-5" id="copyright" style="border-top: 1px solid rgba(255, 255, 255, 0.3);" data-aos="fade-up">
+    <div class="row justify-content-between align-content-center pt-3 mt-4 ml-1 mr-1 pb-md-0 pb-5" id="copyright" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
         <img class="img-fluid d-lg-block d-md-none d-none" style="height:100%; width: 10%;" src="{{asset('images/logo.png')}}" alt="">
         <img class="img-fluid d-lg-none d-md-none d-block" style="height:100%; width: 40%;" src="{{asset('images/logo.png')}}" alt="">
         <img class="img-fluid d-lg-none d-md-block d-none" style="height:100%; width: 25%;" src="{{asset('images/logo.png')}}" alt="">

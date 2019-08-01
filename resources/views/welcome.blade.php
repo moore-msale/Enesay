@@ -411,7 +411,7 @@
     </div>
 </div>
 
-<div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5" id="6">
+<div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5 pb-5" id="6">
     <div class="row pt-lg-5">
         <div class="col-lg-7 p-0">
             <img class="img-fluid" data-aos="fade-up" src="{{asset('images/pic2.png')}}" alt="">
