@@ -358,11 +358,13 @@
 .owl-one .owl-nav .owl-prev
 {
     position: absolute;
-    width:41px;
-    height:17px;
+    width:34px;
+    height:14px;
     background-image: url('/images/prev.png')!important;
+    background-size: 100% 100%!important;
+    background-repeat: no-repeat;
     top:85%;
-    right: 75%;
+    right: 72%;
 }
 .owl-one .owl-nav .owl-prev span
 {
@@ -371,9 +373,10 @@
 .owl-one .owl-nav .owl-next
 {
     position: absolute;
-    width:41px;
-    height:17px;
+    width:34px;
+    height:14px;
     background-image: url('/images/Arrow.png')!important;
+    background-size: 100% 100%!important;
     background-repeat: no-repeat;
     top:85%;
     right:65%;

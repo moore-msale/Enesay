@@ -152,7 +152,7 @@
 
             <div class="row pt-4">
                 <div class="col-lg-3 col-md-2 d-md-block d-none">
-                    <img class="img-fluid"  data-aos="fade-up" style="" src="{{asset('images/line-black.png')}}" alt="">
+                    <img class="img-fluid" style="height:0.5%;" data-aos="fade-up"  src="{{asset('images/line-black.png')}}" alt="">
                 </div>
                 <div class="col-lg-7 col-md-6">
                     <p class="TTRegular text-black pt-2 pb-2" data-aos="fade-up" style="font-size: 14px; line-height: 20px;">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, a </p>
@@ -421,7 +421,7 @@
             <div class="container-fluid">
             <div class="row pt-4 pl-lg-5">
                 <div class="col-2 pl-0 d-lg-block d-none">
-                    <img class="img-fluid" style="" src="{{asset('images/line-black.png')}}" alt="">
+                    <img class="img-fluid" style="height: 0.5%" data-aos="fade-up" src="{{asset('images/line-black.png')}}" alt="">
                 </div>
                 <div class="col-lg-8 col-11 p-0">
                     <p class="TTRegular text-black pt-2 pb-2 pl-lg-0 pl-4" style="font-size: 14px; line-height: 20px;" data-aos="fade-up">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</p>

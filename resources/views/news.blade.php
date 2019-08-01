@@ -9,6 +9,10 @@
         {
             border-color:black!important;
         }
+        .menu-burger
+        {
+            filter: invert(100%);
+        }
     </style>
 @endpush
 @section('content')

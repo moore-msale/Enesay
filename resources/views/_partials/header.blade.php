@@ -20,7 +20,7 @@
                             <a class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
                         </li>
                         <li class="nav-item p-3">
-                            <img class="w-75" src="{{ asset('images/hamburger.png') }}" onclick="openNav()" alt="">
+                            <img class="w-75 menu-burger" src="{{ asset('images/hamburger.svg') }}" onclick="openNav()" alt="">
                         </li>
                     </ul>
                 </nav>
