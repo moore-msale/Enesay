@@ -7,7 +7,6 @@
                 <a href="tel: +996552880575" class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;">+996 552 880 575</a>
                 <a class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px;">7/6, Аалы Токомбаев</a>
                 <a href="#" class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;"><img class="mr-2" src="{{asset('images/insta.svg')}}" alt="">Instagram</a>
-
             </div>
             <div class="contacts pt-4 pb-3 d-lg-none d-block pb-5" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
                 <div class="row">
@@ -47,15 +46,13 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-between align-content-center pt-3 mt-4 ml-1 mr-1" id="copyright" style="border-top: 1px solid rgba(255, 255, 255, 0.3);" data-aos="fade-up">
+    <div class="row justify-content-between align-content-center pt-3 mt-4 ml-1 mr-1 pb-md-0 pb-5" id="copyright" style="border-top: 1px solid rgba(255, 255, 255, 0.3);" data-aos="fade-up">
         <img class="img-fluid d-lg-block d-md-none d-none" style="height:100%; width: 10%;" src="{{asset('images/logo.png')}}" alt="">
         <img class="img-fluid d-lg-none d-md-none d-block" style="height:100%; width: 40%;" src="{{asset('images/logo.png')}}" alt="">
         <img class="img-fluid d-lg-none d-md-block d-none" style="height:100%; width: 25%;" src="{{asset('images/logo.png')}}" alt="">
         <p class="TTLight" style="font-size: 16px;color: #959595;">© copyright 2019</p>
     </div>
 </div>
-
-
 
 
 <div class="modal fade" id="callModal" tabindex="15" role="form"

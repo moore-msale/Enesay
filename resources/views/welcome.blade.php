@@ -52,8 +52,9 @@
             <a href="#7" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">Контакты</a>
         </div>
 
-    <div class="row mt-5 align-items-center d-md-block d-none">
-        <div class="col-lg-8 p-5" style="background: rgba(6, 6, 6, 0.9);">
+    <div class="mt-5 align-items-center d-md-block d-none">
+        <div class="row">
+        <div class="col-lg-8 col-md-8 col-8 p-5" style="background: rgba(6, 6, 6, 0.9);">
             <div class="d-lg-none d-md-block" data-aos="fade-up">
                 <div class="row">
                 <div class="col-8">
@@ -87,18 +88,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 pb-lg-0 pb-5 d-lg-block d-none">
+        <div class="col-lg-4 col-md-4 col-4 pt-5 mt-5 d-lg-block d-none" id="pick">
+            <a href="#2">
             <div class="row align-items-center">
                 <div class="col-6 pl-5 align-items-center"> <h4 class="TTLight text-white mb-0" style="font-size: 15px; line-height: 21px;letter-spacing: 0.2em;">Листайте вниз</h4></div>
                 <div class="col-6 pl-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line.png')}}" alt=""></div>
             </div>
+            </a>
         </div>
+    </div>
     </div>
 </div>
 
 <div class="container-fluid example-classname" id="2">
     <div class="row">
-        <div class="col-lg-4 p-5 align-items-center d-lg-flex d-md-none d-none">
+        <div class="col-lg-4 p-5 align-items-center d-lg-block d-md-none d-none">
             <img class="img-fluid w-100" src="{{asset('images/pic1.png')}}" alt="">
             <div class="text-position-abs">
                 <div class="module-border-wrap">
@@ -408,7 +412,7 @@
     </div>
 </div>
 
-<div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-3 example-classname pb-md-5" id="6">
+<div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5" id="6">
     <div class="row pt-lg-5">
         <div class="col-lg-7 p-0">
             <img class="img-fluid" data-aos="fade-up" src="{{asset('images/pic2.png')}}" alt="">
@@ -442,7 +446,7 @@
             </div>
         </div>
     </div>
-    <div class="row m-4 pt-lg-5 pb-lg-5">
+    <div class="row m-4 pt-lg-5 pb-lg-5 pb-md-5">
        <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
             <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
             <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 20px; text-transform: uppercase;">Заголовок <br>новости</h5>
