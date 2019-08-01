@@ -8,7 +8,7 @@
         <div class="col-lg-8 pt-lg-0 pt-md-5 pt-0 mt-lg-0 mt-md-5 mt-0">
             <div class="row">
                 <div class="col-11 text-right pt-lg-0 pt-5 d-md-none d-block" data-aos="fade-up">
-                    <a href="">
+                    <a data-fancybox="gallery1" href="{{ asset('https://www.youtube.com/embed/vSvCh7Fx9vs') }}">
                         <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                         <p class="TTLight" style="font-size: 12px; text-decoration: underline;color: #ffffff;margin-top: 5%;">Смотреть видео</p>
                     </a>
@@ -18,7 +18,7 @@
                         <div class="col-lg-5 col-md-2 col-3 pr-0 pr-lg-2 mt-lg-0 mt-md-5" data-aos="fade-up"><h1 style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #FFFFFF;">01</h1></div>
                         <div class="col-lg-7 col-md-2 col-3 pb-2 px-0 px-lg-0 mt-lg-0 mt-md-5 d-md-block d-none"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line.png')}}" alt=""></div>
                         <div class="col-lg-3 text-center pt-lg-0 pt-5 d-lg-none d-md-block d-none"  data-aos="fade-up">
-                            <a href="">
+                            <a data-fancybox="gallery3" href="{{ asset('https://www.youtube.com/embed/vSvCh7Fx9vs') }}">
                                 <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                                 <p class="TTLight" style="font-size: 12px; text-decoration: underline;color: #ffffff;margin-top: 5%;">Смотреть видео</p>
                             </a>
@@ -34,12 +34,11 @@
         </div>
 
         <div class="col-lg-3 text-center pt-lg-0 pt-5 d-lg-block d-md-none d-none" data-aos="fade-up">
-            <a href="">
+            <a data-fancybox="gallery2" href="{{ asset('https://www.youtube.com/embed/vSvCh7Fx9vs') }}">
             <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
             <p class="TTLight" style="font-size: 12px; text-decoration: underline;color: #ffffff;margin-top: 5%;">Смотреть видео</p>
             </a>
         </div>
-
         <div class="col-lg-1" id="menu">
 
         </div>
@@ -569,6 +568,15 @@
                     var focus_id = this.id;
                     $('.' + focus_id).removeClass('point-border');
                 })
+            </script>
+            <script>
+                $('.link').fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none',
+                    helpers : {
+                        media : {}
+                    }
+                });
             </script>
     @endpush
     @endsection

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02ad502-24ae-404e-adb5-d4cdfc47b8f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,8 +103,8 @@
       <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="448" column="47" selection-start-line="448" selection-start-column="47" selection-end-line="448" selection-end-column="47" />
+            <state relative-caret-position="408">
+              <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -267,10 +264,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-27" />
-    <option name="y" value="1" />
-    <option name="width" value="1400" />
-    <option name="height" value="736" />
+    <option name="x" value="-35" />
+    <option name="width" value="1750" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -410,7 +406,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97753000" />
+    <option name="totallyTimeSpent" value="98322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -814,8 +810,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="448" column="47" selection-start-line="448" selection-start-column="47" selection-end-line="448" selection-end-column="47" />
+        <state relative-caret-position="408">
+          <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
         </state>
       </provider>
     </entry>
