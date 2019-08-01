@@ -101,7 +101,7 @@
 
 <div class="container-fluid example-classname" id="2">
     <div class="row">
-        <div class="col-lg-4 p-5 align-items-center d-lg-block d-md-none d-none">
+        <div class="col-lg-4 p-5 align-items-center d-lg-block d-md-none d-none" data-aos="fade-up">
             <img class="img-fluid w-100" src="{{asset('images/pic1.png')}}" alt="">
             <div class="text-position-abs">
                 <div class="module-border-wrap">
