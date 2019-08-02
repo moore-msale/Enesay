@@ -70,7 +70,7 @@
                 <div class="col-6" data-aos="fade-up">
                     <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">Смотреть генеральный план</h3>
                     <p class="TTLight text-white" style="font-size: 15px; line-height: 21px;">{{ $content->gen_text }}</p>
-                    <div class="row align-items-center" id="pick">
+                    <div class="row align-items-center" id="pick" style="position: absolute; bottom:-10%; width:350px;">
                         <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line.png')}}" alt=""></div>
                         <a href="#4"><div class="col-10 align-items-center"> <h4 class="TTMedium text-white mb-0" style="font-size: 15px; line-height: 21px;">Смотреть</h4></div></a>
                     </div>
@@ -78,7 +78,7 @@
                 <div class="col-6" data-aos="fade-up">
                     <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">Связаться с отделом продаж</h3>
                     <p class="TTLight text-white" style="font-size: 15px; line-height: 21px;">{{ $content->call_text }}</p>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" style="position: absolute; bottom:-10%; width:350px;">
                         <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;" src="{{asset('images/line.png')}}" alt=""></div>
                         <div class="col-10 align-items-center noselect"  data-toggle="modal" data-target="#callModal"> <h4 class="TTMedium text-white mb-0" style="font-size: 15px; line-height: 21px;">Связаться</h4></div>
                     </div>

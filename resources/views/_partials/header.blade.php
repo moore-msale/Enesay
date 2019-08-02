@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 d-lg-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: absolute;">
+<nav class="navbar menuse navbar-expand-xl py-0 w-100 pr-0 d-lg-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: fixed; transition: 0.5s;">
     <div class="container-fluid">
         <div class="row w-100">
             <div class="col-md-2 col-4 px-4 logs logs3 pt-3">
@@ -19,11 +19,11 @@
                         <li class="nav-item p-3">
                             <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 705 880 575</a>
                         </li>
-                        <li class="nav-item px-3 py-1 mx-5 button noselect" data-toggle="modal" data-target="#callModal">
+                        <li class="nav-item px-3 py-1 mx-5 button noselect menu-point" data-toggle="modal" data-target="#callModal">
                             <a class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
                         </li>
                         <li class="nav-item p-3">
-                            <img class="w-75 menu-burger" src="{{ asset('images/hamburger.svg') }}" onclick="openNav()" alt="">
+                            <img class="w-75 menu-burger" src="{{ asset('images/hamburger.svg') }}" alt="">
                         </li>
                     </ul>
                 </nav>

@@ -104,25 +104,18 @@
 <script>
     $(document).ready(function() {
         $(window).scroll(function() {
-            var height = $('.logo').height();;
             var scrollTop = $(window).scrollTop();
 
-            if (scrollTop >= height - 5) {
+            if (scrollTop >= 50) {
                 $('.menuse').addClass('solid-nav');
                 $('.menuse').addClass('shadow');
-                $('.main-logo').removeClass('max');
-                $('.main-logo').addClass('min');
-                $('.logs').removeClass('logs3');
-                $('.logs').addClass('logs2');
                 $('.menu-point').addClass('menu-point-black');
+                $('.menu-burger').addClass('invert-100');
             } else {
                 $('.menuse').removeClass('solid-nav');
                 $('.menuse').removeClass('shadow');
-                $('.main-logo').removeClass('min');
-                $('.main-logo').addClass('max');
-                $('.logs').addClass('logs3');
-                $('.logs').removeClass('logs2');
                 $('.menu-point').removeClass('menu-point-black');
+                $('.menu-burger').removeClass('invert-100');
             }
 
         });
@@ -189,13 +182,13 @@
     })
 </script>
 <script>
-    function openNav() {
+    $('.menu-burger').mouseenter( function () {
         document.getElementById("mySidenav").style.right = "0px";
-    }
+    });
 
-    function closeNav() {
+    $('.sidenav').mouseleave( function () {
         document.getElementById("mySidenav").style.right = "-300px";
-    }
+    });
 </script>
 </body>
 </html>
