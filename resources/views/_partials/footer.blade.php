@@ -3,11 +3,15 @@
         <div class="col-lg-6 col-12">
             <h2 class="TTBold text-white pb-4"  data-aos="fade-right" style="font-size: 2em; text-transform: uppercase;">Контакты</h2>
             <div class="contacts pt-4 pb-3 d-lg-flex justify-content-between d-none" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
-                <a href="tel: +996312880575" class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;">+996 312 880 575</a>
-                <a href="tel: +996552880575" class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;">+996 552 880 575</a>
-                <a class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px;">7/6, Аалы Токомбаев</a>
-                <a href="#" class="text-white TTMedium" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;"><img class="mr-2" src="{{asset('images/insta.svg')}}" alt="">Instagram</a>
-            </div>
+                <div class="row">
+                <a href="tel: +996312880575" class="text-white TTMedium col-3 pr-0" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;">+996 312 880 575</a>
+                <a href="tel: +996552880575" class="text-white TTMedium col-3 pr-0" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;">+996 552 880 575</a>
+                <a href="tel: +996705880575" class="text-white TTMedium col-3 pr-0" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;">+996 705 880 575</a>
+                <a class="text-white TTMedium col-3 px-0" data-aos="fade-right" style="font-size: 16px;">7/6, Аалы Токомбаев</a>
+                <br>
+                <a href="#" class="text-white TTMedium col-3 pr-0 mt-3" data-aos="fade-right" style="font-size: 16px; text-decoration: underline;"><img class="mr-2" src="{{asset('images/insta.svg')}}" alt="">Instagram</a>
+                </div>
+                </div>
             <div class="contacts pt-4 pb-3 d-lg-none d-block pb-5" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
                 <div class="row">
                     <div class="col-md-4 col-6 px-md-2 px-0">
@@ -64,7 +68,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h2 class="mb-3" style="font-size: 25px; line-height: 120%; color: #000000;">
+                    <h2 class="mb-5" style="font-size: 25px; line-height: 120%; color: #000000;">
                         Оставьте нам свой отзыв
                     </h2>
                     <div class="send-success-mail2 p-4 d-none" >

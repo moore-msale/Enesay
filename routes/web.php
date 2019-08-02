@@ -15,24 +15,31 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('welcome');
+    return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first()]);
 });
 
 // Ajax запрос в Controller
 Route::post('/mail', 'MailController@mail')->name('mail');
 
 Route::get('/about_us', function () {
-   return view('about_us');
+   return view('about_us',['content' => \App\About::first()]);
 });
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    return view('gallery',['galleries' => \App\Gallery::all()]);
 });
 
 Route::get('/news', function () {
-    return view('news');
+    return view('news',['news' => \App\News::all()]);
 });
 
-Route::get('/news_page', function () {
-    return view('news_page');
+//Route::get('/news_page', function () {
+//    return view('news_page');
+//});
+
+Route::get('/news_page/{id}', 'NewsController@show')->name('news_page');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });

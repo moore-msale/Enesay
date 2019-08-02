@@ -35,108 +35,25 @@
             </div>
 
             <div class="row">
+                @foreach($news as $new)
                 <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3" data-aos="flip-up">
                     <div class="shadow-hover pb-4">
-                        <img class="w-100" src="{{ asset('images/item2.png') }}" alt="">
+                        <img class="w-100" src="{{ asset('storage/'.$new->preview) }}" alt="">
                         <div class="p-3">
                             <h4 class="TTBold mb-3" style="font-size: 18px; line-height: 120%; letter-spacing: 0.05em; color: #000000;">
-                                Заголовок новости
+                                {{ $new->name }}
                             </h4>
                             <p class="TTMedium" style="font-family: Futura PT; font-style: normal; font-weight: normal; font-size: 15px; line-height: 130%; letter-spacing: 0.05em;">
-                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более
+                                {{ $new->description }}
                             </p>
-                            <a href="/news_page" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
+                            <a href="{{ asset('news_page/'.$new->id) }}" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
                                 Читать полностью
                             </a>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3" data-aos="flip-up">
-                    <div class="shadow-hover pb-4">
-                        <img class="w-100" src="{{ asset('images/item3.png') }}" alt="">
-                        <div class="p-3">
-                            <h4 class="TTBold mb-3" style="font-size: 18px; line-height: 120%; letter-spacing: 0.05em; color: #000000;">
-                                Заголовок новости
-                            </h4>
-                            <p class="TTMedium" style="font-family: Futura PT; font-style: normal; font-weight: normal; font-size: 15px; line-height: 130%; letter-spacing: 0.05em;">
-                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более
-                            </p>
-                            <a href="/news_page" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
-                                Читать полностью
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3" data-aos="flip-up">
-                    <div class="shadow-hover pb-4">
-                        <img class="w-100" src="{{ asset('images/item1.png') }}" alt="">
-                        <div class="p-3">
-                            <h4 class="TTBold mb-3" style="font-size: 18px; line-height: 120%; letter-spacing: 0.05em; color: #000000;">
-                                Заголовок новости
-                            </h4>
-                            <p class="TTMedium" style="font-family: Futura PT; font-style: normal; font-weight: normal; font-size: 15px; line-height: 130%; letter-spacing: 0.05em;">
-                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более
-                            </p>
-                            <a href="/news_page" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
-                                Читать полностью
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3" data-aos="flip-up">
-                    <div class="shadow-hover pb-4">
-                        <img class="w-100" src="{{ asset('images/item2.png') }}" alt="">
-                        <div class="p-3">
-                            <h4 class="TTBold mb-3" style="font-size: 18px; line-height: 120%; letter-spacing: 0.05em; color: #000000;">
-                                Заголовок новости
-                            </h4>
-                            <p class="TTMedium" style="font-family: Futura PT; font-style: normal; font-weight: normal; font-size: 15px; line-height: 130%; letter-spacing: 0.05em;">
-                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более
-                            </p>
-                            <a href="/news_page" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
-                                Читать полностью
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3" data-aos="flip-up">
-                    <div class="shadow-hover pb-4">
-                        <img class="w-100" src="{{ asset('images/item3.png') }}" alt="">
-                        <div class="p-3">
-                            <h4 class="TTBold mb-3" style="font-size: 18px; line-height: 120%; letter-spacing: 0.05em; color: #000000;">
-                                Заголовок новости
-                            </h4>
-                            <p class="TTMedium" style="font-family: Futura PT; font-style: normal; font-weight: normal; font-size: 15px; line-height: 130%; letter-spacing: 0.05em;">
-                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более
-                            </p>
-                            <a href="/news_page" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
-                                Читать полностью
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 pt-lg-0 pt-4 pb-3" data-aos="flip-up">
-                    <div class="shadow-hover pb-4">
-                        <img class="w-100" src="{{ asset('images/item1.png') }}" alt="">
-                        <div class="p-3">
-                            <h4 class="TTBold mb-3" style="font-size: 18px; line-height: 120%; letter-spacing: 0.05em; color: #000000;">
-                                Заголовок новости
-                            </h4>
-                            <p class="TTMedium" style="font-family: Futura PT; font-style: normal; font-weight: normal; font-size: 15px; line-height: 130%; letter-spacing: 0.05em;">
-                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более
-                            </p>
-                            <a href="/news_page" class="TTMedium" style="font-size: 15px; line-height: 130%; letter-spacing: 0.05em; color: #000000; text-decoration: underline;">
-                                Читать полностью
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+                @endforeach
             </div>
 
         </div>
