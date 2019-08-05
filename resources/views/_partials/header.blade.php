@@ -66,7 +66,6 @@
     </div>
 </nav>
 <div id="mySidenav" class="sidenav d-md-block d-none">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a class="sf-medium pl-5" href="/">  Главная</a>
     <a class="sf-medium pl-5" href="/about_us"> О нас</a>
     <a class="sf-medium pl-5" href="/gallery"> Галерея</a>
