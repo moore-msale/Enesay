@@ -134,8 +134,6 @@
     margin-left: 9%;
 }
 .counter {
-    transform: translateY(-1em);
-    margin-left: 7em;
 }
 @keyframes pulse_animation {
     0% { box-shadow: 0 0 0 0 rgba(208, 160, 48, 0.56); }
@@ -172,10 +170,22 @@
 .pulse-wrapper #pulse span:nth-child(2) {
     animation-delay: 0.3s; /* Start the second wave with some delay */
 }
+.carousel-index {
+    font-size: 25px;
+    font-family: 'RobotoCondensed';
+}
+.carousel-delimiter {
+    font-family: 'RobotoCondensed';
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    font-size: 12px;
+}
 .status-carousel {
     padding: 10px;
     position: absolute;
     bottom: 0;
+    left: 40px;
 }
 .pointer {
     cursor: pointer !important;

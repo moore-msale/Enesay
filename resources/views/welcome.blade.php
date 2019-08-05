@@ -228,7 +228,10 @@
                 <div class="carousel">
                     <div class="blokincarousel">
                         <div class="status-carousel">
-                            <span>1</span>\<span>10</span>
+                            <span class="carousel-index">01</span>
+                            <div class="carousel-delimiter">
+                                /<span class="carousel-count">12</span>
+                            </div>
                         </div>
                     </div>
                     <div class="owl-carousel owl-one w-10">
@@ -239,7 +242,6 @@
                             </div>
                         @endforeach
                     </div>
-                    <p class='counter'>01 /12</p>
                 </div>
 
             </div>
