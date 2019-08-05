@@ -125,18 +125,18 @@
             </div>
             <div class="row pt-md-5 pt-3 mt-lg-0 mt-md-5 mt-2 mb-lg-0 mb-md-5 mb-5">
                 <div class="col-lg-6 col-md-6 text-center" >
-                    <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locale_img2)}}" alt="">
-                    <p class="TTBold text-black" data-aos="fade-up" style="font-size: 18px;">{{ $content->locale2 }}</p>
+                    <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img2)}}" alt="">
+                    <p class="TTBold text-black" data-aos="fade-up" style="font-size: 18px;">{{ $content->locate2 }}</p>
 
-                    <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up" src="{{asset('storage/'.$content->locale_img3)}}" alt="">
-                    <p class="TTBold text-black pt-3" data-aos="fade-up" style="font-size: 18px;">{{ $content->locale3 }}</p>
+                    <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img3)}}" alt="">
+                    <p class="TTBold text-black pt-3" data-aos="fade-up" style="font-size: 18px;">{{ $content->locate3 }}</p>
                 </div>
                 <div class="col-lg-6 col-md-6 text-center ">
-                    <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locale_img4)}}" alt="">
-                    <p class="TTBold text-black pt-2" data-aos="fade-up" style="font-size: 18px;">{{ $content->locale4 }}</p>
+                    <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}" alt="">
+                    <p class="TTBold text-black pt-2" data-aos="fade-up" style="font-size: 18px;">{{ $content->locate4 }}</p>
 
-                    <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up" src="{{asset('storage/'.$content->locale_img5)}}" alt="">
-                    <p class="TTBold text-black" data-aos="fade-up" style="font-size: 18px;">{{ $content->locale5 }}</p>
+                    <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img5)}}" alt="">
+                    <p class="TTBold text-black" data-aos="fade-up" style="font-size: 18px;">{{ $content->locate5 }}</p>
                 </div>
             </div>
         </div>
