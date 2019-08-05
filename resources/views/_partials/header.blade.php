@@ -19,8 +19,8 @@
                         <li class="nav-item p-3">
                             <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 705 880 575</a>
                         </li>
-                        <li class="nav-item px-3 py-1 mx-5 button noselect menu-point" data-toggle="modal" data-target="#callModal">
-                            <a class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
+                        <li class="nav-item px-3 py-1 mx-5 button noselect menu-point pointer" data-toggle="modal" data-target="#callModal">
+                            <a href="#" class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
                         </li>
                         <li class="nav-item p-3">
                             <img class="w-75 menu-burger" src="{{ asset('images/hamburger.svg') }}" alt="">

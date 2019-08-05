@@ -146,7 +146,7 @@
     display: flex;
     width: 20%;
     height: 20%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .pulse-wrapper #pulse {
     margin: auto;
@@ -159,13 +159,26 @@
     height: 20px;
     border-radius: 50%;
     background: #fece68;
+    transition: .3s;
     animation: pulse_animation 1.8s infinite;
+}
+.pulse-hover {
+    transform: scale(1.8);
+    cursor: pointer;
 }
 .pulse-wrapper1 #pulse span {
 
 }
 .pulse-wrapper #pulse span:nth-child(2) {
     animation-delay: 0.3s; /* Start the second wave with some delay */
+}
+.status-carousel {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.pointer {
+    cursor: pointer !important;
 }
 .point-border
 {

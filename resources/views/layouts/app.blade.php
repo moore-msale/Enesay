@@ -68,7 +68,7 @@
         autoplay: true,
         nav: true,
         onInitialized: function(e) {
-            $('.counter').text('1 из ' + this.items().length)
+            $('.counter').text(1 + ' из ' + this.items().length)
             console.log();
         },
         smartSpeed: 1000,
@@ -86,8 +86,19 @@
         }
     });
     owl.on('changed.owl.carousel', function(e) {
-        $('.counter').text(++e.page.index + ' из ' + e.item.count)
+        $('.counter').text(fixOwlCurrentIdx(e) + ' из ' + e.item.count)
     });
+
+    function fixOwlCurrentIdx(event) {
+        let current = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+        let itemsCount = event.item.count;
+
+        if (current > itemsCount || current == 0) {
+            current = itemsCount - (current % itemsCount);
+        }
+
+        return current;
+    }
 </script>
 <script>
     var owl = $('.owl-two');
