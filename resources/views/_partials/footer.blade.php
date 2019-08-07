@@ -1,31 +1,48 @@
 <div class="container-fluid px-md-5 pt-md-5 pb-md-2 p-5 example-classname" id="7"
      style="background-image: url({{ asset('images/footer.png') }}); background-repeat: no-repeat; background-size: cover;">
     <div class="row">
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-8 col-12">
             <h2 class="TTBold text-white pb-4" data-aos="fade-right" style="font-size: 2em; text-transform: uppercase;">
                 Контакты</h2>
-            <div class="contacts pt-4 pb-3 d-lg-flex justify-content-between d-none"
-                 style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
-                <div class="row">
-                    @if($content->tel1)
-                        <a href="tel: {{ $content->tel1 }}" class="text-white TTMedium col-3 pr-0" data-aos="fade-right"
-                           style="font-size: 14px; text-decoration: underline;">{{ $content->tel1 }}</a>
-                    @endif
-                    @if($content->tel2)
-                        <a href="tel: {{ $content->tel2 }}" class="text-white TTMedium col-3 pr-0" data-aos="fade-right"
-                           style="font-size: 14px; text-decoration: underline;">{{ $content->tel2 }}</a>
-                    @endif
-                    @if($content->tel3)
-                        <a href="tel: {{ $content->tel3 }}" class="text-white TTMedium col-3 pr-0" data-aos="fade-right"
-                           style="font-size: 14px; text-decoration: underline;">{{ $content->tel3 }}</a>
-                    @endif
-                    @if($content->address)
-                            <a class="text-white TTMedium col-3 px-0" data-aos="fade-right" style="font-size: 14px;">{{ $content->address }}</a>
-                    @endif
-                    @if($content->instagram)
-                            <a href="{{ $content->instagram }}" class="text-white TTMedium col-auto pr-0 mt-3" data-aos="fade-right"
-                               style="font-size: 16px; text-decoration: underline;"><i class="fab fa-instagram mr-1"></i>Instagram</a>
-                    @endif
+            <div class="contacts pt-4 pb-3 d-lg-flex justify-content-between d-none">
+                <div class="col-auto">
+                    <ul class="nav flex-column">
+                        @if($content->tel1)
+                            <li class="nav-item mb-3">
+                                <a href="tel: {{ $content->tel1 }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                   style="font-size: 14px;">{{ $content->tel1 }}</a>
+                            </li>
+                        @endif
+                        @if($content->tel2)
+                            <li class="nav-item mb-3">
+                                <a href="tel: {{ $content->tel2 }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                   style="font-size: 14px;">{{ $content->tel2 }}</a>
+                            </li>
+                        @endif
+                        @if($content->tel3)
+                            <li class="nav-item mb-3">
+                                <a href="tel: {{ $content->tel3 }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                   style="font-size: 14px;">{{ $content->tel3 }}</a>
+                            </li>
+                        @endif
+                        @if($content->address)
+                            <li class="nav-item mb-3">
+                                <a class="text-white TTMedium px-0" data-aos="fade-right" style="font-size: 14px;">{{ $content->address }}</a>
+                            </li>
+                        @endif
+                        @if($content->instagram)
+                            <li class="nav-item mb-3">
+                                <a href="{{ $content->instagram }}" class="text-white TTMedium pr-0 mt-3" data-aos="fade-right"
+                                   style="font-size: 16px;"><i class="fab fa-instagram mr-1"></i>Instagram</a>
+                            </li>
+                        @endif
+                    </ul>
+                </div>
+                <div class="col d-none d-lg-block">
+                    <div class="map" data-aos="fade-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
+                                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="contacts pt-4 pb-3 d-lg-none d-block pb-5"
@@ -53,12 +70,12 @@
                     </div>
                 </div>
             </div>
-            <div class="map" data-aos="fade-right">
+            <div class="map d-block d-lg-none" data-aos="fade-right">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
                         width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="col-lg-6 padleft">
+        <div class="col-lg-4">
             <h2 class="TTBold text-white pb-4 pt-lg-0 pt-3" data-aos="fade-right"
                 style="font-size: 2em; text-transform: uppercase;">Напишите нам</h2>
             <div class="form pt-4 pb-3" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">

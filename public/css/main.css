@@ -39,6 +39,11 @@
     src: local('TTNormsRegular'), local('TTNormsRegular'),
     url('/fonts/TTNormsRegular.ttf') format('truetype');
 }
+@font-face {
+    font-family: "RobotoCondensed";
+    src: local('RobotoCondensedRegular'), local('RobotoCondensedRegular'),
+    url('/fonts/RobotoCondensedRegular.ttf') format('truetype');
+}
 
 .TTRegular {
     font-family: "TTNormsRegular";
@@ -192,6 +197,7 @@
 }
 .point-border
 {
+    cursor: pointer;
     border-radius: 10px;
     background: white!important;
     -webkit-transition: all 0.5s ease;

@@ -79,8 +79,8 @@
                                 <p class="TTLight text-white"
                                    style="font-size: 15px; line-height: 21px;">{{ $content->call_text }}</p>
                                 <div class="row align-items-center">
-                                    <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                                 src="{{asset('images/line.png')}}" alt=""></div>
+                                    <div class="col-2 pr-0">
+                                        <hr class="border-white"></div>
                                     <div class="col-10 align-items-center"><h4 class="TTMedium text-white mb-0"
                                                                                style="font-size: 15px; line-height: 21px;">
                                             Связаться</h4></div>
@@ -97,8 +97,8 @@
                                    style="font-size: 15px; line-height: 21px;">{{ $content->gen_text }}</p>
                                 <div class="row align-items-center" id="pick"
                                      style="position: absolute; bottom:-10%; width:350px;">
-                                    <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                                 src="{{asset('images/line.png')}}" alt=""></div>
+                                    <div class="col-2 pr-0">
+                                        <hr class="border-white"></div>
                                     <a href="#4">
                                         <div class="col-10 align-items-center"><h4 class="TTMedium text-white mb-0"
                                                                                    style="font-size: 15px; line-height: 21px;">
@@ -113,8 +113,8 @@
                                    style="font-size: 15px; line-height: 21px;">{{ $content->call_text }}</p>
                                 <div class="row align-items-center"
                                      style="position: absolute; bottom:-10%; width:350px;">
-                                    <div class="col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                                 src="{{asset('images/line.png')}}" alt=""></div>
+                                    <div class="col-2 pr-0">
+                                        <hr class="border-white"></div>
                                     <a href="#" class="col-10 align-items-center noselect" data-toggle="modal"
                                        data-target="#callModal"><h4 class="TTMedium text-white mb-0"
                                                                     style="font-size: 15px; line-height: 21px;">
@@ -176,24 +176,24 @@
                     <div class="col-lg-6 col-md-6 text-center">
                         <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img2)}}"
                              alt="">
-                        <p class="TTBold text-black" data-aos="fade-up"
-                           style="font-size: 18px;">{{ $content->locate2 }}</p>
+                        <p class="TTRegular text-black" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate2 !!}</p>
 
                         <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
                              src="{{asset('storage/'.$content->locate_img3)}}" alt="">
-                        <p class="TTBold text-black pt-3" data-aos="fade-up"
-                           style="font-size: 18px;">{{ $content->locate3 }}</p>
+                        <p class="TTRegular text-black pt-3" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate3 !!}</p>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
                         <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}"
                              alt="">
-                        <p class="TTBold text-black pt-2" data-aos="fade-up"
-                           style="font-size: 18px;">{{ $content->locate4 }}</p>
+                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate4 !!}</p>
 
                         <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
                              src="{{asset('storage/'.$content->locate_img5)}}" alt="">
-                        <p class="TTBold text-black" data-aos="fade-up"
-                           style="font-size: 18px;">{{ $content->locate5 }}</p>
+                        <p class="TTRegular text-black" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate5 !!}</p>
                     </div>
                 </div>
             </div>
