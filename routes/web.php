@@ -26,11 +26,11 @@ Route::get('/about_us', function () {
 });
 
 Route::get('/gallery', function () {
-    return view('gallery',['galleries' => \App\Gallery::all()]);
+    return view('gallery',['galleries' => \App\Gallery::all(), 'content' => \App\MainPage::first()]);
 });
 
 Route::get('/news', function () {
-    return view('news',['news' => \App\News::all()]);
+    return view('news',['news' => \App\News::all(), 'content' => \App\MainPage::first()]);
 });
 
 //Route::get('/news_page', function () {
