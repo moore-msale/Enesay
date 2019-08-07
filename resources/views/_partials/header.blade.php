@@ -11,13 +11,13 @@
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a href="tel: +996312880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 312 880 575</a>
+                            <a href="tel: +996312880575" class="TTLight menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 312 880 575</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 552 880 575</a>
+                            <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 552 880 575</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: underline;font-size: 14px; color:#fefefe;">+996 705 880 575</a>
+                            <a href="tel: +996552880575" class="TTLight menu-point" style="text-decoration: none;font-size: 14px; color:#fefefe;">+996 705 880 575</a>
                         </li>
                         <li class="nav-item px-3 py-1 mx-5 button noselect menu-point pointer" data-toggle="modal" data-target="#callModal">
                             <a href="#" class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
