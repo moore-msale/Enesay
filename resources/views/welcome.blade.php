@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @push('styles')
+    <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}">
 @endpush
 @section('content')
     <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1  example-classname" id="1"
@@ -270,45 +271,50 @@
                 <img class="img-fluid w-75" style="" data-aos="fade-up" src="{{asset('images/plan.png')}}" alt="">
                 <div class="anim1 pulse-wrapper">
                     <div id="pulse">
-                        <span data-id="10" class="dot"></span> <!-- Wave 1 -->
-                        <span data-id="10" class="dot"></span> <!-- Wave 2 -->
+                        <span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
+                        <span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
                     </div>
                 </div>
                 <div class="anim2 pulse-wrapper">
                     <div id="pulse">
-                        <span data-id="11" class="dot"></span> <!-- Wave 1 -->
-                        <span data-id="11" class="dot"></span> <!-- Wave 2 -->
+                        <span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
+                        <span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
                     </div>
                 </div>
                 <div class="anim3 pulse-wrapper">
                     <div id="pulse">
-                        <span data-id="12" class="dot"></span> <!-- Wave 1 -->
-                        <span data-id="12" class="dot"></span> <!-- Wave 2 -->
+                        <span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
+                        <span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
                     </div>
                 </div>
                 <div class="anim4 pulse-wrapper">
                     <div id="pulse">
-                        <span data-id="13" class="dot"></span> <!-- Wave 1 -->
-                        <span data-id="13" class="dot"></span> <!-- Wave 2 -->
+                        <span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
+                        <span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
                     </div>
                 </div>
                 <div class="anim5 pulse-wrapper">
                     <div id="pulse">
-                        <span data-id="14" class="dot"></span> <!-- Wave 1 -->
-                        <span data-id="14" class="dot"></span> <!-- Wave 2 -->
+                        <span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
+                        <span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
                     </div>
                 </div>
                 <div class="anim6 pulse-wrapper">
                     <div id="pulse">
-                        <span data-id="15" class="dot"></span> <!-- Wave 1 -->
-                        <span data-id="15" class="dot"></span> <!-- Wave 2 -->
+                        <span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
+                        <span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
                     </div>
                 </div>
             </div>
         </div>
+        <div class="tooltip_templates d-none">
+            <span id="tooltip_content">
+                <img src="{{ asset('images/hello.png') }}" style="width: 500px; height: auto;" />
+            </span>
+        </div>
         <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none">
             <div class="row pl-lg-0 pl-4">
-                <div data-id="10" class="col-lg-2 col-12 d-flex 10 build pt-3" data-aos="fade-up">
+                <div data-id="10" class="col-lg-2 col-12 d-flex 10 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">01</h3>
                     <div class="descr pl-lg-3 pl-3">
                         <h5 class="TTBold text-white"
@@ -317,7 +323,7 @@
                            style="font-size: 15px;line-height: 18px;">{{ $content->build_description1 }}</p>
                     </div>
                 </div>
-                <div data-id="11" class="col-lg-2 col-12 d-flex 11 build pt-3" data-aos="fade-up">
+                <div data-id="11" class="col-lg-2 col-12 d-flex 11 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">02</h3>
                     <div class="descr pl-lg-3 pl-3">
                         <h5 class="TTBold text-white"
@@ -326,7 +332,7 @@
                            style="font-size: 15px;line-height: 18px;">{{ $content->build_description2 }}</p>
                     </div>
                 </div>
-                <div data-id="12" class="col-lg-2 col-12 d-flex 12 build pt-3" data-aos="fade-up">
+                <div data-id="12" class="col-lg-2 col-12 d-flex 12 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">03</h3>
                     <div class="descr pl-lg-3 pl-3">
                         <h5 class="TTBold text-white"
@@ -335,7 +341,7 @@
                            style="font-size: 15px;line-height: 18px;">{{ $content->build_description3 }}</p>
                     </div>
                 </div>
-                <div data-id="13" class="col-lg-2 col-12 d-flex 13 build pt-3" data-aos="fade-up">
+                <div data-id="13" class="col-lg-2 col-12 d-flex 13 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">04</h3>
                     <div class="descr pl-lg-3 pl-3">
                         <h5 class="TTBold text-white"
@@ -344,7 +350,7 @@
                            style="font-size: 15px;line-height: 18px;">{{ $content->build_description4 }}</p>
                     </div>
                 </div>
-                <div data-id="14" class="col-lg-2 col-12 d-flex 14 build pt-3" data-aos="fade-up">
+                <div data-id="14" class="col-lg-2 col-12 d-flex 14 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">05</h3>
                     <div class="descr pl-lg-3 pl-3">
                         <h5 class="TTBold text-white"
@@ -353,7 +359,7 @@
                            style="font-size: 15px;line-height: 18px;">{{ $content->build_description5 }}</p>
                     </div>
                 </div>
-                <div data-id="15" class="col-lg-2 col-12 d-flex 15 build pt-3 pb-4" data-aos="fade-up">
+                <div data-id="15" class="col-lg-2 col-12 d-flex 15 build pt-3 tooltipster-tooltip pb-4" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>
                     <div class="descr pl-lg-3 pl-3">
                         <h5 class="TTBold text-white"
@@ -682,6 +688,12 @@
 
 
     @push('scripts')
+        <script src="{{ asset('js/tooltipster.bundle.min.js') }}"></script>
+        <script>
+            $('.tooltipster-tooltip').tooltipster({
+                contentCloning: true
+            });
+        </script>
         <script>
             $(window).scroll(testScroll);
             var viewed = false;
