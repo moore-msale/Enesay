@@ -95,16 +95,16 @@
                     ответим на все ваши вопросы</p>
                 <form data-aos="fade-right">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-name" placeholder="Ваше имя">
+                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-email" placeholder="Ваш e-mail">
+                        <input type="text" class="form-control text-white" id="form-email" placeholder="Ваш e-mail">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-phone" placeholder="Ваш телефон">
+                        <input type="text" class="form-control text-white" id="form-phone" placeholder="Ваш телефон">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="form-message" rows="3"
+                        <textarea class="form-control text-white" id="form-message" rows="3"
                                   placeholder="Ваше сообщение"></textarea>
                     </div>
                     <button id="ajax-message" class="btn btn-submit"><a href="#">Отправить</a></button>
