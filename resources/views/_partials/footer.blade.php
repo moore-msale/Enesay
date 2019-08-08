@@ -25,6 +25,12 @@
                                    style="font-size: 14px;">{{ $content->tel3 }}</a>
                             </li>
                         @endif
+                        @if($content->email)
+                            <li class="nav-item mb-3">
+                                <a href="tel: {{ $content->email }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                   style="font-size: 14px;">{{ $content->email }}</a>
+                            </li>
+                        @endif
                         @if($content->address)
                             <li class="nav-item mb-3">
                                 <a class="text-white TTMedium px-0" data-aos="fade-right" style="font-size: 14px;">{{ $content->address }}</a>
@@ -34,6 +40,12 @@
                             <li class="nav-item mb-3">
                                 <a href="{{ $content->instagram }}" class="text-white TTMedium pr-0 mt-3" data-aos="fade-right"
                                    style="font-size: 16px;"><i class="fab fa-instagram mr-1"></i>Instagram</a>
+                            </li>
+                        @endif
+                        @if($content->facebook)
+                            <li class="nav-item mb-3">
+                                <a href="{{ $content->facebook }}" class="text-white TTMedium pr-0 mt-3" data-aos="fade-right"
+                                   style="font-size: 16px;"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
                             </li>
                         @endif
                     </ul>
