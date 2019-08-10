@@ -76,15 +76,38 @@
     <a class="sf-medium pl-5" href="/about_us"> О нас</a>
     <a class="sf-medium pl-5" href="/gallery"> Галерея</a>
     <a class="sf-medium pl-5" href="/news">Новости</a>
+    @if($content->tel1)
+        <a class="sf-medium pl-5" href="tel:{{ $content->tel1 }}">{{ $content->tel1 }}</a>
+    @endif
+    @if($content->tel2)
+        <a class="sf-medium pl-5" href="tel:{{ $content->tel2 }}">{{ $content->tel2 }}</a>
+    @endif
+    @if($content->tel3)
+        <a class="sf-medium pl-5" href="tel:{{ $content->tel3 }}">{{ $content->tel3 }}</a>
+    @endif
+    @if($content->email)
+        <a class="sf-medium pl-5" href="mailto:{{ $content->email }}">{{ $content->email }}</a>
+    @endif
     <div class="container-fluid pt-5 pl-4 ml-2">
         <div class="row">
-            <div class="col-3 p-0">
-                <a href="#" class="ics" target="_blank">
-                    <p>
-                        <i class="fab fa-instagram fa-sm"></i>
-                    </p>
-                </a>
-            </div>
+            @if($content->instagram)
+                <div class="col-3 p-0">
+                    <a href="{{ $content->instagram }}" class="ics" target="_blank">
+                        <p>
+                            <i class="fab fa-instagram fa-sm"></i>
+                        </p>
+                    </a>
+                </div>
+            @endif
+            @if($content->facebook)
+                <div class="col-3 p-0">
+                    <a href="{{ $content->facebook }}" class="ics" target="_blank">
+                        <p>
+                            <i class="fab fa-facebook-f fa-sm"></i>
+                        </p>
+                    </a>
+                </div>
+            @endif
         </div>
     </div>
 </div>

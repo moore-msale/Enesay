@@ -138,6 +138,7 @@
         let email = $('#form-email');
         let phone = $('#form-phone');
         let message = $('#form-message');
+        $(".send-success-mail").removeClass('d-none');
 
         $.ajax({
             url: '{{ route('mail') }}',
@@ -168,6 +169,7 @@
         let email = $('#form-email2');
         let phone = $('#form-phone2');
         let message = $('#form-message2');
+        $(".send-success-mail2").removeClass('d-none');
 
         $.ajax({
             url: '{{ route('mail') }}',

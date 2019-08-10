@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\message;
+use App\Mail\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
