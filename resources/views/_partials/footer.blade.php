@@ -27,7 +27,7 @@
                         @endif
                         @if($content->email)
                             <li class="nav-item mb-3">
-                                <a href="tel: {{ $content->email }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                <a href="mailto: {{ $content->email }}" class="text-white TTMedium pr-0" data-aos="fade-right"
                                    style="font-size: 14px;">{{ $content->email }}</a>
                             </li>
                         @endif
@@ -93,19 +93,23 @@
             <div class="form pt-4 pb-3" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
                 <p class="text-white TTMedium" data-aos="fade-right" style="font-size: 18px;">Свяжитесь с нами и мы
                     ответим на все ваши вопросы</p>
+                <div class="send-success-mail p-4 d-none">
+                    <i class="fas fa-check-circle" style="color:#00d920;"></i><span class="pl-2 text-fut-bold"
+                                                                                    style="color:#fff;">Отзыв успешно отправлен!</span>
+                </div>
                 <form data-aos="fade-right">
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя">
+                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-email" placeholder="Ваш e-mail">
+                        <input type="text" class="form-control text-white" id="form-email" placeholder="Ваш e-mail" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-phone" placeholder="Ваш телефон">
+                        <input type="text" class="form-control text-white" id="form-phone" placeholder="Ваш телефон" required>
                     </div>
                     <div class="form-group">
                         <textarea class="form-control text-white" id="form-message" rows="3"
-                                  placeholder="Ваше сообщение"></textarea>
+                                  placeholder="Ваше сообщение" required></textarea>
                     </div>
                     <button id="ajax-message" class="btn btn-submit"><a href="#">Отправить</a></button>
                 </form>
