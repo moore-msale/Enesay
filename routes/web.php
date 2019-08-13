@@ -29,6 +29,8 @@ Route::get('/gallery', function () {
     return view('gallery',['galleries' => \App\Gallery::all(), 'content' => \App\MainPage::first()]);
 });
 
+Route::resource('photo', 'PhotoController')->only(['create', 'store']);
+
 Route::get('/news', function () {
     return view('news',['news' => \App\News::all(), 'content' => \App\MainPage::first()]);
 });
