@@ -3,9 +3,13 @@
     <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}">
 @endpush
 @section('content')
-    <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1  example-classname" id="1"
+    <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname" id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">
-        <div class="row align-items-center pt-md-5 pt-0 pb-md-5 pb-0 mt-5 pl-md-5 pl-2">
+        <div class="backdrop"></div>
+        <video autoplay muted loop>
+            <source src="{{ asset('video/video_back.mp4') }}" type="video/mp4">
+        </video>
+        <div class="row align-items-center pt-md-5 pt-0 pb-md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative" style="z-index: 2;">
             <div class="col-lg-8 pt-lg-0 pt-md-5 pt-0 pb-md-5 pb-0 mt-lg-0 mt-md-5 mt-0">
                 <div class="row pt-md-5 pt-0">
                     <div class="col-11 text-right pt-lg-0 pt-5 d-md-none d-block" data-aos="fade-up">
@@ -46,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 text-center pt-lg-0 pt-5 d-lg-block d-md-none d-none" data-aos="fade-up">
+            <div class="col-lg-3 text-center pt-lg-0 pt-5 d-lg-block d-md-none d-none position-relative" style="z-index: 2;" data-aos="fade-up">
                 <a data-fancybox="gallery2" href="{{ asset( $content->video_ur ) }}">
                     <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                     <p class="TTLight"
@@ -69,7 +73,7 @@
                style="text-transform: uppercase; font-size: 14px;">Контакты</a>
         </div>
 
-        <div class="mt-5 align-items-center d-md-block d-none">
+        <div class="mt-5 align-items-center d-md-block d-none position-relative" style="z-index: 2;">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-8 p-5" style="background: rgba(6, 6, 6, 0.9);">
                     <div class="d-lg-none d-md-block" data-aos="fade-up">
@@ -777,6 +781,62 @@
                     media: {}
                 }
             });
+        </script>
+        <script src="https://raw.githubusercontent.com/rishabhp/bideo.js/master/bideo.js"></script>
+        <script>
+            var video = document.querySelector('video')
+                , container = document.querySelector('.video-container');
+
+            var setVideoDimensions = function () {
+                // Video's intrinsic dimensions
+                var w = video.videoWidth
+                    , h = video.videoHeight;
+
+                // Intrinsic Ratio
+                // Will be more than 1 if W > H and less if W < H
+                var videoRatio = (w / h).toFixed(2);
+
+                // Get the container's computed styles
+                //
+                // Also calculate the min dimensions required (this will be
+                // the container dimentions)
+                var containerStyles = window.getComputedStyle(container)
+                    , minW = parseInt( containerStyles.getPropertyValue('width') )
+                    , minH = parseInt( containerStyles.getPropertyValue('height') );
+
+                // What's the min:intrinsic dimensions
+                //
+                // The idea is to get which of the container dimension
+                // has a higher value when compared with the equivalents
+                // of the video. Imagine a 1200x700 container and
+                // 1000x500 video. Then in order to find the right balance
+                // and do minimum scaling, we have to find the dimension
+                // with higher ratio.
+                //
+                // Ex: 1200/1000 = 1.2 and 700/500 = 1.4 - So it is best to
+                // scale 500 to 700 and then calculate what should be the
+                // right width. If we scale 1000 to 1200 then the height
+                // will become 600 proportionately.
+                var widthRatio = minW / w
+                    , heightRatio = minH / h;
+
+                // Whichever ratio is more, the scaling
+                // has to be done over that dimension
+                if (widthRatio > heightRatio) {
+                    var newWidth = minW;
+                    var newHeight = Math.ceil( newWidth / videoRatio );
+                }
+                else {
+                    var newHeight = minH;
+                    var newWidth = Math.ceil( newHeight * videoRatio );
+                }
+
+                video.style.width = newWidth + 'px';
+                video.style.height = newHeight + 'px';
+            };
+
+            video.addEventListener('loadedmetadata', setVideoDimensions, false);
+            window.addEventListener('resize', setVideoDimensions, false);
         </script>
     @endpush
 @endsection
