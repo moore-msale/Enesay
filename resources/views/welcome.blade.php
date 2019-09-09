@@ -74,7 +74,7 @@
 
         </div>
         <div class="d-lg-block d-none" id="pick"
-             style="transform: rotate(90deg);position: absolute;top: 55%;right: -10.2%;" data-aos="fade-up">
+             style="transform: rotate(90deg);position: absolute;top: 55%;right: -10.2%; z-index: 3;" data-aos="fade-up">
             <a href="#1" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">Главная</a>
             <a href="#2" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">О
                 проекте</a>
@@ -279,14 +279,18 @@
         </div>
     </div>
 
-    <div class="container-fluid pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen" id="4"
+    <div class="container-fluid position-relative pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen" id="4"
          style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
-        <h3 class="TTBold text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
-            data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный
+        <div class="backdrop"></div>
+        <h3 class="TTBold position-relative text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
+            data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
             план</h3>
-        <div class="row justify-content-center">
-            <div class="col-8 d-lg-block d-none text-center">
-                <img class="img-fluid w-75" style="" data-aos="fade-up" src="{{asset('images/plan.png')}}" alt="">
+        <div class="row justify-content-center position-relative" style="z-index: 2;">
+            <div class="col text-light">
+                Здесь будет список
+            </div>
+            <div class="col-8 d-lg-block d-none text-center position-relative" style="z-index: 2;">
+                <img class="img-fluid w-75" style="" data-aos="fade-up" src="{{asset('images/map2.png')}}" alt="">
                 <div class="anim1 pulse-wrapper">
                     <div id="pulse">
                         <span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
@@ -330,7 +334,7 @@
                 <img src="{{ asset('images/hello.png') }}" style="width: 500px; height: auto;" />
             </span>
         </div>
-        <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none">
+        <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none position-relative" style="z-index: 2;">
             <div class="row pl-lg-0 pl-4">
                 <div data-id="10" class="col-lg-2 col-12 d-flex 10 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
                     <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">01</h3>

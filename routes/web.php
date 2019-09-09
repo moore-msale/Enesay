@@ -20,6 +20,9 @@ Route::get('/home', function () {
 
 // Ajax запрос в Controller
 Route::post('/mail', 'MailController@mail')->name('mail');
+Route::get('/photo', function () {
+    return view('map');
+});
 
 Route::get('/about_us', function () {
    return view('about_us',['about' => \App\About::first(), 'content' => \App\MainPage::first()]);
