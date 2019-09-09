@@ -3,12 +3,22 @@
     <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}">
 @endpush
 @section('content')
+    <?php
+    $agent = New \Jenssegers\Agent\Agent();
+    ?>
     <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname" id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">
         <div class="backdrop"></div>
-        <video autoplay muted loop>
-            <source src="{{ asset('video/video_back.mp4') }}" type="video/mp4">
-        </video>
+        @if($agent->isPhone())
+            <video class="vids-mb" autoplay muted loop>
+                <source src="{{ asset('video/video_back.mp4') }}" type="video/mp4">
+            </video>
+            @else
+            <video class="vids-pc" autoplay muted loop>
+                <source src="{{ asset('video/video_back.mp4') }}" type="video/mp4">
+            </video>
+            @endif
+
         <div class="row align-items-center pt-md-5 pt-0 pb-md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative" style="z-index: 2;">
             <div class="col-lg-8 pt-lg-0 pt-md-5 pt-0 pb-md-5 pb-0 mt-lg-0 mt-md-5 mt-0">
                 <div class="row pt-md-5 pt-0">
@@ -242,8 +252,10 @@
                     <div class="owl-carousel owl-one w-10">
                         @foreach($galleries as $gallery)
                             <div class="item">
+                                <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="">
                                 <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
                                      src="{{asset('storage/'.$gallery->image)}}" alt="">
+                                </a>
                             </div>
                         @endforeach
                     </div>
@@ -255,8 +267,10 @@
                     <div class="owl-carousel owl-two w-100">
                         @foreach($galleries as $gallery)
                             <div class="item">
+                                <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="">
                                 <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
                                      src="{{asset('storage/'.$gallery->image)}}" alt="">
+                                </a>
                             </div>
                         @endforeach
                     </div>

@@ -470,19 +470,25 @@
 
 .video-container {
     overflow: hidden;
-    /*height: 80vh;*/
+    /*width:100%;*/
     background: #edeae8;
     position: relative;
 }
 
-video {
+.vids-pc {
     position: absolute;
-
+    width:100%;
     /* Vertical and Horizontal center*/
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.vids-mb {
+    position: absolute;
+    height:100%;
+    /* Vertical and Horizontal center*/
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
 .backdrop {
     position: absolute;
     z-index: 1;
