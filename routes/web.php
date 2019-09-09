@@ -22,7 +22,7 @@ Route::get('/home', function () {
 Route::post('/mail', 'MailController@mail')->name('mail');
 
 Route::get('/about_us', function () {
-   return view('about_us',['content' => \App\About::first()]);
+   return view('about_us',['about' => \App\About::first(), 'content' => \App\MainPage::first()]);
 });
 
 Route::get('/gallery', function () {

@@ -149,7 +149,7 @@
                         <i class="fas fa-exclamation-circle text-fut-bold text-white" style="color:#00d920;"></i><span
                                 class="pl-2" style="color:#000000;">Отзыв не был отправлен!</span>
                     </div>
-                    <form>
+                    <form id="callForm">
                         <div class="form-group">
                             <input class="w-100 mb-2 p-2" name="name" type="text" id="form-name2"
                                    placeholder="Ваше имя*" required>
@@ -167,7 +167,7 @@
                                       placeholder="Сообщение*" required></textarea>
                         </div>
                         <div class="form-group">
-                            <button id="ajax-message2" class="btn"><a href="#">Отправить</a></button>
+                            <a id="ajax-message2" class="btn" href="#">Отправить</a>
                         </div>
                     </form>
 

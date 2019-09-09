@@ -6,7 +6,7 @@
     <?php
     $agent = New \Jenssegers\Agent\Agent();
     ?>
-    <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname" id="1"
+    <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname panel-screen" id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">
         <div class="backdrop"></div>
         @if($agent->isPhone())
@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <div class="container-fluid example-classname" id="2">
+    <div class="container-fluid example-classname panel-screen" id="2">
         <div class="row">
             <div class="col-lg-4 p-5 align-items-center d-lg-block d-md-none d-none" data-aos="fade-up">
                 <img class="img-fluid w-100" src="{{asset( 'storage/'.$content->image2)}}" alt="">
@@ -215,7 +215,7 @@
         </div>
     </div>
 
-    <div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname"
+    <div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname panel-screen"
          id="gallery">
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-5">
@@ -279,7 +279,7 @@
         </div>
     </div>
 
-    <div class="container-fluid pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname" id="4"
+    <div class="container-fluid pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen" id="4"
          style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
         <h3 class="TTBold text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
             data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный
@@ -462,7 +462,7 @@
         </div>
     </div>
 
-    <div class="container-fluid example-classname p-lg-5 p-5" id="5"
+    <div class="container-fluid example-classname p-lg-5 p-5 panel-screen" id="5"
          style="background-image: url({{ asset('images/bg5.png') }}); background-size: cover; background-position: center;">
         <div class="row align-items-end">
             <div class="col-lg-6 col-md-10 pr-lg-5">
@@ -515,49 +515,43 @@
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title1 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant1 }}</p>
+                    {{ $content->advant1 }}</h5>
+{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant1 }}</p>--}}
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title2 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant2 }}</p>
+                    {{ $content->advant2 }}</h5>
+{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant2 }}</p>--}}
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title3 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant3 }}</p>
-            </div>
+                    {{ $content->advant3 }}</h5>
+{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant3 }}</p>--}}
+            </div>  
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title4 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant4 }}</p>
+                    {{ $content->advant4 }}</h5>
+{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant4 }}</p>--}}
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title5 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant5 }}</p>
+                    {{ $content->advant5 }}</h5>
+{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant5 }}</p>--}}
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title6 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant6 }}</p>
+                    {{ $content->advant6 }}</h5>
+{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant6 }}</p>--}}
             </div>
         </div>
     </div>
 
-    <div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5 pb-5" id="6">
+    <div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5 pb-5 panel-screen" id="6">
         <div class="row pt-lg-5">
             <div class="col-lg-7 p-0">
                 <img class="img-fluid" data-aos="fade-up" src="{{asset('images/pic2.png')}}" alt="">
@@ -707,6 +701,12 @@
 
     @push('scripts')
         <script src="{{ asset('js/tooltipster.bundle.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.scrollify2.js') }}"></script>
+        <script>
+            $.scrollify({
+                content: '.panel-screen'
+            })
+        </script>
         <script>
             $('.tooltipster-tooltip').tooltipster({
                 contentCloning: true

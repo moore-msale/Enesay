@@ -46,6 +46,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="{{ asset('js/jquery.validate.min.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $("#pick").on("click","a", function (event) {
@@ -134,6 +135,7 @@
 <script>
     $('#ajax-message').click(e => {
         e.preventDefault();
+        $('#ajax-message').parents('form').validate();
         let name = $('#form-name');
         let email = $('#form-email');
         let phone = $('#form-phone');
@@ -165,6 +167,7 @@
 <script>
     $('#ajax-message2').click(e => {
         e.preventDefault();
+        $('#ajax-message2').parents('form').validate();
         let name = $('#form-name2');
         let email = $('#form-email2');
         let phone = $('#form-phone2');
