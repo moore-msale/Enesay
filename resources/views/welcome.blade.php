@@ -515,38 +515,44 @@
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant1 }}</h5>
-{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant1 }}</p>--}}
+                    {{ $content->advant_title1 }}</h5>
+                <p class="TTRegular text-black px-md-0 px-5"
+                   style="font-size: 13px;line-height: 17px;">{{ $content->advant1 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant2 }}</h5>
-{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant2 }}</p>--}}
+                    {{ $content->advant_title2 }}</h5>
+                <p class="TTRegular text-black px-md-0 px-5"
+                   style="font-size: 13px;line-height: 17px;">{{ $content->advant2 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant3 }}</h5>
-{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant3 }}</p>--}}
-            </div>  
+                    {{ $content->advant_title3 }}</h5>
+                <p class="TTRegular text-black px-md-0 px-5"
+                   style="font-size: 13px;line-height: 17px;">{{ $content->advant3 }}</p>
+            </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant4 }}</h5>
-{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant4 }}</p>--}}
+                    {{ $content->advant_title4 }}</h5>
+                <p class="TTRegular text-black px-md-0 px-5"
+                   style="font-size: 13px;line-height: 17px;">{{ $content->advant4 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant5 }}</h5>
-{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant5 }}</p>--}}
+                    {{ $content->advant_title5 }}</h5>
+                <p class="TTRegular text-black px-md-0 px-5"
+                   style="font-size: 13px;line-height: 17px;">{{ $content->advant5 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
                 <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant6 }}</h5>
-{{--                <p class="TTRegular text-black px-md-0 px-5" style="font-size: 13px;line-height: 17px;">{{ $content->advant6 }}</p>--}}
+                    {{ $content->advant_title6 }}</h5>
+                <p class="TTRegular text-black px-md-0 px-5"
+                   style="font-size: 13px;line-height: 17px;">{{ $content->advant6 }}</p>
             </div>
         </div>
     </div>
