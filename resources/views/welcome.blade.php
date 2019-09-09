@@ -268,7 +268,7 @@
     <div class="container-fluid pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname" id="4"
          style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
         <h3 class="TTBold text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
-            data-aos="fade-up" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный
+            data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">Генеральный
             план</h3>
         <div class="row justify-content-center">
             <div class="col-8 d-lg-block d-none text-center">
