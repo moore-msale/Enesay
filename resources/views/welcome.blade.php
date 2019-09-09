@@ -252,7 +252,7 @@
                     <div class="owl-carousel owl-one w-10">
                         @foreach($galleries as $gallery)
                             <div class="item">
-                                <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="">
+                                <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="gallery-carousel2">
                                 <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
                                      src="{{asset('storage/'.$gallery->image)}}" alt="">
                                 </a>
@@ -267,7 +267,7 @@
                     <div class="owl-carousel owl-two w-100">
                         @foreach($galleries as $gallery)
                             <div class="item">
-                                <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="">
+                                <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="gallery-carousel">
                                 <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
                                      src="{{asset('storage/'.$gallery->image)}}" alt="">
                                 </a>
