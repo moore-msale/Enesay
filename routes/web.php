@@ -11,12 +11,16 @@
 |
 */
 Route::get('/', function () {
-    return view('hello');
+    return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first()]);
 });
 
 Route::get('/home', function () {
     return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first()]);
 });
+
+Route::resource('plan', 'PlanController');
+Route::resource('build', 'BuildController');
+Route::resource('dot', 'DotController');
 
 // Ajax запрос в Controller
 Route::post('/mail', 'MailController@mail')->name('mail');
