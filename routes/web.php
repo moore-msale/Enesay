@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function () {
-    return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first()]);
+    return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first(), 'plan' => \App\Plan::find(2),]);
 });
 
 Route::get('/home', function () {

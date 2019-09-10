@@ -16,7 +16,9 @@ class PlanController extends Controller
      */
     public function index()
     {
-        //
+        return view('plan.index', [
+            'plans' => Plan::all(),
+        ]);
     }
 
     /**
@@ -77,7 +79,9 @@ class PlanController extends Controller
      */
     public function show(Plan $plan)
     {
-        //
+        return view('plan.show', [
+            'plan' => $plan,
+        ]);
     }
 
     /**
@@ -88,7 +92,9 @@ class PlanController extends Controller
      */
     public function edit(Plan $plan)
     {
-        //
+        return view('constructor.edit', [
+            'plan' => $plan,
+        ]);
     }
 
     /**
@@ -111,6 +117,12 @@ class PlanController extends Controller
      */
     public function destroy(Plan $plan)
     {
-        //
+        foreach ($plan->builds as $build) {
+            $build->dots()->delete();
+        }
+        $plan->builds()->delete();
+        $plan->delete();
+
+        return redirect()->back();
     }
 }

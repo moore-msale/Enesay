@@ -289,44 +289,45 @@
             <div class="col text-light">
                 Здесь будет список
             </div>
-            <div class="col-8 d-lg-block d-none text-center position-relative" style="z-index: 2;">
-                <img class="img-fluid w-75" style="" data-aos="fade-up" src="{{asset('images/map2.png')}}" alt="">
-                <div class="anim1 pulse-wrapper">
-                    <div id="pulse">
-                        <span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
-                        <span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
-                    </div>
-                </div>
-                <div class="anim2 pulse-wrapper">
-                    <div id="pulse">
-                        <span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
-                        <span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
-                    </div>
-                </div>
-                <div class="anim3 pulse-wrapper">
-                    <div id="pulse">
-                        <span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
-                        <span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
-                    </div>
-                </div>
-                <div class="anim4 pulse-wrapper">
-                    <div id="pulse">
-                        <span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
-                        <span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
-                    </div>
-                </div>
-                <div class="anim5 pulse-wrapper">
-                    <div id="pulse">
-                        <span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
-                        <span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
-                    </div>
-                </div>
-                <div class="anim6 pulse-wrapper">
-                    <div id="pulse">
-                        <span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->
-                        <span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->
-                    </div>
-                </div>
+            <div class="col-8 px-0 d-lg-block d-none text-center position-relative" style="z-index: 2;">
+                <img class="img-fluid" id="planImage" style="" src="{{asset('storage/'.$plan->image)}}" alt="">
+                <div class="backzone"></div>
+                {{--<div class="anim1 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                        {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                        {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="anim2 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                        {{--<span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                        {{--<span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="anim3 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                        {{--<span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                        {{--<span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="anim4 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                        {{--<span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                        {{--<span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="anim5 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                        {{--<span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                        {{--<span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="anim6 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                        {{--<span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                        {{--<span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
         <div class="tooltip_templates d-none">
@@ -861,6 +862,37 @@
 
             video.addEventListener('loadedmetadata', setVideoDimensions, false);
             window.addEventListener('resize', setVideoDimensions, false);
+        </script>
+    @endpush
+    @push('scripts')
+        <script>
+            $(document).ready(e => {
+                $.ajax({
+                    url: '{{ route('dot.index') }}',
+                    data: {
+                        plan_id: '{{ $plan->id }}'
+                    },
+                    success: data => {
+                        setTimeout(function () {
+                            let width = $('#planImage').width();
+                            let height = $('#planImage').height();
+                            let naturalWidth = parseFloat('{{ $plan->width }}');
+                            let naturalHeight = parseFloat('{{ $plan->height }}');
+                            let ratio = height / naturalHeight;
+                            console.log(ratio);
+                            console.log(height);
+                            console.log(naturalHeight);
+                            for (let item of data) {
+                                let dot = $('<div class="dot bg-danger" style=top:' + parseInt(ratio * item.top) + 'px;left:' + parseInt(ratio * item.left) + 'px;width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></div>');
+                                $('.backzone').append(dot);
+                            }
+                        }, 1000);
+                    },
+                    error: () => {
+                        console.log('error');
+                    }
+                })
+            })
         </script>
     @endpush
 @endsection

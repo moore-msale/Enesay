@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Build;
 use App\Dot;
+use App\Plan;
 use Illuminate\Http\Request;
 
 class DotController extends Controller
@@ -13,9 +14,21 @@ class DotController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if ($request->ajax()) {
+            $plan = Plan::find($request->plan_id);
+            $builds = $plan->builds;
+            $dots = $builds->map(function ($item) {
+                return $item->dots;
+            })->collapse();
+
+            $dots = $dots->each(function ($item) {
+                return collect($item)->merge($item->build);
+            });
+
+            return response()->json($dots);
+        }
     }
 
     /**
