@@ -885,15 +885,16 @@
         </script>
     @endpush
     @push('scripts')
-        <script>
-            $(document).ready(e => {
-                $.ajax({
-                    url: '{{ route('dot.index') }}',
-                    data: {
-                        plan_id: '{{ $plan->id }}'
-                    },
-                    success: data => {
-                        // setTimeout(function () {
+        @if($plan)
+            <script>
+                $(document).ready(e => {
+                    $.ajax({
+                        url: '{{ route('dot.index') }}',
+                        data: {
+                            plan_id: '{{ $plan->id }}'
+                        },
+                        success: data => {
+                            // setTimeout(function () {
                             let width = $('#planImage').width();
                             let height = $('#planImage').height();
                             let naturalWidth = parseFloat('{{ $plan->width }}');
@@ -904,21 +905,22 @@
                             console.log(naturalHeight);
                             for (let item of data) {
                                 let dot = $('<div class="dot pulse-wrapper d-none" data-id=' + item.build.id + ' style=top:' + parseInt(ratio * item.top) + 'px;left:' + parseInt(ratio * item.left) + 'px;width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;>' +
-                                        '<div class="pulse">' +
-                                            '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
-                                            '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
-                                        '</div>' +
+                                    '<div class="pulse">' +
+                                    '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
+                                    '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
+                                    '</div>' +
                                     '</div>');
                                 $('.backzone').append(dot);
                                 registerHoverDot(dot);
                             }
-                        // }, 1000);
-                    },
-                    error: () => {
-                        console.log('error');
-                    }
+                            // }, 1000);
+                        },
+                        error: () => {
+                            console.log('error');
+                        }
+                    })
                 })
-            })
-        </script>
+            </script>
+        @endif
     @endpush
 @endsection
