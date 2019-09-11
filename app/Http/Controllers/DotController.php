@@ -49,18 +49,19 @@ class DotController extends Controller
      */
     public function store(Request $request)
     {
+        $createdDots = collect();
         for ($i = 0; $i < $request->count; $i++) {
             $dot = new Dot();
             $dot->top = $request->top;
             $dot->left = $request->left;
             $dot->build_id = $request->build_id;
             $dot->save();
+
+            $createdDots = $createdDots->push($dot);
         }
 
-        $dots = Dot::where('build_id', $request->build_id)->get('id')->flatten();
-
         if ($request->ajax()) {
-            return response()->json($dots);
+            return response()->json($createdDots);
         }
 
         return redirect()->back();

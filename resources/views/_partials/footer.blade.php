@@ -9,42 +9,49 @@
                     <ul class="nav flex-column">
                         @if($content->tel1)
                             <li class="nav-item mb-3">
-                                <a href="tel: {{ $content->tel1 }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                <a href="tel: {{ $content->tel1 }}" class="text-white TTMedium pr-0"
+                                   data-aos="fade-right"
                                    style="font-size: 14px;">{{ $content->tel1 }}</a>
                             </li>
                         @endif
                         @if($content->tel2)
                             <li class="nav-item mb-3">
-                                <a href="tel: {{ $content->tel2 }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                <a href="tel: {{ $content->tel2 }}" class="text-white TTMedium pr-0"
+                                   data-aos="fade-right"
                                    style="font-size: 14px;">{{ $content->tel2 }}</a>
                             </li>
                         @endif
                         @if($content->tel3)
                             <li class="nav-item mb-3">
-                                <a href="tel: {{ $content->tel3 }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                <a href="tel: {{ $content->tel3 }}" class="text-white TTMedium pr-0"
+                                   data-aos="fade-right"
                                    style="font-size: 14px;">{{ $content->tel3 }}</a>
                             </li>
                         @endif
                         @if($content->email)
                             <li class="nav-item mb-3">
-                                <a href="mailto: {{ $content->email }}" class="text-white TTMedium pr-0" data-aos="fade-right"
+                                <a href="mailto: {{ $content->email }}" class="text-white TTMedium pr-0"
+                                   data-aos="fade-right"
                                    style="font-size: 14px;">{{ $content->email }}</a>
                             </li>
                         @endif
                         @if($content->address)
                             <li class="nav-item mb-3">
-                                <a class="text-white TTMedium px-0" data-aos="fade-right" style="font-size: 14px;">{{ $content->address }}</a>
+                                <a class="text-white TTMedium px-0" data-aos="fade-right"
+                                   style="font-size: 14px;">{{ $content->address }}</a>
                             </li>
                         @endif
                         @if($content->instagram)
                             <li class="nav-item mb-3">
-                                <a href="{{ $content->instagram }}" class="text-white TTMedium pr-0 mt-3" data-aos="fade-right"
+                                <a href="{{ $content->instagram }}" class="text-white TTMedium pr-0 mt-3"
+                                   data-aos="fade-right"
                                    style="font-size: 16px;"><i class="fab fa-instagram mr-1"></i>Instagram</a>
                             </li>
                         @endif
                         @if($content->facebook)
                             <li class="nav-item mb-3">
-                                <a href="{{ $content->facebook }}" class="text-white TTMedium pr-0 mt-3" data-aos="fade-right"
+                                <a href="{{ $content->facebook }}" class="text-white TTMedium pr-0 mt-3"
+                                   data-aos="fade-right"
                                    style="font-size: 16px;"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
                             </li>
                         @endif
@@ -52,8 +59,9 @@
                 </div>
                 <div class="col d-none d-lg-block">
                     <div class="map" data-aos="fade-right">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
-                                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
+                            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -77,14 +85,16 @@
                                style="font-size: 16px; text-decoration: underline;"><p>{{ $content->tel2 }}</p></a>
                         @endif
                         @if($content->address)
-                                <a class="text-white TTLight" data-aos="fade-right" style="font-size: 16px;">{{ $content->address }}</a>
+                            <a class="text-white TTLight" data-aos="fade-right"
+                               style="font-size: 16px;">{{ $content->address }}</a>
                         @endif
                     </div>
                 </div>
             </div>
             <div class="map d-block d-lg-none" data-aos="fade-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
-                        width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
+                    width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
         <div class="col-lg-4">
@@ -99,13 +109,16 @@
                 </div>
                 <form data-aos="fade-right">
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя" required>
+                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя"
+                               required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-email" placeholder="Ваш e-mail" required>
+                        <input type="text" class="form-control text-white" id="form-email" placeholder="Ваш e-mail"
+                               required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-phone" placeholder="Ваш телефон" required>
+                        <input type="text" class="form-control text-white" id="form-phone" placeholder="Ваш телефон"
+                               required>
                     </div>
                     <div class="form-group">
                         <textarea class="form-control text-white" id="form-message" rows="3"
@@ -147,7 +160,7 @@
                     </div>
                     <div class="send-error-mail2 p-4 d-none">
                         <i class="fas fa-exclamation-circle text-fut-bold text-white" style="color:#00d920;"></i><span
-                                class="pl-2" style="color:#000000;">Отзыв не был отправлен!</span>
+                            class="pl-2" style="color:#000000;">Отзыв не был отправлен!</span>
                     </div>
                     <form id="callForm">
                         <div class="form-group">

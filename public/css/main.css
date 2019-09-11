@@ -151,13 +151,13 @@
     height: 20%;
     /*overflow: hidden;*/
 }
-.pulse-wrapper #pulse {
+.pulse-wrapper .pulse {
     margin: auto;
 }
-.pulse-wrapper #pulse span {
+.pulse-wrapper .pulse span {
     position: absolute;
-    margin-top: -25px; /* = height / 2 */
-    margin-left: -25px; /* = width / 2 */
+    top: 0;
+    left: 0;
     width: 20px;
     height: 20px;
     border-radius: 50%;

@@ -19,14 +19,15 @@
             </video>
             @endif
 
-        <div class="row align-items-center pt-md-5 pt-0 pb-md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative" style="z-index: 2;">
+        <div class="row align-items-center pt-md-5 pt-0 pb-
+        md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative" style="z-index: 2;">
             <div class="col-lg-8 pt-lg-0 pt-md-5 pt-0 pb-md-5 pb-0 mt-lg-0 mt-md-5 mt-0">
                 <div class="row pt-md-5 pt-0">
                     <div class="col-11 text-right pt-lg-0 pt-5 d-md-none d-block" data-aos="fade-up">
                         <a data-fancybox="gallery1" href="{{ asset( $content->video_ur ) }}">
                             <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                             <p class="TTLight"
-                               style="font-size: 12px; text-decoration: underline;color: #ffffff;margin-top: 5%;">
+                               style="color: #ffffff;margin-top: 5%;">
                                 Смотреть видео</p>
                         </a>
                     </div>
@@ -43,7 +44,7 @@
                                 <a data-fancybox="gallery3" href="{{ asset( $content->video_ur ) }}">
                                     <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                                     <p class="TTLight"
-                                       style="font-size: 12px; text-decoration: underline;color: #ffffff;margin-top: 5%;">
+                                       style="color: #ffffff;margin-top: 5%;">
                                         Смотреть видео</p>
                                 </a>
                             </div>
@@ -64,7 +65,7 @@
                 <a data-fancybox="gallery2" href="{{ asset( $content->video_ur ) }}">
                     <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                     <p class="TTLight"
-                       style="font-size: 12px; text-decoration: underline;color: #ffffff;margin-top: 5%;">Смотреть
+                       style="color: #ffffff;margin-top: 5%;">Смотреть
                         видео</p>
                 </a>
             </div>
@@ -279,193 +280,210 @@
         </div>
     </div>
 
-    <div class="container-fluid position-relative pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen" id="4"
-         style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
-        <div class="backdrop"></div>
-        <h3 class="TTBold position-relative text-white pt-2 text-lg-center text-md-left pb-lg-5 pb-4 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
-            data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
-            план</h3>
-        <div class="row justify-content-center position-relative" style="z-index: 2;">
-            <div class="col text-light">
-                Здесь будет список
+    @if($plan)
+        <div class="container-fluid position-relative pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen" id="4"
+             style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
+            <div class="backdrop"></div>
+            <h3 class="TTBold position-relative text-white pt-2 text-lg-center text-md-left pb-lg-0 pb-0 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
+                data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
+                план</h3>
+            <div class="row align-items-center justify-content-around position-relative" style="z-index: 2;">
+                <div class="col-4 text-light">
+                    <div class="row">
+                        @foreach($plan->builds as $build)
+                            <div data-id="{{ $build->id }}" class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3" data-tooltip-content="#tooltip_content" data-aos="fade-up">
+                                <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
+                                <div class="descr pl-lg-3 pl-3">
+                                    <h5 class="TTBold text-white"
+                                        style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $build->title }}</h5>
+                                    <p class="TTRegular text-white"
+                                       style="font-size: 15px;line-height: 18px;">{{ $build->description }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-6 px-0 d-lg-block d-none position-relative" style="z-index: 2;">
+                    <img class="img-fluid" id="planImage" style="" src="{{asset('storage/'.$plan->image)}}" alt="">
+                    <div class="backzone"></div>
+                    {{--<div class="anim1 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                    {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                    {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="anim2 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                    {{--<span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                    {{--<span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="anim3 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                    {{--<span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                    {{--<span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="anim4 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                    {{--<span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                    {{--<span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                    {{--                <div class="anim5 pulse-wrapper">--}}
+                    {{--                    <div id="pulse">--}}
+                    {{--                        <span data-id="3" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                    {{--                        <span data-id="3" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--<div class="anim6 pulse-wrapper">--}}
+                    {{--<div id="pulse">--}}
+                    {{--<span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
+                    {{--<span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                </div>
             </div>
-            <div class="col-8 px-0 d-lg-block d-none text-center position-relative" style="z-index: 2;">
-                <img class="img-fluid" id="planImage" style="" src="{{asset('storage/'.$plan->image)}}" alt="">
-                <div class="backzone"></div>
-                {{--<div class="anim1 pulse-wrapper">--}}
-                    {{--<div id="pulse">--}}
-                        {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
-                        {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="anim2 pulse-wrapper">--}}
-                    {{--<div id="pulse">--}}
-                        {{--<span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
-                        {{--<span data-id="11" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="anim3 pulse-wrapper">--}}
-                    {{--<div id="pulse">--}}
-                        {{--<span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
-                        {{--<span data-id="12" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="anim4 pulse-wrapper">--}}
-                    {{--<div id="pulse">--}}
-                        {{--<span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
-                        {{--<span data-id="13" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="anim5 pulse-wrapper">--}}
-                    {{--<div id="pulse">--}}
-                        {{--<span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
-                        {{--<span data-id="14" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="anim6 pulse-wrapper">--}}
-                    {{--<div id="pulse">--}}
-                        {{--<span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
-                        {{--<span data-id="15" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 2 -->--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            </div>
-        </div>
-        <div class="tooltip_templates d-none">
+            <div class="tooltip_templates d-none">
             <span id="tooltip_content">
                 <img src="{{ asset('images/hello.png') }}" style="width: 500px; height: auto;" />
             </span>
-        </div>
-        <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none position-relative" style="z-index: 2;">
-            <div class="row pl-lg-0 pl-4">
-                <div data-id="10" class="col-lg-2 col-12 d-flex 10 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">01</h3>
-                    <div class="descr pl-lg-3 pl-3">
-                        <h5 class="TTBold text-white"
-                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name1 }}</h5>
-                        <p class="TTRegular text-white"
-                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description1 }}</p>
-                    </div>
+            </div>
+            <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none position-relative" style="z-index: 2;">
+                <div class="row pl-lg-0 pl-4">
+
+                    {{--                <div data-id="11" class="col-lg-2 col-12 d-flex 11 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
+                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">02</h3>--}}
+                    {{--                    <div class="descr pl-lg-3 pl-3">--}}
+                    {{--                        <h5 class="TTBold text-white"--}}
+                    {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name2 }}</h5>--}}
+                    {{--                        <p class="TTRegular text-white"--}}
+                    {{--                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description2 }}</p>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--                <div data-id="12" class="col-lg-2 col-12 d-flex 12 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
+                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">03</h3>--}}
+                    {{--                    <div class="descr pl-lg-3 pl-3">--}}
+                    {{--                        <h5 class="TTBold text-white"--}}
+                    {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name3 }}</h5>--}}
+                    {{--                        <p class="TTRegular text-white"--}}
+                    {{--                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description3 }}</p>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--                <div data-id="13" class="col-lg-2 col-12 d-flex 13 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
+                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">04</h3>--}}
+                    {{--                    <div class="descr pl-lg-3 pl-3">--}}
+                    {{--                        <h5 class="TTBold text-white"--}}
+                    {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name4 }}</h5>--}}
+                    {{--                        <p class="TTRegular text-white"--}}
+                    {{--                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description4 }}</p>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--                <div data-id="14" class="col-lg-2 col-12 d-flex 14 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
+                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">05</h3>--}}
+                    {{--                    <div class="descr pl-lg-3 pl-3">--}}
+                    {{--                        <h5 class="TTBold text-white"--}}
+                    {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name5 }}</h5>--}}
+                    {{--                        <p class="TTRegular text-white"--}}
+                    {{--                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description5 }}</p>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--                <div data-id="15" class="col-lg-2 col-12 d-flex 15 build pt-3 tooltipster-tooltip pb-4" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
+                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>--}}
+                    {{--                    <div class="descr pl-lg-3 pl-3">--}}
+                    {{--                        <h5 class="TTBold text-white"--}}
+                    {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name6 }}</h5>--}}
+                    {{--                        <p class="TTRegular text-white"--}}
+                    {{--                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description6 }}</p>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
                 </div>
-                <div data-id="11" class="col-lg-2 col-12 d-flex 11 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">02</h3>
-                    <div class="descr pl-lg-3 pl-3">
-                        <h5 class="TTBold text-white"
-                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name2 }}</h5>
-                        <p class="TTRegular text-white"
-                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description2 }}</p>
-                    </div>
-                </div>
-                <div data-id="12" class="col-lg-2 col-12 d-flex 12 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">03</h3>
-                    <div class="descr pl-lg-3 pl-3">
-                        <h5 class="TTBold text-white"
-                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name3 }}</h5>
-                        <p class="TTRegular text-white"
-                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description3 }}</p>
-                    </div>
-                </div>
-                <div data-id="13" class="col-lg-2 col-12 d-flex 13 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">04</h3>
-                    <div class="descr pl-lg-3 pl-3">
-                        <h5 class="TTBold text-white"
-                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name4 }}</h5>
-                        <p class="TTRegular text-white"
-                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description4 }}</p>
-                    </div>
-                </div>
-                <div data-id="14" class="col-lg-2 col-12 d-flex 14 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">05</h3>
-                    <div class="descr pl-lg-3 pl-3">
-                        <h5 class="TTBold text-white"
-                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name5 }}</h5>
-                        <p class="TTRegular text-white"
-                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description5 }}</p>
-                    </div>
-                </div>
-                <div data-id="15" class="col-lg-2 col-12 d-flex 15 build pt-3 tooltipster-tooltip pb-4" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>
-                    <div class="descr pl-lg-3 pl-3">
-                        <h5 class="TTBold text-white"
-                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name6 }}</h5>
-                        <p class="TTRegular text-white"
-                           style="font-size: 15px;line-height: 18px;">{{ $content->build_description6 }}</p>
-                    </div>
+            </div>
+            <div class="mt-lg-5 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 point d-lg-none d-md-block d-none pb-lg-0 pb-md-5">
+                <div class="row">
+                    @foreach($plan->builds as $build)
+                        <div data-id="{{ $build->id }}" class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3" data-tooltip-content="#tooltip_content" data-aos="fade-up">
+                            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
+                            <div class="descr pl-lg-3 pl-3">
+                                <h5 class="TTBold text-white"
+                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $build->title }}</h5>
+                                <p class="TTRegular text-white"
+                                   style="font-size: 15px;line-height: 18px;">{{ $build->description }}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                    {{--                <div class="col-4">--}}
+                    {{--                    <div class="row">--}}
+                    {{--                        <div class="col-12 d-flex 10 pt-3" data-aos="fade-up">--}}
+                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                                01</h3>--}}
+                    {{--                            <div class="descr pl-lg-3">--}}
+                    {{--                                <h5 class="TTBold text-white"--}}
+                    {{--                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name1 }}</h5>--}}
+                    {{--                                <p class="TTRegular text-white"--}}
+                    {{--                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description1 }}</p>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                        <div class="col-12 d-flex 11 pt-3" data-aos="fade-up">--}}
+                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                                03</h3>--}}
+                    {{--                            <div class="descr pl-lg-3">--}}
+                    {{--                                <h5 class="TTBold text-white"--}}
+                    {{--                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name3 }}</h5>--}}
+                    {{--                                <p class="TTRegular text-white"--}}
+                    {{--                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description3 }}</p>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                        <div class="col-12 d-flex 12 pt-3" data-aos="fade-up">--}}
+                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                                05</h3>--}}
+                    {{--                            <div class="descr pl-lg-3">--}}
+                    {{--                                <h5 class="TTBold text-white"--}}
+                    {{--                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name5 }}</h5>--}}
+                    {{--                                <p class="TTRegular text-white"--}}
+                    {{--                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description5 }}</p>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--                <div class="col-4">--}}
+                    {{--                    <div class="row">--}}
+                    {{--                        <div class="col-12 d-flex 10 pt-3" data-aos="fade-up">--}}
+                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                                02</h3>--}}
+                    {{--                            <div class="descr pl-lg-3">--}}
+                    {{--                                <h5 class="TTBold text-white"--}}
+                    {{--                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name2 }}</h5>--}}
+                    {{--                                <p class="TTRegular text-white"--}}
+                    {{--                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description2 }}</p>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                        <div class="col-12 d-flex 11 pt-3" data-aos="fade-up">--}}
+                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                                04</h3>--}}
+                    {{--                            <div class="descr pl-lg-3">--}}
+                    {{--                                <h5 class="TTBold text-white"--}}
+                    {{--                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name4 }}</h5>--}}
+                    {{--                                <p class="TTRegular text-white"--}}
+                    {{--                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description4 }}</p>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                        <div class="col-12 d-flex 12 pt-3" data-aos="fade-up">--}}
+                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                                06</h3>--}}
+                    {{--                            <div class="descr pl-lg-3">--}}
+                    {{--                                <h5 class="TTBold text-white"--}}
+                    {{--                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name6 }}</h5>--}}
+                    {{--                                <p class="TTRegular text-white"--}}
+                    {{--                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description6 }}</p>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
                 </div>
             </div>
         </div>
-        <div class="mt-lg-5 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 point d-lg-none d-md-block d-none pb-lg-0 pb-md-5">
-            <div class="row">
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-12 d-flex 10 pt-3" data-aos="fade-up">
-                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">
-                                01</h3>
-                            <div class="descr pl-lg-3">
-                                <h5 class="TTBold text-white"
-                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name1 }}</h5>
-                                <p class="TTRegular text-white"
-                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description1 }}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex 11 pt-3" data-aos="fade-up">
-                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">
-                                03</h3>
-                            <div class="descr pl-lg-3">
-                                <h5 class="TTBold text-white"
-                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name3 }}</h5>
-                                <p class="TTRegular text-white"
-                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description3 }}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex 12 pt-3" data-aos="fade-up">
-                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">
-                                05</h3>
-                            <div class="descr pl-lg-3">
-                                <h5 class="TTBold text-white"
-                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name5 }}</h5>
-                                <p class="TTRegular text-white"
-                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description5 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-12 d-flex 10 pt-3" data-aos="fade-up">
-                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">
-                                02</h3>
-                            <div class="descr pl-lg-3">
-                                <h5 class="TTBold text-white"
-                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name2 }}</h5>
-                                <p class="TTRegular text-white"
-                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description2 }}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex 11 pt-3" data-aos="fade-up">
-                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">
-                                04</h3>
-                            <div class="descr pl-lg-3">
-                                <h5 class="TTBold text-white"
-                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name4 }}</h5>
-                                <p class="TTRegular text-white"
-                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description4 }}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex 12 pt-3" data-aos="fade-up">
-                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">
-                                06</h3>
-                            <div class="descr pl-lg-3">
-                                <h5 class="TTBold text-white"
-                                    style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name6 }}</h5>
-                                <p class="TTRegular text-white"
-                                   style="font-size: 15px;line-height: 18px;">{{ $content->build_description6 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endif
 
     <div class="container-fluid example-classname p-lg-5 p-5 panel-screen" id="5"
          style="background-image: url({{ asset('images/bg5.png') }}); background-size: cover; background-position: center;">
@@ -519,45 +537,45 @@
         <div class="row pr-lg-5 pl-lg-5 mt-lg-5 pt-lg-5 pt-md-5 pt-5 text-md-left text-center">
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
-                <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
+                <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title1 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant1 }}</p>
+                <p class="TTRegular text-black text-uppercase px-md-0 px-5"
+                   style="font-size: 16px;line-height: 17px;">{{ $content->advant1 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
-                <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
+                <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title2 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant2 }}</p>
+                <p class="TTRegular text-black text-uppercase px-md-0 px-5"
+                   style="font-size: 16px;line-height: 17px;">{{ $content->advant2 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
-                <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
+                <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title3 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant3 }}</p>
+                <p class="TTRegular text-black text-uppercase px-md-0 px-5"
+                   style="font-size: 16px;line-height: 17px;">{{ $content->advant3 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
-                <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
+                <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title4 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant4 }}</p>
+                <p class="TTRegular text-black text-uppercase px-md-0 px-5"
+                   style="font-size: 16px;line-height: 17px;">{{ $content->advant4 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
-                <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
+                <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title5 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant5 }}</p>
+                <p class="TTRegular text-black text-uppercase px-md-0 px-5"
+                   style="font-size: 16px;line-height: 17px;">{{ $content->advant5 }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
-                <h5 class="TTBold text-black mb-0" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
+                <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title6 }}</h5>
-                <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 13px;line-height: 17px;">{{ $content->advant6 }}</p>
+                <p class="TTRegular text-black text-uppercase px-md-0 px-5"
+                   style="font-size: 16px;line-height: 17px;">{{ $content->advant6 }}</p>
             </div>
         </div>
     </div>
@@ -774,28 +792,30 @@
             //     $('.' + focus_id).removeClass('point-border');
             // });
 
-            $('.dot').hover(e => {
-                let pulse = $(e.currentTarget);
-                let id = pulse.data('id');
-                pulse.toggleClass('pulse-hover');
-                $('.' + id).toggleClass('point-border');
-            }, e => {
-                let pulse = $($(e.currentTarget));
-                let id = pulse.data('id');
-                pulse.toggleClass('pulse-hover');
-                $('.' + id).toggleClass('point-border');
-            });
+            function registerHoverDot(item) {
+                item.hover(e => {
+                    let pulse = $(e.currentTarget);
+                    let id = pulse.data('id');
+                    pulse.toggleClass('pulse-hover');
+                    $('.' + id).toggleClass('point-border');
+                }, e => {
+                    let pulse = $($(e.currentTarget));
+                    let id = pulse.data('id');
+                    pulse.toggleClass('pulse-hover');
+                    $('.' + id).toggleClass('point-border');
+                });
+            }
 
             $('.build').hover(e => {
                 let card = $($(e.currentTarget));
                 let id = card.data('id');
                 $('.' + id).toggleClass('point-border');
-                $('span[data-id="' + id +'"]').toggleClass('pulse-hover');
+                $('div.dot[data-id="' + id +'"]').toggleClass('d-none');
             }, e => {
                 let card = $($(e.currentTarget));
                 let id = card.data('id');
                 $('.' + id).toggleClass('point-border');
-                $('span[data-id="' + id +'"]').toggleClass('pulse-hover');
+                $('div.dot[data-id="' + id +'"]').toggleClass('d-none');
             });
         </script>
         <script>
@@ -873,7 +893,7 @@
                         plan_id: '{{ $plan->id }}'
                     },
                     success: data => {
-                        setTimeout(function () {
+                        // setTimeout(function () {
                             let width = $('#planImage').width();
                             let height = $('#planImage').height();
                             let naturalWidth = parseFloat('{{ $plan->width }}');
@@ -883,10 +903,16 @@
                             console.log(height);
                             console.log(naturalHeight);
                             for (let item of data) {
-                                let dot = $('<div class="dot bg-danger" style=top:' + parseInt(ratio * item.top) + 'px;left:' + parseInt(ratio * item.left) + 'px;width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></div>');
+                                let dot = $('<div class="dot pulse-wrapper d-none" data-id=' + item.build.id + ' style=top:' + parseInt(ratio * item.top) + 'px;left:' + parseInt(ratio * item.left) + 'px;width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;>' +
+                                        '<div class="pulse">' +
+                                            '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
+                                            '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
+                                        '</div>' +
+                                    '</div>');
                                 $('.backzone').append(dot);
+                                registerHoverDot(dot);
                             }
-                        }, 1000);
+                        // }, 1000);
                     },
                     error: () => {
                         console.log('error');
