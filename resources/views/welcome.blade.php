@@ -295,11 +295,11 @@
                 style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
                 план</h3>
             <div class="row align-items-center justify-content-around position-relative" style="z-index: 2;">
-                <div class="col-4 text-light">
+                <div class="col-12 col-lg-4 order-2 order-lg-0 text-light">
                     <div class="row">
                         @foreach($plan->builds as $build)
                             <div data-id="{{ $build->id }}" data-images="{{ count($build->images) ? 'true' : 'false' }}"
-                                 class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
+                                 class="col-md-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
                                  data-tooltip-content="#tooltip_content">
                                 <h3 class="robotobold"
                                     style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
@@ -316,9 +316,9 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="col-6 px-0 d-lg-block d-none position-relative" style="z-index: 2;">
+                <div class="col-lg-6 col-12 order-0 order-lg-2 px-0 position-relative" style="z-index: 2;">
                     <img class="img-fluid" id="planImage" style="" src="{{asset('storage/'.$plan->image)}}" alt="">
-                    <div class="backzone"></div>
+                    <div class="backzone d-none d-md-block"></div>
                     {{--<div class="anim1 pulse-wrapper">--}}
                     {{--<div id="pulse">--}}
                     {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
@@ -412,7 +412,7 @@
                     {{--                </div>--}}
                 </div>
             </div>
-            <div class="mt-lg-5 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 point d-lg-none d-md-block d-none pb-lg-0 pb-md-5">
+            <div class="mt-lg-5 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 point d-none pb-lg-0 pb-md-5">
                 <div class="row">
                     @foreach($plan->builds as $build)
                         <div data-id="{{ $build->id }}"

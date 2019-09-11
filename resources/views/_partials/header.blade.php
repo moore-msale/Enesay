@@ -11,7 +11,7 @@
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a href="#plan" class="TTLight menu-point" style="font-size: 14px; color:#fefefe;">Ген план</a>
+                            <a href="/#plan" class="TTLight menu-point" style="font-size: 14px; color:#fefefe;">Смотреть генеральный план</a>
                         </li>
                         @if($content->tel1)
                             <li class="nav-item p-3">

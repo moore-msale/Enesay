@@ -6,7 +6,7 @@
     <img class="w-100 d-lg-block d-none" data-aos="flip-up" style="position: absolute; z-index: -1;" src="{{ asset('images/about_us.png') }}" alt="">
 
     <div class="container" style="padding-top:18%;">
-        <div class="row justify-about-center">
+        <div class="row justify-content-center">
             <h1 class="TTLight text-center text-main" style="font-size: 300%; line-height: 140%; text-transform: uppercase; color: white;">
                 <p class="TTBold" data-aos="flip-up">{{ $about->name1 }}</p>
                 {{ $about->name2 }}
