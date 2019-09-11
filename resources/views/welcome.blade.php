@@ -6,18 +6,19 @@
     <?php
     $agent = New \Jenssegers\Agent\Agent();
     ?>
-    <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname panel-screen" id="1"
+    <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname panel-screen"
+         id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">
         <div class="backdrop"></div>
         @if($agent->isPhone())
             <video class="vids-mb" autoplay muted loop>
                 <source src="{{ asset('video/video_back2.mp4') }}" type="video/mp4">
             </video>
-            @else
+        @else
             <video class="vids-pc" autoplay muted loop>
                 <source src="{{ asset('video/video_back2.mp4') }}" type="video/mp4">
             </video>
-            @endif
+        @endif
 
         <div class="row align-items-center pt-md-5 pt-0 pb-
         md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative" style="z-index: 2;">
@@ -34,7 +35,7 @@
                     <div class="col-lg-3">
                         <div class="row align-items-center justify-content-start flex-nowrap">
                             <div class="col-lg-5 col-md-2 col-3 pr-0 pr-lg-2 mt-lg-0 mt-md-5" data-aos="fade-up"><h1
-                                        style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #FFFFFF;">
+                                    style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #FFFFFF;">
                                     01</h1></div>
                             <div class="col-lg-7 col-md-2 col-3 pb-2 px-0 px-lg-0 mt-lg-0 mt-md-5 d-md-block d-none">
                                 <img class="img-fluid" style="height: 100%; width: auto;"
@@ -61,7 +62,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 text-center pt-lg-0 pt-5 d-lg-block d-md-none d-none position-relative" style="z-index: 2;" data-aos="fade-up">
+            <div class="col-lg-3 text-center pt-lg-0 pt-5 d-lg-block d-md-none d-none position-relative"
+                 style="z-index: 2;" data-aos="fade-up">
                 <a data-fancybox="gallery2" href="{{ asset( $content->video_ur ) }}">
                     <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                     <p class="TTLight"
@@ -96,7 +98,8 @@
                                    style="font-size: 15px; line-height: 21px;">{{ $content->call_text }}</p>
                                 <div class="row align-items-center">
                                     <div class="col-2 pr-0">
-                                        <hr class="border-white"></div>
+                                        <hr class="border-white">
+                                    </div>
                                     <div class="col-10 align-items-center"><h4 class="TTMedium text-white mb-0"
                                                                                style="font-size: 15px; line-height: 21px;">
                                             Связаться</h4></div>
@@ -114,7 +117,8 @@
                                 <div class="row align-items-center" id="pick"
                                      style="position: absolute; bottom:-10%; width:350px;">
                                     <div class="col-2 pr-0">
-                                        <hr class="border-white"></div>
+                                        <hr class="border-white">
+                                    </div>
                                     <a href="#4">
                                         <div class="col-10 align-items-center"><h4 class="TTMedium text-white mb-0"
                                                                                    style="font-size: 15px; line-height: 21px;">
@@ -130,7 +134,8 @@
                                 <div class="row align-items-center"
                                      style="position: absolute; bottom:-10%; width:350px;">
                                     <div class="col-2 pr-0">
-                                        <hr class="border-white"></div>
+                                        <hr class="border-white">
+                                    </div>
                                     <a href="#" class="col-10 align-items-center noselect" data-toggle="modal"
                                        data-target="#callModal"><h4 class="TTMedium text-white mb-0"
                                                                     style="font-size: 15px; line-height: 21px;">
@@ -171,8 +176,8 @@
             <div class="col-lg-2 pt-lg-5 pt-3 mt-lg-5 mt-0 d-lg-block d-none" style="transform: translateX(15%);">
                 <div class="row align-items-center justify-content-between flex-nowrap">
                     <div class="col-5"><h1
-                                style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #000;"
-                                data-aos="fade-up">02</h1></div>
+                            style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #000;"
+                            data-aos="fade-up">02</h1></div>
                     <div class="col-7"><img class="img-fluid" style="height: 100%; width: auto;"
                                             src="{{asset('images/line-black.png')}}" alt=""></div>
                 </div>
@@ -216,8 +221,9 @@
         </div>
     </div>
 
-    <div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname panel-screen"
-         id="gallery">
+    <div
+        class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname panel-screen"
+        id="gallery">
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-5">
                 <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">
@@ -254,8 +260,8 @@
                         @foreach($galleries as $gallery)
                             <div class="item">
                                 <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="gallery-carousel2">
-                                <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
-                                     src="{{asset('storage/'.$gallery->image)}}" alt="">
+                                    <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
+                                         src="{{asset('storage/'.$gallery->image)}}" alt="">
                                 </a>
                             </div>
                         @endforeach
@@ -269,8 +275,8 @@
                         @foreach($galleries as $gallery)
                             <div class="item">
                                 <a href="{{asset('storage/'.$gallery->image)}}" data-fancybox="gallery-carousel">
-                                <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
-                                     src="{{asset('storage/'.$gallery->image)}}" alt="">
+                                    <img class="img-fluid" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);"
+                                         src="{{asset('storage/'.$gallery->image)}}" alt="">
                                 </a>
                             </div>
                         @endforeach
@@ -285,17 +291,24 @@
              style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
             <div class="backdrop"></div>
             <h3 class="TTBold position-relative text-white pt-2 text-lg-center text-md-left pb-lg-0 pb-0 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
-                data-aos="fade-up" id="plan" style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
+                data-aos="fade-up" id="plan"
+                style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
                 план</h3>
             <div class="row align-items-center justify-content-around position-relative" style="z-index: 2;">
                 <div class="col-4 text-light">
                     <div class="row">
                         @foreach($plan->builds as $build)
-                            <div data-id="{{ $build->id }}" class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                                <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
+                            <div data-id="{{ $build->id }}" data-images="{{ count($build->images) ? 'true' : 'false' }}"
+                                 class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
+                                 data-tooltip-content="#tooltip_content">
+                                <h3 class="robotobold"
+                                    style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
                                 <div class="descr pl-lg-3 pl-3">
                                     <h5 class="TTBold text-white"
                                         style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $build->title }}</h5>
+                                    @if(count($build->images))
+                                        <p class="small text-muted m-0">Нажмите для подробностей</p>
+                                    @endif
                                     <p class="TTRegular text-white"
                                        style="font-size: 15px;line-height: 18px;">{{ $build->description }}</p>
                                 </div>
@@ -346,7 +359,7 @@
             </div>
             <div class="tooltip_templates d-none">
             <span id="tooltip_content">
-                <img src="{{ asset('images/hello.png') }}" style="width: 500px; height: auto;" />
+                <img src="{{ asset('images/hello.png') }}" style="width: 500px; height: auto;"/>
             </span>
             </div>
             <div class="mt-lg-5 pl-lg-3 pr-lg-3 point d-lg-block d-md-none position-relative" style="z-index: 2;">
@@ -402,8 +415,11 @@
             <div class="mt-lg-5 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 point d-lg-none d-md-block d-none pb-lg-0 pb-md-5">
                 <div class="row">
                     @foreach($plan->builds as $build)
-                        <div data-id="{{ $build->id }}" class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3" data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                            <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
+                        <div data-id="{{ $build->id }}"
+                             class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
+                             data-tooltip-content="#tooltip_content" data-aos="fade-up">
+                            <h3 class="robotobold"
+                                style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
                             <div class="descr pl-lg-3 pl-3">
                                 <h5 class="TTBold text-white"
                                     style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $build->title }}</h5>
@@ -500,7 +516,7 @@
                             <input class="form-control" type="text" data-aos="fade-up"
                                    placeholder="Введите номер телефона">
                             <button type="submit" class="btn-submit" style="border: 0; background: transparent;"><img
-                                        src="{{asset('images/Arrow.png')}}" alt=""></button>
+                                    src="{{asset('images/Arrow.png')}}" alt=""></button>
                         </div>
                     </form>
                 </div>
@@ -512,7 +528,7 @@
                         <div class="line"></div>
                         <div class="numbers">
                             <div class="number-item text-center pt-md-0 pt-4"><span
-                                        class="value">{{ $content->number1 }}</span></div>
+                                    class="value">{{ $content->number1 }}</span></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-6">
@@ -520,7 +536,7 @@
                         <div class="line"></div>
                         <div class="numbers">
                             <div class="number-item text-center pt-md-0 pt-4"><span
-                                        class="value">{{ $content->number2 }}</span></div>
+                                    class="value">{{ $content->number2 }}</span></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-6 pt-lg-0 pt-md-0 pt-5">
@@ -528,7 +544,7 @@
                         <div class="line"></div>
                         <div class="numbers">
                             <div class="number-item text-center pt-md-0 pt-4"><span
-                                        class="value">{{ $content->number3 }}</span></div>
+                                    class="value">{{ $content->number3 }}</span></div>
                         </div>
                     </div>
                 </div>
@@ -810,12 +826,33 @@
                 let card = $($(e.currentTarget));
                 let id = card.data('id');
                 $('.' + id).toggleClass('point-border');
-                $('div.dot[data-id="' + id +'"]').toggleClass('d-none');
+                $('div.dot[data-id="' + id + '"]').toggleClass('d-none');
             }, e => {
                 let card = $($(e.currentTarget));
                 let id = card.data('id');
                 $('.' + id).toggleClass('point-border');
-                $('div.dot[data-id="' + id +'"]').toggleClass('d-none');
+                $('div.dot[data-id="' + id + '"]').toggleClass('d-none');
+            });
+
+            $('.build').click(e => {
+                let btn = $(e.currentTarget);
+                let id = btn.data('id');
+                let images = btn.data('images');
+
+                if (images) {
+                    $.ajax({
+                        url: '{{ route('build.images') }}',
+                        data: {
+                            build_id: id
+                        },
+                        success: data => {
+                            $.fancybox.open(data);
+                        },
+                        error: () => {
+                            console.log('error');
+                        }
+                    })
+                }
             });
         </script>
         <script>
@@ -846,8 +883,8 @@
                 // Also calculate the min dimensions required (this will be
                 // the container dimentions)
                 var containerStyles = window.getComputedStyle(container)
-                    , minW = parseInt( containerStyles.getPropertyValue('width') )
-                    , minH = parseInt( containerStyles.getPropertyValue('height') );
+                    , minW = parseInt(containerStyles.getPropertyValue('width'))
+                    , minH = parseInt(containerStyles.getPropertyValue('height'));
 
                 // What's the min:intrinsic dimensions
                 //
@@ -869,11 +906,10 @@
                 // has to be done over that dimension
                 if (widthRatio > heightRatio) {
                     var newWidth = minW;
-                    var newHeight = Math.ceil( newWidth / videoRatio );
-                }
-                else {
+                    var newHeight = Math.ceil(newWidth / videoRatio);
+                } else {
                     var newHeight = minH;
-                    var newWidth = Math.ceil( newHeight * videoRatio );
+                    var newWidth = Math.ceil(newHeight * videoRatio);
                 }
 
                 video.style.width = newWidth + 'px';

@@ -18,6 +18,9 @@ Route::get('/home', function () {
     return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first()]);
 });
 
+Route::get('/build/images', 'BuildController@imagesAjax')->name('build.images');
+
+Route::resource('image', 'ImageController')->only(['create', 'store']);
 Route::resource('plan', 'PlanController');
 Route::resource('build', 'BuildController');
 Route::resource('dot', 'DotController');

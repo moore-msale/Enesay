@@ -7,24 +7,19 @@ use Illuminate\Http\Request;
 
 class BuildController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function imagesAjax(Request $request)
     {
-        //
-    }
+        $build = Build::find($request->build_id);
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        $images = [];
+
+        if ($build) {
+            foreach ($build->images as $image) {
+                $images[] = ['src' => '/storage/'.$image->image];
+            }
+        }
+
+        return response()->json($images);
     }
 
     /**

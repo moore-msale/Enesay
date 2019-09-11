@@ -15,4 +15,9 @@ class Build extends Model
     {
         return $this->hasMany(Dot::class);
     }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
 }
