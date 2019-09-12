@@ -514,7 +514,7 @@
         </div>
     @endif
 
-    <div class="container-fluid example-classname p-lg-5 p-5 panel-screen" id="5"
+    <div class="container-fluid example-classname p-5 panel-screen" id="5"
          style="background-image: url({{ asset('images/bg5.png') }}); background-size: cover; background-position: center;">
         <div class="row align-items-end">
             <div class="col-lg-6 col-md-10 pr-lg-5">
@@ -535,7 +535,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-6 pt-lg-0 pt-md-5 pt-4">
+            <div class="col-lg-6 pt-lg-0 pt-md-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-4 col-6">
                         <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">Продано</h4>
@@ -564,7 +564,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pr-lg-5 pl-lg-5 mt-lg-5 pt-lg-5 pt-md-5 pt-5 text-md-left text-center">
+        <div class="row mt-lg-5 pt-lg-5 pt-md-5 pt-5 text-md-left text-center">
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
