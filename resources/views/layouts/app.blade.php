@@ -47,6 +47,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/localization/messages_ru.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $("#pick").on("click","a", function (event) {
@@ -135,33 +136,35 @@
 <script>
     $('#ajax-message').click(e => {
         e.preventDefault();
-        $('#ajax-message').parents('form').validate();
-        let name = $('#form-name');
-        let email = $('#form-email');
-        let phone = $('#form-phone');
-        let message = $('#form-message');
-        $(".send-success-mail").removeClass('d-none');
+        if ($('#ajax-message').parents('form').valid()) {
+            let name = $('#form-name');
+            let email = $('#form-email');
+            let phone = $('#form-phone');
+            let message = $('#form-message');
+            $(".send-success-mail").removeClass('d-none');
 
-        $.ajax({
-            url: '{{ route('mail') }}',
-            method: 'POST',
-            data: {
-                "_token": "{{ csrf_token() }}",
-                "name": name.val(),
-                "phone": phone.val(),
-                "email": email.val(),
-                "message": message.val()
-            },
-            success: data => {
-                $('#form-name').val('');
-                $('#form-phone').val('');
-                $('#form-email').val('');
-                $('#form-message').val('');
-                $(".send-success-mail").removeClass('d-none');
-            },
-            error: () => {
-            }
-        });
+            $.ajax({
+                url: '{{ route('mail') }}',
+                method: 'POST',
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    "name": name.val(),
+                    "phone": phone.val(),
+                    "email": email.val(),
+                    "message": message.val()
+                },
+                success: data => {
+                    $('#form-name').val('');
+                    $('#form-phone').val('');
+                    $('#form-email').val('');
+                    $('#form-message').val('');
+                    $(".send-success-mail").removeClass('d-none');
+                },
+                error: () => {
+                }
+            });
+        }
+
     })
 </script>
 <script>

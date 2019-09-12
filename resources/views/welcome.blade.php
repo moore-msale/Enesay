@@ -6,6 +6,8 @@
     <?php
     $agent = New \Jenssegers\Agent\Agent();
     ?>
+    <a href="tel: +996705880575" class="call-a d-md-block d-none"><i class="call-ic fa fa-phone fa-2x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575" class="wa-a d-md-block d-none"><i class="wa-ic fab fa-whatsapp fa-2x"></i></a>
     <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname panel-screen"
          id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">

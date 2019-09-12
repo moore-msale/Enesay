@@ -109,11 +109,11 @@
                     ответим на все ваши вопросы</p>
                 <div class="send-success-mail p-4 d-none">
                     <i class="fas fa-check-circle" style="color:#00d920;"></i><span class="pl-2 text-fut-bold"
-                                                                                    style="color:#fff;">Отзыв успешно отправлен!</span>
+                                                                                    style="color:#fff;">Заявка успешно отправлена!</span>
                 </div>
                 <form data-aos="fade-right">
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя"
+                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя*"
                                required>
                     </div>
                     <div class="form-group">
@@ -156,11 +156,11 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h2 class="mb-5" style="font-size: 25px; line-height: 120%; color: #000000;">
-                        Оставьте нам свой отзыв
+                        Оставьте нам свою заявку
                     </h2>
                     <div class="send-success-mail2 p-4 d-none">
                         <i class="fas fa-check-circle" style="color:#00d920;"></i><span class="pl-2 text-fut-bold"
-                                                                                        style="color:#000000;">Отзыв успешно отправлен!</span>
+                                                                                        style="color:#000000;">Заявка успешно отправлена!</span>
                     </div>
                     <div class="send-error-mail2 p-4 d-none">
                         <i class="fas fa-exclamation-circle text-fut-bold text-white" style="color:#00d920;"></i><span
