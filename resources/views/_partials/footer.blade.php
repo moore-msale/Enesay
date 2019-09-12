@@ -113,22 +113,24 @@
                 </div>
                 <form data-aos="fade-right">
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-name" placeholder="Ваше имя*"
-                               required>
+                        <input class="w-100 mb-2 p-2" name="name" type="text" id="form-name"
+                               placeholder="Ваше имя*" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-email" placeholder="Ваш e-mail"
-                               required>
+                        <input class="w-100 mb-2 p-2" name="phone" type="tel" id="form-phone"
+                               placeholder="Ваш номер телефона*" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control text-white" id="form-phone" placeholder="Ваш телефон"
-                               required>
+                        <input class="w-100 mb-2 p-2" name="email" type="email" id="form-email"
+                               placeholder="Введите E-mail*" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control text-white" id="form-message" rows="3"
-                                  placeholder="Ваше сообщение" required></textarea>
+                            <textarea class="w-100 mb-2 p-2" name="message" type="message" id="form-message"
+                                      placeholder="Сообщение*" required></textarea>
                     </div>
-                    <button id="ajax-message" class="btn btn-submit"><a href="#">Отправить</a></button>
+                    <div class="form-group">
+                        <a id="ajax-message" class="btn" href="#">Отправить</a>
+                    </div>
                 </form>
             </div>
         </div>
