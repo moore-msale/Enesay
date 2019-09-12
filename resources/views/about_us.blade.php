@@ -24,7 +24,7 @@
                 </p>
             </div>
 
-            <div class="col-6 d-md-block d-none text-right pt-4">
+            <div class="col-6 d-md-block d-none text-right pt-3">
                 <img class="w-75" data-aos="flip-up" src="{{ asset('storage/'.$about->image) }}" alt="">
             </div>
             <div class="col-md-6 col-12" style="transform: translateY(-7%)">
