@@ -297,7 +297,7 @@
             <div class="row align-items-center justify-content-around position-relative" style="z-index: 2;">
                 <div class="col-12 col-lg-4 order-2 order-lg-0 text-light">
                     <div class="row">
-                        @foreach($plan->builds as $build)
+                        @foreach($plan->builds->sortBy('order') as $build)
                             <div data-id="{{ $build->id }}" data-images="{{ count($build->images) ? 'true' : 'false' }}"
                                  class="col-md-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
                                  data-tooltip-content="#tooltip_content">
@@ -414,7 +414,7 @@
             </div>
             <div class="mt-lg-5 pt-lg-5 pt-md-5 pl-lg-0 pl-md-5 point d-none pb-lg-0 pb-md-5">
                 <div class="row">
-                    @foreach($plan->builds as $build)
+                    @foreach($plan->builds->sortBy('order') as $build)
                         <div data-id="{{ $build->id }}"
                              class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
                              data-tooltip-content="#tooltip_content" data-aos="fade-up">

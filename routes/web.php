@@ -10,12 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first(), 'plan' => \App\Plan::where('active', true)->first(),]);
-});
+Route::get('/', 'MainController@index')->name('home');
 
 Route::get('/home', function () {
-    return view('welcome',['galleries' => \App\Gallery::all(), 'news' => \App\News::first(), 'content' => \App\MainPage::first()]);
+    return redirect()->route('home');
 });
 
 Route::get('/build/images', 'BuildController@imagesAjax')->name('build.images');
@@ -35,9 +33,7 @@ Route::get('/about_us', function () {
    return view('about_us',['about' => \App\About::first(), 'content' => \App\MainPage::first()]);
 });
 
-Route::get('/gallery', function () {
-    return view('gallery',['galleries' => \App\Gallery::all(), 'content' => \App\MainPage::first()]);
-});
+Route::get('/gallery', 'MainController@gallery')->name('gallery');
 
 Route::resource('photo', 'PhotoController')->only(['create', 'store']);
 
