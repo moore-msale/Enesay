@@ -24,15 +24,18 @@
                 </p>
             </div>
 
-            <img class="w-75" data-aos="flip-up" style="transform: translateY(-7%)" src="{{ asset('storage/'.$about->image) }}" alt="">
-
-            <div class="TTLight p-5 " style="font-size: 112%; line-height: 140%; color: #000000;">
-                <p data-aos="flip-up">
-                    {{ $about->text4 }}
-                </p>
-                <p data-aos="flip-up">
-                    {{ $about->text5 }}
-                </p>
+            <div class="col-6 d-md-block d-none">
+                <img class="w-75" data-aos="flip-up" src="{{ asset('storage/'.$about->image) }}" alt="">
+            </div>
+            <div class="col-md-6 col-12" style="transform: translateY(-7%)">
+                <div class="TTLight p-5 " style="font-size: 112%; line-height: 140%; color: #000000;">
+                    <p data-aos="flip-up">
+                        {{ $about->text4 }}
+                    </p>
+                    <p data-aos="flip-up">
+                        {{ $about->text5 }}
+                    </p>
+                </div>
             </div>
         </div>
 
