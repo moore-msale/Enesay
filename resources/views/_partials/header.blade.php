@@ -42,8 +42,8 @@
 </nav>
 <nav class="navbar navbar-expand-xl py-0 w-100 pr-0 bg-white d-xl-none d-block" style="z-index: 999; background: rgba(0,0,0,0); position: fixed;">
     <div class="container-fluid">
-        <div class="row w-100">
-            <div class="col-md-4 col-lg-3 text-center col-4 px-4 py-2">
+        <div class="row w-100 align-items-center">
+            <div class="col-md-4 col-lg-3 text-center col-6 col-sm-5 px-4 py-2">
                 <a href="/">
                     <img class="w-100" src="{{asset('images/logo.png')}}" alt="">
                 </a>
@@ -70,7 +70,49 @@
                         <li class="nav-item p-2">
                             <a href="/news" class="text-dark text-fut-bold" style="text-decoration: none;">Новости</a>
                         </li>
+                        @if($content->tel1)
+                            <li class="nav-item p-2">
+                                <a href="tel: {{ $content->tel1 }}" class="text-dark text-fut-bold" style="font-size: 14px; color:#fefefe;">{{ $content->tel1 }}</a>
+                            </li>
+                        @endif
+                        @if($content->tel2)
+                            <li class="nav-item p-2">
+                                <a href="tel: {{ $content->tel2 }}" class="text-dark text-fut-bold" style="font-size: 14px; color:#fefefe;">{{ $content->tel2 }}</a>
+                            </li>
+                        @endif
+                        @if($content->tel3)
+                            <li class="nav-item p-2">
+                                <a href="tel: {{ $content->tel3 }}" class="text-dark text-fut-bold" style="font-size: 14px; color:#fefefe;">{{ $content->tel3 }}</a>
+                            </li>
+                        @endif
+                        @if($content->email)
+                            <li class="nav-item p-2">
+                                <a href="tel: {{ $content->email }}" class="text-dark text-fut-bold" style="font-size: 14px; color:#fefefe;">{{ $content->email }}</a>
+                            </li>
+                        @endif
                     </ul>
+                    <div class="container-fluid ml-2">
+                        <div class="row">
+                            @if($content->instagram)
+                                <div class="col-3 p-0">
+                                    <a href="{{ $content->instagram }}" class="ics text-dark" target="_blank">
+                                        <p>
+                                            <i class="fab fa-instagram fa-sm"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            @endif
+                            @if($content->facebook)
+                                <div class="col-3 p-0">
+                                    <a href="{{ $content->facebook }}" class="ics text-dark" target="_blank">
+                                        <p>
+                                            <i class="fab fa-facebook-f fa-sm"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            @endif
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>

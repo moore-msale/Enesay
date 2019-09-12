@@ -112,6 +112,7 @@
     margin: auto;
     background: transparent;
     border: 13px solid transparent;
+    -o-border-image: -o-linear-gradient(top left, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);
     -moz-border-image: -moz-linear-gradient(top left, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);
     -webkit-border-image: -webkit-linear-gradient(top left, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);
     border-image: linear-gradient(to bottom right, #E3B345 10%, #FDF7BC 80%, #DABC67 90%, #E3B852 100%);

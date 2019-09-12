@@ -45,14 +45,14 @@
                             <li class="nav-item mb-3">
                                 <a href="{{ $content->instagram }}" class="text-white TTMedium pr-0 mt-3"
                                    data-aos="fade-right"
-                                   style="font-size: 16px;"><i class="fab fa-instagram mr-1"></i>Instagram</a>
+                                   style="font-size: 16px;"><i class="fab fa-instagram fa-lg mr-1"></i>Instagram</a>
                             </li>
                         @endif
                         @if($content->facebook)
                             <li class="nav-item mb-3">
                                 <a href="{{ $content->facebook }}" class="text-white TTMedium pr-0 mt-3"
                                    data-aos="fade-right"
-                                   style="font-size: 16px;"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
+                                   style="font-size: 16px;"><i class="fab fa-facebook-f fa-lg mr-1"></i>Facebook</a>
                             </li>
                         @endif
                     </ul>
