@@ -89,7 +89,7 @@
         <div class="mt-5 align-items-center d-md-block d-none position-relative" style="z-index: 2;">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-8 p-5" style="background: rgba(6, 6, 6, 0.9);">
-                    <div class="d-lg-none d-md-block" data-aos="fade-up">
+                    <div class="d-lg-none d-md-block">
                         <div class="row">
                             <div class="col-8">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
@@ -109,7 +109,7 @@
                     </div>
                     <div class="d-lg-block d-md-none">
                         <div class="row">
-                            <div class="col-6" data-aos="fade-up">
+                            <div class="col-6">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
                                     Смотреть генеральный план</h3>
                                 <p class="TTLight text-white"
@@ -126,7 +126,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-6" data-aos="fade-up">
+                            <div class="col-6">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
                                     Связаться с отделом продаж</h3>
                                 <p class="TTLight text-white"
@@ -215,6 +215,23 @@
                              src="{{asset('storage/'.$content->locate_img5)}}" alt="">
                         <p class="TTRegular text-black" data-aos="fade-up"
                            style="font-size: 18px;">{!! $content->locate5 !!}</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-center ">
+                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img6)}}"
+                             alt="">
+                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate6 !!}</p>
+
+                        <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
+                             src="{{asset('storage/'.$content->locate_img6)}}" alt="">
+                        <p class="TTRegular text-black" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate6 !!}</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-center ">
+                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
+                             alt="">
+                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate7 !!}</p>
                     </div>
                 </div>
             </div>
