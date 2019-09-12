@@ -99,6 +99,21 @@
 #first-block .col-lg-3 img {
     width: 35%;
 }
+.btn-call {
+    bottom: 10%;
+    background: linear-gradient(270deg, #C6972A 1.04%, #EFBB42 51.04%, #C6972A 100%);
+    z-index: 9;
+}
+.btn-call.btn-left {
+    left: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.btn-call.btn-right {
+    right: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
 .module-border-wrap{
     position: absolute;
     top:25%;
