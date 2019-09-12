@@ -19,7 +19,7 @@
          style="background-image: url({{ asset('images/bg1.png') }});">
         <div class="backdrop"></div>
         @if($agent->isPhone())
-            <video class="vids-mb" autoplay muted loop>
+            <video class="vids-mb" autoplay muted loop controls="true" playsinline>
                 <source src="{{ asset('video/video_back2.mp4') }}" type="video/mp4">
             </video>
         @else
