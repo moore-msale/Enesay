@@ -173,9 +173,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 pt-lg-5 pt-3 mt-lg-5 mt-0 d-md-block d-none" style="transform: translateX(15%);">
+            <div class="col-lg-2 pt-lg-5 pt-3 mt-lg-5 mt-0 d-md-block d-none" style="">
                 <div class="row align-items-center justify-content-between flex-nowrap">
-                    <div class="col-5"><h1
+                    <div class="col-5 text-center"><h1
                             style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #000;"
                             data-aos="fade-up">02</h1></div>
                     <div class="col-7"><img class="img-fluid" style="height: 100%; width: auto;"
