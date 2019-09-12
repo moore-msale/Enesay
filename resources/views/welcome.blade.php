@@ -204,6 +204,10 @@
                              src="{{asset('storage/'.$content->locate_img3)}}" alt="">
                         <p class="TTRegular text-black pt-3" data-aos="fade-up"
                            style="font-size: 18px;">{!! $content->locate3 !!}</p>
+                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
+                             alt="">
+                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                           style="font-size: 18px;">{!! $content->locate7 !!}</p>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
                         <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}"
@@ -215,8 +219,6 @@
                              src="{{asset('storage/'.$content->locate_img5)}}" alt="">
                         <p class="TTRegular text-black" data-aos="fade-up"
                            style="font-size: 18px;">{!! $content->locate5 !!}</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 text-center ">
                         <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img6)}}"
                              alt="">
                         <p class="TTRegular text-black pt-2" data-aos="fade-up"
@@ -226,12 +228,6 @@
                              src="{{asset('storage/'.$content->locate_img8)}}" alt="">
                         <p class="TTRegular text-black" data-aos="fade-up"
                            style="font-size: 18px;">{!! $content->locate8 !!}</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 text-center ">
-                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
-                             alt="">
-                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate7 !!}</p>
                     </div>
                 </div>
             </div>
