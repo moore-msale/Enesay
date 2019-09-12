@@ -528,8 +528,9 @@
                         <div class="form-group d-flex col-lg-12 col-12 px-0">
                             <input class="form-control" type="text" data-aos="fade-up"
                                    placeholder="Введите номер телефона">
-                            <button type="submit" class="btn-submit" style="border: 0; background: transparent;"><img
-                                    src="{{asset('images/Arrow.png')}}" alt=""></button>
+                            <button type="submit" class="btn-submit" style="border: 0; background: transparent;">
+                                <img style="width: 30px; height: auto; transform: translate(-2px, 8px);" src="{{asset('images/arrow.svg')}}" alt="">
+                            </button>
                         </div>
                     </form>
                 </div>
