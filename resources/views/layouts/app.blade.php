@@ -167,33 +167,35 @@
 <script>
     $('#ajax-message2').click(e => {
         e.preventDefault();
-        $('#ajax-message2').parents('form').validate();
-        let name = $('#form-name2');
-        let email = $('#form-email2');
-        let phone = $('#form-phone2');
-        let message = $('#form-message2');
-        $(".send-success-mail2").removeClass('d-none');
+        if ($('#ajax-message2').parents('form').valid()) {
+            let name = $('#form-name2');
+            let email = $('#form-email2');
+            let phone = $('#form-phone2');
+            let message = $('#form-message2');
+            $(".send-success-mail2").removeClass('d-none');
 
-        $.ajax({
-            url: '{{ route('mail') }}',
-            method: 'POST',
-            data: {
-                "_token": "{{ csrf_token() }}",
-                "name": name.val(),
-                "phone": phone.val(),
-                "email": email.val(),
-                "message": message.val()
-            },
-            success: data => {
-                $('#form-name2').val('');
-                $('#form-phone2').val('');
-                $('#form-email2').val('');
-                $('#form-message2').val('');
-                $(".send-success-mail2").removeClass('d-none');
-            },
-            error: () => {
-            }
-        });
+            $.ajax({
+                url: '{{ route('mail') }}',
+                method: 'POST',
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    "name": name.val(),
+                    "phone": phone.val(),
+                    "email": email.val(),
+                    "message": message.val()
+                },
+                success: data => {
+                    $('#form-name2').val('');
+                    $('#form-phone2').val('');
+                    $('#form-email2').val('');
+                    $('#form-message2').val('');
+                    $(".send-success-mail2").removeClass('d-none');
+                },
+                error: () => {
+                }
+            });
+        }
+
     })
 </script>
 <script>

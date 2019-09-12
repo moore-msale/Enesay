@@ -1,5 +1,5 @@
 
-<nav class="navbar menuse navbar-expand-xl py-0 w-100 pr-0 d-lg-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: fixed; transition: 0.5s;">
+<nav class="navbar menuse navbar-expand-xl py-0 w-100 pr-0 d-xl-block d-none" style="z-index: 999; top: 4%; background: rgba(0,0,0,0); position: fixed; transition: 0.5s;">
     <div class="container-fluid">
         <div class="row w-100">
             <div class="col-md-2 col-4 px-4 logs logs3 pt-3">
@@ -40,10 +40,10 @@
         </div>
     </div>
 </nav>
-<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 bg-white d-lg-none d-block" style="z-index: 999; background: rgba(0,0,0,0); position: fixed;">
+<nav class="navbar navbar-expand-xl py-0 w-100 pr-0 bg-white d-xl-none d-block" style="z-index: 999; background: rgba(0,0,0,0); position: fixed;">
     <div class="container-fluid">
         <div class="row w-100">
-            <div class="col-md-4 text-center col-4 px-4 py-2">
+            <div class="col-md-4 col-lg-3 text-center col-4 px-4 py-2">
                 <a href="/">
                     <img class="w-100" src="{{asset('images/logo.png')}}" alt="">
                 </a>
