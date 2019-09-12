@@ -7,11 +7,11 @@
     $agent = New \Jenssegers\Agent\Agent();
     ?>
     <a href="tel: +996705880575" class="d-md-block d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone fa-2x"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-md-block d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-3x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-md-block d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-2x"></i></a>
     <a href="tel: +996705880575" class="d-sm-none d-block position-fixed px-3 py-2 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-sm-none d-block position-fixed px-3 py-2 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-lg"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-sm-none d-block position-fixed px-3 py-2 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp"></i></a>
     <a href="tel: +996705880575" class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone fa-lg"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-2x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-lg"></i></a>
     <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname panel-screen"
          id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">
