@@ -223,9 +223,9 @@
                            style="font-size: 18px;">{!! $content->locate6 !!}</p>
 
                         <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
-                             src="{{asset('storage/'.$content->locate_img6)}}" alt="">
+                             src="{{asset('storage/'.$content->locate_img8)}}" alt="">
                         <p class="TTRegular text-black" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate6 !!}</p>
+                           style="font-size: 18px;">{!! $content->locate8 !!}</p>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
                         <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
