@@ -529,7 +529,7 @@
                             <input class="form-control" type="text" data-aos="fade-up"
                                    placeholder="Введите номер телефона">
                             <button type="submit" class="btn-submit" style="border: 0; background: transparent;">
-                                <img style="width: 30px; height: auto; transform: translate(-2px, 8px);" src="{{asset('images/arrow.svg')}}" alt="">
+                                <img style="width: 30px; height: auto; transform: translate(-10px, 8px);" src="{{asset('images/arrow.svg')}}" alt="">
                             </button>
                         </div>
                     </form>
