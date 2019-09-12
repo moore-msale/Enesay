@@ -28,6 +28,10 @@
                                    style="font-size: 14px;">{{ $content->tel3 }}</a>
                             </li>
                         @endif
+                            <li class="nav-item mb-3">
+                                <a class="text-white TTMedium px-0" data-aos="fade-right"
+                                   style="font-size: 14px;">Медерова, 50 - офис продаж</a>
+                            </li>
                         @if($content->email)
                             <li class="nav-item mb-3">
                                 <a href="mailto: {{ $content->email }}" class="text-white TTMedium pr-0"

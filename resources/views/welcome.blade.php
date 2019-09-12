@@ -195,39 +195,53 @@
                 </div>
                 <div class="row pt-md-5 pt-3 mt-lg-0 mt-md-5 mt-2 mb-lg-0 mb-md-5 mb-5">
                     <div class="col-lg-6 col-md-6 text-center">
-                        <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img2)}}"
-                             alt="">
-                        <p class="TTRegular text-black" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate2 !!}</p>
+                        @if($content->locate2)
+                            <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img2)}}"
+                                 alt="">
+                            <p class="TTRegular text-black" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate2 !!}</p>
+                        @endif
 
-                        <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
-                             src="{{asset('storage/'.$content->locate_img3)}}" alt="">
-                        <p class="TTRegular text-black pt-3" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate3 !!}</p>
-                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
-                             alt="">
-                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate7 !!}</p>
+                        @if($content->locate3)
+                            <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
+                                 src="{{asset('storage/'.$content->locate_img3)}}" alt="">
+                            <p class="TTRegular text-black pt-3" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate3 !!}</p>
+                        @endif
+                        @if($content->locate7)
+                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
+                                 alt="">
+                            <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate7 !!}</p>
+                        @endif
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
-                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}"
-                             alt="">
-                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate4 !!}</p>
+                        @if($content->locate4)
+                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}"
+                                 alt="">
+                            <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate4 !!}</p>
+                        @endif
 
-                        <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
-                             src="{{asset('storage/'.$content->locate_img5)}}" alt="">
-                        <p class="TTRegular text-black" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate5 !!}</p>
-                        <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img6)}}"
-                             alt="">
-                        <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate6 !!}</p>
+                        @if($content->locate5)
+                            <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
+                                 src="{{asset('storage/'.$content->locate_img5)}}" alt="">
+                            <p class="TTRegular text-black" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate5 !!}</p>
+                        @endif
+                        @if($content->locate6)
+                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img6)}}"
+                                 alt="">
+                            <p class="TTRegular text-black pt-2" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate6 !!}</p>
+                        @endif
 
-                        <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
-                             src="{{asset('storage/'.$content->locate_img8)}}" alt="">
-                        <p class="TTRegular text-black" data-aos="fade-up"
-                           style="font-size: 18px;">{!! $content->locate8 !!}</p>
+                        @if($content->locate8)
+                            <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
+                                 src="{{asset('storage/'.$content->locate_img8)}}" alt="">
+                            <p class="TTRegular text-black" data-aos="fade-up"
+                               style="font-size: 18px;">{!! $content->locate8 !!}</p>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -235,7 +249,7 @@
     </div>
 
     <div
-        class="container-fluid pl-lg-5 pl-md-5 px-md-5 pt-lg-4 pt-md-4 pt-5 pb-lg-5 pb-md-5 pb-5 example-classname panel-screen"
+        class="container-fluid pl-lg-5 pl-md-5 px-md-5 example-classname panel-screen"
         id="gallery">
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-5">
