@@ -479,6 +479,10 @@
         transform: translateX(0%);
     }
 }
+.map {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
 .dot {
     width: 15px;
