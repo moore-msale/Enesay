@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="row align-items-center justify-content-start flex-nowrap">
-                            <div class="col-lg-5 col-md-2 col-3 pr-0 pr-lg-2 mt-lg-0 mt-md-5" data-aos="fade-up"><h1
+                            <div class="col-lg-5 col-md-2 col-3 pr-0 pr-lg-2 mt-lg-0 mt-md-5 d-none d-md-block" data-aos="fade-up"><h1
                                     style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #FFFFFF;">
                                     01</h1></div>
                             <div class="col-lg-7 col-md-2 col-3 pb-2 px-0 px-lg-0 mt-lg-0 mt-md-5 d-md-block d-none">
@@ -173,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 pt-lg-5 pt-3 mt-lg-5 mt-0 d-lg-block d-none" style="transform: translateX(15%);">
+            <div class="col-lg-2 pt-lg-5 pt-3 mt-lg-5 mt-0 d-md-block d-none" style="transform: translateX(15%);">
                 <div class="row align-items-center justify-content-between flex-nowrap">
                     <div class="col-5"><h1
                             style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #000;"
@@ -596,151 +596,151 @@
         </div>
     </div>
 
-    <div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5 pb-5 panel-screen" id="6">
-        <div class="row pt-lg-5">
-            <div class="col-lg-7 p-0">
-                <img class="img-fluid" data-aos="fade-up" src="{{asset('images/pic2.png')}}" alt="">
-            </div>
-            <div class="col-lg-5 p-0 transformblock d-lg-block d-md-none d-block">
-                <h3 class="TTExtraBold text-black pt-lg-2 pt-5 pl-lg-0 pl-4 text-first" data-aos="fade-up"
-                    style="font-size: 2.9em; line-height: 1.2em; text-transform: uppercase;">{{ $content->name5 }}</h3>
-                <div class="container-fluid">
-                    <div class="row pt-4 pl-lg-5">
-                        <div class="col-2 pl-0 d-lg-block d-none">
-                            <img class="img-fluid" style="height: 1%" data-aos="fade-up"
-                                 src="{{asset('images/line-black.png')}}" alt="">
-                        </div>
-                        <div class="col-lg-8 col-11 p-0">
-                            <p class="TTRegular text-black pt-2 pb-2 pl-lg-0 pl-4"
-                               style="font-size: 14px; line-height: 20px;"
-                               data-aos="fade-up">{{ $content->description5 }}</p>
-                            <div data-aos="fade-up">
-                                <button class="btn btn-pictures ml-lg-0 ml-4"><a href="/news">Читать все новости</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-11 ml-5 pl-5 pt-5 d-lg-none d-md-block d-none">
-                <h3 class="TTExtraBold text-black pt-2 pl-lg-0 pl-3 text-first" data-aos="fade-up"
-                    style="font-size: 2.9em; line-height: 1.2em; text-transform: uppercase;">{{ $content->name5 }}</h3>
-                <div class="container-fluid">
-                    <div class="row pt-4 pl-lg-5">
-                        <div class="col-2 pl-0">
-                            <img class="img-fluid" style="" data-aos="fade-up" src="{{asset('images/line-black.png')}}"
-                                 alt="">
-                        </div>
-                        <div class="col-8 p-0">
-                            <p class="TTRegular text-black pt-2 pb-2" style="font-size: 14px; line-height: 20px;"
-                               data-aos="fade-up">{{ $content->description5 }}</p>
-                            <div data-aos="fade-up">
-                                <button class="btn btn-pictures"><a href="/news">Читать все новости</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-4 pt-lg-5 pb-lg-5 pb-md-5">
-            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
-                <h5 class="TTBold text-black mb-0"
-                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>
-                <p class="TTRegular text-black pt-2"
-                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>
-                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                              src="{{asset('images/line-black.png')}}" alt=""></div>
-                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"
-                                                                                 style="font-size: 13px; line-height: 19px;">
-                                Читать полностью</h4></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
-                <h5 class="TTBold text-black mb-0"
-                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>
-                <p class="TTRegular text-black pt-2"
-                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>
-                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                              src="{{asset('images/line-black.png')}}" alt=""></div>
-                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"
-                                                                                 style="font-size: 13px; line-height: 19px;">
-                                Читать полностью</h4></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
-                <h5 class="TTBold text-black mb-0"
-                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>
-                <p class="TTRegular text-black pt-2"
-                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>
-                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                              src="{{asset('images/line-black.png')}}" alt=""></div>
-                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"
-                                                                                 style="font-size: 13px; line-height: 19px;">
-                                Читать полностью</h4></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
-                <h5 class="TTBold text-black mb-0"
-                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>
-                <p class="TTRegular text-black pt-2"
-                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>
-                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                              src="{{asset('images/line-black.png')}}" alt=""></div>
-                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"
-                                                                                 style="font-size: 13px; line-height: 19px;">
-                                Читать полностью</h4></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
-                <h5 class="TTBold text-black mb-0"
-                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>
-                <p class="TTRegular text-black pt-2"
-                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>
-                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                              src="{{asset('images/line-black.png')}}" alt=""></div>
-                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"
-                                                                                 style="font-size: 13px; line-height: 19px;">
-                                Читать полностью</h4></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5 pb-lg-0 pb-md-0 pb-5" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
-                <h5 class="TTBold text-black mb-0"
-                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>
-                <p class="TTRegular text-black pt-2"
-                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>
-                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"
-                                                              src="{{asset('images/line-black.png')}}" alt=""></div>
-                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"
-                                                                                 style="font-size: 13px; line-height: 19px;">
-                                Читать полностью</h4></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+{{--    <div class="container-fluid pt-lg-5 pt-md-0 pt-5 pb-lg-5 example-classname pb-md-5 pb-5 panel-screen" id="6">--}}
+{{--        <div class="row pt-lg-5">--}}
+{{--            <div class="col-lg-7 p-0">--}}
+{{--                <img class="img-fluid" data-aos="fade-up" src="{{asset('images/pic2.png')}}" alt="">--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-5 p-0 transformblock d-lg-block d-md-none d-block">--}}
+{{--                <h3 class="TTExtraBold text-black pt-lg-2 pt-5 pl-lg-0 pl-4 text-first" data-aos="fade-up"--}}
+{{--                    style="font-size: 2.9em; line-height: 1.2em; text-transform: uppercase;">{{ $content->name5 }}</h3>--}}
+{{--                <div class="container-fluid">--}}
+{{--                    <div class="row pt-4 pl-lg-5">--}}
+{{--                        <div class="col-2 pl-0 d-lg-block d-none">--}}
+{{--                            <img class="img-fluid" style="height: 1%" data-aos="fade-up"--}}
+{{--                                 src="{{asset('images/line-black.png')}}" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-8 col-11 p-0">--}}
+{{--                            <p class="TTRegular text-black pt-2 pb-2 pl-lg-0 pl-4"--}}
+{{--                               style="font-size: 14px; line-height: 20px;"--}}
+{{--                               data-aos="fade-up">{{ $content->description5 }}</p>--}}
+{{--                            <div data-aos="fade-up">--}}
+{{--                                <button class="btn btn-pictures ml-lg-0 ml-4"><a href="/news">Читать все новости</a>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-5 col-md-11 ml-5 pl-5 pt-5 d-lg-none d-md-block d-none">--}}
+{{--                <h3 class="TTExtraBold text-black pt-2 pl-lg-0 pl-3 text-first" data-aos="fade-up"--}}
+{{--                    style="font-size: 2.9em; line-height: 1.2em; text-transform: uppercase;">{{ $content->name5 }}</h3>--}}
+{{--                <div class="container-fluid">--}}
+{{--                    <div class="row pt-4 pl-lg-5">--}}
+{{--                        <div class="col-2 pl-0">--}}
+{{--                            <img class="img-fluid" style="" data-aos="fade-up" src="{{asset('images/line-black.png')}}"--}}
+{{--                                 alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="col-8 p-0">--}}
+{{--                            <p class="TTRegular text-black pt-2 pb-2" style="font-size: 14px; line-height: 20px;"--}}
+{{--                               data-aos="fade-up">{{ $content->description5 }}</p>--}}
+{{--                            <div data-aos="fade-up">--}}
+{{--                                <button class="btn btn-pictures"><a href="/news">Читать все новости</a></button>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row m-4 pt-lg-5 pb-lg-5 pb-md-5">--}}
+{{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">--}}
+{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>--}}
+{{--                <h5 class="TTBold text-black mb-0"--}}
+{{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
+{{--                <p class="TTRegular text-black pt-2"--}}
+{{--                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>--}}
+{{--                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"--}}
+{{--                                                              src="{{asset('images/line-black.png')}}" alt=""></div>--}}
+{{--                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"--}}
+{{--                                                                                 style="font-size: 13px; line-height: 19px;">--}}
+{{--                                Читать полностью</h4></div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="fade-up">--}}
+{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>--}}
+{{--                <h5 class="TTBold text-black mb-0"--}}
+{{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
+{{--                <p class="TTRegular text-black pt-2"--}}
+{{--                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>--}}
+{{--                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"--}}
+{{--                                                              src="{{asset('images/line-black.png')}}" alt=""></div>--}}
+{{--                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"--}}
+{{--                                                                                 style="font-size: 13px; line-height: 19px;">--}}
+{{--                                Читать полностью</h4></div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">--}}
+{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>--}}
+{{--                <h5 class="TTBold text-black mb-0"--}}
+{{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
+{{--                <p class="TTRegular text-black pt-2"--}}
+{{--                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>--}}
+{{--                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"--}}
+{{--                                                              src="{{asset('images/line-black.png')}}" alt=""></div>--}}
+{{--                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"--}}
+{{--                                                                                 style="font-size: 13px; line-height: 19px;">--}}
+{{--                                Читать полностью</h4></div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="fade-up">--}}
+{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>--}}
+{{--                <h5 class="TTBold text-black mb-0"--}}
+{{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
+{{--                <p class="TTRegular text-black pt-2"--}}
+{{--                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>--}}
+{{--                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"--}}
+{{--                                                              src="{{asset('images/line-black.png')}}" alt=""></div>--}}
+{{--                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"--}}
+{{--                                                                                 style="font-size: 13px; line-height: 19px;">--}}
+{{--                                Читать полностью</h4></div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">--}}
+{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>--}}
+{{--                <h5 class="TTBold text-black mb-0"--}}
+{{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
+{{--                <p class="TTRegular text-black pt-2"--}}
+{{--                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>--}}
+{{--                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"--}}
+{{--                                                              src="{{asset('images/line-black.png')}}" alt=""></div>--}}
+{{--                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"--}}
+{{--                                                                                 style="font-size: 13px; line-height: 19px;">--}}
+{{--                                Читать полностью</h4></div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5 pb-lg-0 pb-md-0 pb-5" data-aos="fade-up">--}}
+{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>--}}
+{{--                <h5 class="TTBold text-black mb-0"--}}
+{{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
+{{--                <p class="TTRegular text-black pt-2"--}}
+{{--                   style="font-size: 13px;line-height: 17px;"> {{ $news->description }} </p>--}}
+{{--                <a href="{{ asset('news_page/'.$news->id) }}" style="text-decoration: none;">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-3 col-2 pr-0"><img class="img-fluid" style="height: 100%; width: auto;"--}}
+{{--                                                              src="{{asset('images/line-black.png')}}" alt=""></div>--}}
+{{--                        <div class="col-lg-9 col-10 align-items-center pl-1"><h4 class="TTBold text-black mb-0"--}}
+{{--                                                                                 style="font-size: 13px; line-height: 19px;">--}}
+{{--                                Читать полностью</h4></div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 
 

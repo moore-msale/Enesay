@@ -49,9 +49,11 @@
                 </a>
             </div>
             <div class="col-auto my-auto ml-auto d-xl-none px-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <i class="fas fa-bars fa-lg"></i>
-                </button>
+                <div class="hamburger hamburger--collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
             </div>
             <div class="collapse navbar-collapse col-md-11 col-8 pt-md-4 pt-0 pb-md-4 pb-0"  id="navbarSupportedContent">
                 <nav class="ml-md-auto ml-0">
@@ -115,4 +117,17 @@
     </div>
 </div>
 
+@push('scripts')
+    <script>
+        $('.hamburger').click(e => {
+            let status = $('.hamburger').attr('aria-expanded');
+            if (status != 'true') {
+                $('.hamburger').addClass('is-active');
+            }
+            if (status != 'false') {
+                $('.hamburger').removeClass('is-active');
+            }
+        });
+    </script>
+@endpush
 
