@@ -144,6 +144,10 @@
     0% { box-shadow: 0 0 0 0 rgba(208, 160, 48, 0.56); }
     100% { box-shadow: 0 0 0 12px rgba(254, 206, 104, 0) }
 }
+@keyframes pulse_animation_hover {
+    0% { box-shadow: 0 0 0 0 rgba(184, 58, 63, 0.68); }
+    100% { box-shadow: 0 0 0 12px rgba(254, 206, 104, 0) }
+}
 
 .pulse-wrapper {
     display: flex;
@@ -164,6 +168,17 @@
     background: #fece68;
     transition: .3s;
     animation: pulse_animation 1.8s infinite;
+}
+.pulse-wrapper .pulse span.pulse-span-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(184, 58, 63, 0.66);
+    transition: .3s;
+    animation: pulse_animation_hover 1.8s infinite;
 }
 .pulse-hover {
     transform: scale(1.8);

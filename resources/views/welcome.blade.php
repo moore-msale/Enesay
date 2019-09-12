@@ -318,7 +318,7 @@
                 </div>
                 <div class="col-lg-6 col-12 order-0 order-lg-2 px-0 position-relative" style="z-index: 2;">
                     <img class="img-fluid" id="planImage" style="" src="{{asset('storage/'.$plan->image)}}" alt="">
-                    <div class="backzone d-none d-md-block"></div>
+                    <div class="backzone"></div>
                     {{--<div class="anim1 pulse-wrapper">--}}
                     {{--<div id="pulse">--}}
                     {{--<span data-id="10" class="dot tooltipster-tooltip" data-tooltip-content="#tooltip_content"></span> <!-- Wave 1 -->--}}
@@ -826,12 +826,12 @@
                 let card = $($(e.currentTarget));
                 let id = card.data('id');
                 $('.' + id).toggleClass('point-border');
-                $('div.dot[data-id="' + id + '"]').toggleClass('d-none');
+                $('div.dot[data-id="' + id + '"]').find('span').toggleClass('pulse-span-hover');
             }, e => {
                 let card = $($(e.currentTarget));
                 let id = card.data('id');
                 $('.' + id).toggleClass('point-border');
-                $('div.dot[data-id="' + id + '"]').toggleClass('d-none');
+                $('div.dot[data-id="' + id + '"]').find('span').toggleClass('pulse-span-hover');
             });
 
             $('.build').click(e => {
@@ -940,7 +940,7 @@
                             console.log(height);
                             console.log(naturalHeight);
                             for (let item of data) {
-                                let dot = $('<div class="dot pulse-wrapper d-none" data-id=' + item.build.id + ' style=top:' + parseInt(ratio * item.top) + 'px;left:' + parseInt(ratio * item.left) + 'px;width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;>' +
+                                let dot = $('<div class="dot pulse-wrapper" data-id=' + item.build.id + ' style=top:' + parseInt(ratio * item.top) + 'px;left:' + parseInt(ratio * item.left) + 'px;width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;>' +
                                     '<div class="pulse">' +
                                     '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
                                     '<span style=width:' + parseInt(ratio * 15) + 'px;height:' + parseInt(ratio * 15) + 'px;></span>' +
