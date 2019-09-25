@@ -15,29 +15,29 @@
 }
 
 @font-face {
-    font-family: "TTNormsBold";
-    src: local('TTNormsBold'), local('TTNormsBold'),
-    url('/fonts/TTNormsBold.ttf') format('truetype');
+    font-family: 'TTNormsBold';
+    src: local('Lato-Bold'), local('Lato-Bold'),
+    url('/fonts/Lato-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: "TTNormsExtraBold";
-    src: local('TTNormsExtraBold'), local('TTNormsExtraBold'),
-    url('/fonts/TTNormsExtraBold.ttf') format('truetype');
+    src: local('Lato-Black'), local('Lato-Black'),
+    url('/fonts/Lato-Black.ttf') format('truetype');
 }
 @font-face {
     font-family: "TTNormsLight";
-    src: local('TTNormsLight'), local('TTNormsLight'),
-    url('/fonts/TTNormsLight.ttf') format('truetype');
+    src: local('Lato-Light'), local('Lato-Light'),
+    url('/fonts/Lato-Light.ttf') format('truetype');
 }
 @font-face {
     font-family: "TTNormsMedium";
-    src: local('TTNormsMedium'), local('TTNormsMedium'),
-    url('/fonts/TTNormsMedium.ttf') format('truetype');
+    src: local('Lato-Medium'), local('Lato-Medium'),
+    url('/fonts/Lato-Medium.ttf') format('truetype');
 }
 @font-face {
     font-family: "TTNormsRegular";
-    src: local('TTNormsRegular'), local('TTNormsRegular'),
-    url('/fonts/TTNormsRegular.ttf') format('truetype');
+    src: local('Lato-Regular'), local('Lato-Regular'),
+    url('/fonts/Lato-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: "RobotoCondensed";

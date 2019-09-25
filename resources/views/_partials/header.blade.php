@@ -11,7 +11,7 @@
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a href="/#plan" class="TTLight menu-point" style="font-size: 14px; color:#fefefe;">Смотреть генеральный план</a>
+                            <a href="/#plan" class="TTLight menu-point" style="font-size: 14px; color:#fefefe;">{{__('main.genplan') }}</a>
                         </li>
                         @if($content->tel1)
                             <li class="nav-item p-3">
@@ -29,7 +29,12 @@
                             </li>
                         @endif
                         <li class="nav-item px-3 py-1 mx-5 button noselect menu-point pointer" data-toggle="modal" data-target="#callModal">
-                            <a href="#" class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">Заказать звонок</a>
+                            <a href="#" class="TTlight menu-point" style="color:#fefefe; text-decoration: none;font-size: 12px; text-transform: uppercase;">{{__('main.call') }}</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="TTlight menu-point"  style="font-size: 14px; color:#fefefe;" href="{{ route('set.language', App::isLocale('kg') ? 'ru' : 'kg') }}" id="">
+                                {{ strtoupper(App::isLocale('kg') ? 'ru' : 'kg') }}
+                            </a>
                         </li>
                         <li class="nav-item p-3">
                             <img class="w-75 menu-burger" src="{{ asset('images/hamburger.svg') }}" alt="">
@@ -59,16 +64,16 @@
                 <nav class="ml-md-auto ml-0">
                     <ul class="navbar-nav">
                         <li class="nav-item p-2">
-                            <a href="/" class="text-dark text-fut-bold" style="text-decoration: none;">Главная</a>
+                            <a href="/" class="text-dark text-fut-bold" style="text-decoration: none;">{{__('main.main') }}</a>
                         </li>
                         <li class="nav-item p-2 ">
-                            <a href="/about_us" class="text-dark text-fut-bold" style="text-decoration: none;">О нас</a>
+                            <a href="/about_us" class="text-dark text-fut-bold" style="text-decoration: none;">{{__('main.about_us') }}</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a href="/gallery" class="text-dark text-fut-bold" style="text-decoration: none;">Галерея</a>
+                            <a href="/gallery" class="text-dark text-fut-bold" style="text-decoration: none;">{{__('main.gallery') }}</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a href="/news" class="text-dark text-fut-bold" style="text-decoration: none;">Новости</a>
+                            <a href="/news" class="text-dark text-fut-bold" style="text-decoration: none;">{{__('main.news') }}</a>
                         </li>
                         @if($content->tel1)
                             <li class="nav-item p-2">
@@ -119,10 +124,10 @@
     </div>
 </nav>
 <div id="mySidenav" class="sidenav d-md-block d-none">
-    <a class="sf-medium pl-5" href="/">  Главная</a>
-    <a class="sf-medium pl-5" href="/about_us"> О нас</a>
-    <a class="sf-medium pl-5" href="/gallery"> Галерея</a>
-    <a class="sf-medium pl-5" href="/news">Новости</a>
+    <a class="sf-medium pl-5" href="/">{{__('main.main') }}</a>
+    <a class="sf-medium pl-5" href="/about_us"> {{__('main.about_us') }}</a>
+    <a class="sf-medium pl-5" href="/gallery"> {{__('main.gallery') }}</a>
+    <a class="sf-medium pl-5" href="/news">{{__('main.news') }}</a>
     @if($content->tel1)
         <a class="sf-medium pl-5" href="tel:{{ $content->tel1 }}">{{ $content->tel1 }}</a>
     @endif

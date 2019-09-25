@@ -129,7 +129,7 @@
                                       placeholder="Сообщение*" required></textarea>
                     </div>
                     <div class="form-group">
-                        <a id="ajax-message" class="btn" href="#">Отправить</a>
+                        <a id="ajax-message" class="btn text-white" href="#">Отправить</a>
                     </div>
                 </form>
             </div>

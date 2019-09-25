@@ -37,7 +37,7 @@
                             <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                             <p class="TTLight"
                                style="color: #ffffff;margin-top: 5%;">
-                                Смотреть видео</p>
+                                {{__('main.video') }}</p>
                         </a>
                     </div>
                     <div class="col-lg-3">
@@ -54,7 +54,7 @@
                                     <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                                     <p class="TTLight"
                                        style="color: #ffffff;margin-top: 5%;">
-                                        Смотреть видео</p>
+                                        {{__('main.video') }}</p>
                                 </a>
                             </div>
                         </div>
@@ -62,10 +62,13 @@
                     <div class="col-lg-9 col-md-10 col-11" data-aos="fade-up">
                         <h1 class="TTBold text-first"
                             style="font-size: 2.5em; line-height: 1.3em;color: #fff; text-transform: uppercase;"
-                            data-aos="fade-up">{{ $content->name1 }}</h1>
+                            data-aos="fade-up">
+
+                            {{App::isLocale('ru') ? $content->name1 : $content->name1_kg  }}
+                        </h1>
                         <p class="pr-lg-5 mr-lg-5 TTLight pt-lg-0 pt-md-5 pt-3 pb-lg-0 pb-md-5 pb-3" data-aos="fade-up"
-                           style="font-size: 15px;line-height: 21px;color: #fff;">{{ $content->description1 }}</p>
-                        <button class="btn btn-main-block mb-md-0 mb-5"><a href="/about_us">Подробнее</a></button>
+                           style="font-size: 15px;line-height: 21px;color: #fff;">{{App::isLocale('ru') ? $content->description1 : $content->description1_kg  }}</p>
+                        <button class="btn btn-main-block mb-md-0 mb-5"><a href="/about_us">{{__('main.more') }}</a></button>
                     </div>
                 </div>
             </div>
@@ -75,8 +78,7 @@
                 <a data-fancybox="gallery2" href="{{ asset( $content->video_ur ) }}">
                     <img class="w-25" src="{{asset('images/play-btn.png')}}" alt="">
                     <p class="TTLight"
-                       style="color: #ffffff;margin-top: 5%;">Смотреть
-                        видео</p>
+                       style="color: #ffffff;margin-top: 5%;">{{__('main.video') }}</p>
                 </a>
             </div>
             <div class="col-lg-1" id="menu">
@@ -86,12 +88,11 @@
         </div>
         <div class="d-lg-block d-none" id="pick"
              style="transform: rotate(90deg);position: absolute;top: 55%;right: -10.2%; z-index: 3;" data-aos="fade-up">
-            <a href="#1" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">Главная</a>
-            <a href="#2" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">О
-                проекте</a>
-            <a href="#4" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">Расположение</a>
+            <a href="#1" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">{{__('main.main') }}</a>
+            <a href="#2" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">{{__('main.project') }}</a>
+            <a href="#4" class="text-white px-2 TTLight" style="text-transform: uppercase; font-size: 14px;">{{__('main.location') }}</a>
             <a href="#7" class="text-white px-2 TTLight"
-               style="text-transform: uppercase; font-size: 14px;">Контакты</a>
+               style="text-transform: uppercase; font-size: 14px;">{{__('main.contact') }}</a>
         </div>
 
         <div class="mt-5 align-items-center d-md-block d-none position-relative" style="z-index: 2;">
@@ -101,16 +102,16 @@
                         <div class="row">
                             <div class="col-8">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
-                                    Связаться с отделом продаж</h3>
+                                    {{__('main.connect_sale') }}</h3>
                                 <p class="TTLight text-white"
-                                   style="font-size: 15px; line-height: 21px;">{{ $content->call_text }}</p>
+                                   style="font-size: 15px; line-height: 21px;">{{App::isLocale('ru') ? $content->call_text : $content->call_text_kg  }}</p>
                                 <div class="row align-items-center">
                                     <div class="col-2 pr-0">
                                         <hr class="border-white">
                                     </div>
                                     <div class="col-10 align-items-center"><h4 class="TTMedium text-white mb-0"
                                                                                style="font-size: 15px; line-height: 21px;">
-                                            Связаться</h4></div>
+                                            {{__('main.connect') }}</h4></div>
                                 </div>
                             </div>
                         </div>
@@ -119,9 +120,9 @@
                         <div class="row">
                             <div class="col-6">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
-                                    Смотреть генеральный план</h3>
+                                    {{__('main.show_plan') }}</h3>
                                 <p class="TTLight text-white"
-                                   style="font-size: 15px; line-height: 21px;">{{ $content->gen_text }}</p>
+                                   style="font-size: 15px; line-height: 21px;">{{App::isLocale('ru') ? $content->gen_text : $content->gen_text_kg  }}</p>
                                 <div class="row align-items-center" id="pick"
                                      style="position: absolute; bottom:-10%; width:350px;">
                                     <div class="col-2 pr-0">
@@ -130,15 +131,15 @@
                                     <a href="#4">
                                         <div class="col-10 align-items-center"><h4 class="TTMedium text-white mb-0"
                                                                                    style="font-size: 15px; line-height: 21px;">
-                                                Смотреть</h4></div>
+                                                {{__('main.show') }}</h4></div>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
-                                    Связаться с отделом продаж</h3>
+                                    {{__('main.connect_sale') }}</h3>
                                 <p class="TTLight text-white"
-                                   style="font-size: 15px; line-height: 21px;">{{ $content->call_text }}</p>
+                                   style="font-size: 15px; line-height: 21px;">{{App::isLocale('ru') ? $content->call_text : $content->call_text_kg  }}</p>
                                 <div class="row align-items-center"
                                      style="position: absolute; bottom:-10%; width:350px;">
                                     <div class="col-2 pr-0">
@@ -147,7 +148,7 @@
                                     <a href="#" class="col-10 align-items-center noselect" data-toggle="modal"
                                        data-target="#callModal"><h4 class="TTMedium text-white mb-0"
                                                                     style="font-size: 15px; line-height: 21px;">
-                                            Связаться</h4></a>
+                                            {{__('main.connect') }}</h4></a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +159,7 @@
                         <div class="row align-items-center">
                             <div class="col-6 pl-5 align-items-center"><h4 class="TTLight text-white mb-0"
                                                                            style="font-size: 15px; line-height: 21px;letter-spacing: 0.2em;">
-                                    Листайте вниз</h4></div>
+                                    {{__('main.slide') }}</h4></div>
                             <div class="col-6 pl-0"><img class="img-fluid" style="height: 100%; width: auto;"
                                                          src="{{asset('images/line.png')}}" alt=""></div>
                         </div>
@@ -176,7 +177,7 @@
                     <div class="module-border-wrap">
                         <div class="module">
                             <h3 class="TTBold text-black text-second"
-                                style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">{{ $content->block2 }}</h3>
+                                style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;">{{App::isLocale('ru') ? $content->block2 : $content->block2_kg  }}</h3>
                         </div>
                     </div>
                 </div>
@@ -195,9 +196,9 @@
                     проекте</h5>
                 <h3 class="TTBold text-black pt-2 text-second"
                     style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;"
-                    data-aos="fade-up">{{ $content->name2 }}</h3>
+                    data-aos="fade-up">{{App::isLocale('ru') ? $content->name2 : $content->name2_kg  }}</h3>
                 <p class="TTRegular text-black pt-md-2 pt-2 pb-md-2 pb-2" style="font-size: 14px; line-height: 20px;"
-                   data-aos="fade-up">{{ $content->description2 }}</p>
+                   data-aos="fade-up">{{App::isLocale('ru') ? $content->description2 : $content->description2_kg  }}</p>
                 <div data-aos="fade-up">
                     <button class="btn btn-main-block"><a href="/about_us">Подробнее</a></button>
                 </div>
@@ -207,48 +208,29 @@
                             <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img2)}}"
                                  alt="">
                             <p class="TTRegular text-black" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate2 !!}</p>
+                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate2 : $content->locate2_kg  }}</p>
                         @endif
 
                         @if($content->locate3)
                             <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
                                  src="{{asset('storage/'.$content->locate_img3)}}" alt="">
                             <p class="TTRegular text-black pt-3" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate3 !!}</p>
+                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate3 : $content->locate3_kg  }}</p>
                         @endif
-                        @if($content->locate7)
-                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img7)}}"
-                                 alt="">
-                            <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate7 !!}</p>
-                        @endif
+
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
                         @if($content->locate4)
                             <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}"
                                  alt="">
                             <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate4 !!}</p>
+                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate4 : $content->locate4_kg  }}</p>
                         @endif
-
                         @if($content->locate5)
-                            <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
-                                 src="{{asset('storage/'.$content->locate_img5)}}" alt="">
-                            <p class="TTRegular text-black" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate5 !!}</p>
-                        @endif
-                        @if($content->locate6)
-                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img6)}}"
+                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img5)}}"
                                  alt="">
                             <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate6 !!}</p>
-                        @endif
-
-                        @if($content->locate8)
-                            <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up"
-                                 src="{{asset('storage/'.$content->locate_img8)}}" alt="">
-                            <p class="TTRegular text-black" data-aos="fade-up"
-                               style="font-size: 18px;">{!! $content->locate8 !!}</p>
+                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate5 : $content->locate5_kg  }}</p>
                         @endif
                     </div>
                 </div>
@@ -265,7 +247,7 @@
                     Галерея</h5>
                 <h3 class="TTBold text-black pt-2"
                     style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;"
-                    data-aos="fade-up">{{ $content->name3 }}</h3>
+                    data-aos="fade-up">{{App::isLocale('ru') ? $content->name3 : $content->name3_kg  }}</h3>
 
                 <div class="row pt-4">
                     <div class="col-lg-3 col-md-2 d-md-block d-none">
@@ -274,7 +256,7 @@
                     </div>
                     <div class="col-lg-7 col-md-6">
                         <p class="TTRegular text-black pt-2 pb-2" data-aos="fade-up"
-                           style="font-size: 14px; line-height: 20px;">{{ $content->description3 }}</p>
+                           style="font-size: 14px; line-height: 20px;">{{App::isLocale('ru') ? $content->description3 : $content->description3_kg  }}</p>
                         <div data-aos="fade-up">
                             <button class="btn btn-pictures"><a href="/gallery">Смотреть все фото</a></button>
                         </div>
@@ -336,7 +318,7 @@
                             <div data-id="{{ $build->id }}" data-images="{{ count($build->images) ? 'true' : 'false' }}"
                                  class="col-md-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
                                  data-tooltip-content="#tooltip_content">
-                                <h3 class="robotobold"
+                                <h3 class="TTBold"
                                     style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
                                 <div class="descr pl-lg-3 pl-3">
                                     <h5 class="TTBold text-white"
@@ -401,7 +383,7 @@
                 <div class="row pl-lg-0 pl-4">
 
                     {{--                <div data-id="11" class="col-lg-2 col-12 d-flex 11 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
-                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">02</h3>--}}
+                    {{--                    <h3 class="TTBold" style="color: #C6972A; font-size: 2em;line-height: 31px;">02</h3>--}}
                     {{--                    <div class="descr pl-lg-3 pl-3">--}}
                     {{--                        <h5 class="TTBold text-white"--}}
                     {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name2 }}</h5>--}}
@@ -410,7 +392,7 @@
                     {{--                    </div>--}}
                     {{--                </div>--}}
                     {{--                <div data-id="12" class="col-lg-2 col-12 d-flex 12 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
-                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">03</h3>--}}
+                    {{--                    <h3 class="TTBold" style="color: #C6972A; font-size: 2em;line-height: 31px;">03</h3>--}}
                     {{--                    <div class="descr pl-lg-3 pl-3">--}}
                     {{--                        <h5 class="TTBold text-white"--}}
                     {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name3 }}</h5>--}}
@@ -419,7 +401,7 @@
                     {{--                    </div>--}}
                     {{--                </div>--}}
                     {{--                <div data-id="13" class="col-lg-2 col-12 d-flex 13 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
-                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">04</h3>--}}
+                    {{--                    <h3 class="TTBold" style="color: #C6972A; font-size: 2em;line-height: 31px;">04</h3>--}}
                     {{--                    <div class="descr pl-lg-3 pl-3">--}}
                     {{--                        <h5 class="TTBold text-white"--}}
                     {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name4 }}</h5>--}}
@@ -428,7 +410,7 @@
                     {{--                    </div>--}}
                     {{--                </div>--}}
                     {{--                <div data-id="14" class="col-lg-2 col-12 d-flex 14 build pt-3 tooltipster-tooltip" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
-                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">05</h3>--}}
+                    {{--                    <h3 class="TTBold" style="color: #C6972A; font-size: 2em;line-height: 31px;">05</h3>--}}
                     {{--                    <div class="descr pl-lg-3 pl-3">--}}
                     {{--                        <h5 class="TTBold text-white"--}}
                     {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name5 }}</h5>--}}
@@ -437,7 +419,7 @@
                     {{--                    </div>--}}
                     {{--                </div>--}}
                     {{--                <div data-id="15" class="col-lg-2 col-12 d-flex 15 build pt-3 tooltipster-tooltip pb-4" data-tooltip-content="#tooltip_content" data-aos="fade-up">--}}
-                    {{--                    <h3 class="robotobold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>--}}
+                    {{--                    <h3 class="TTBold" style="color: #C6972A; font-size: 2em;line-height: 31px;">06</h3>--}}
                     {{--                    <div class="descr pl-lg-3 pl-3">--}}
                     {{--                        <h5 class="TTBold text-white"--}}
                     {{--                            style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $content->build_name6 }}</h5>--}}
@@ -453,7 +435,7 @@
                         <div data-id="{{ $build->id }}"
                              class="col-lg-6 col-12 d-flex {{ $build->id }} build pt-3 {{--tooltipster-tooltip--}} mb-3"
                              data-tooltip-content="#tooltip_content" data-aos="fade-up">
-                            <h3 class="robotobold"
+                            <h3 class="TTBold"
                                 style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
                             <div class="descr pl-lg-3 pl-3">
                                 <h5 class="TTBold text-white"
@@ -466,7 +448,7 @@
                     {{--                <div class="col-4">--}}
                     {{--                    <div class="row">--}}
                     {{--                        <div class="col-12 d-flex 10 pt-3" data-aos="fade-up">--}}
-                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                            <h3 class="TTBold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
                     {{--                                01</h3>--}}
                     {{--                            <div class="descr pl-lg-3">--}}
                     {{--                                <h5 class="TTBold text-white"--}}
@@ -476,7 +458,7 @@
                     {{--                            </div>--}}
                     {{--                        </div>--}}
                     {{--                        <div class="col-12 d-flex 11 pt-3" data-aos="fade-up">--}}
-                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                            <h3 class="TTBold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
                     {{--                                03</h3>--}}
                     {{--                            <div class="descr pl-lg-3">--}}
                     {{--                                <h5 class="TTBold text-white"--}}
@@ -486,7 +468,7 @@
                     {{--                            </div>--}}
                     {{--                        </div>--}}
                     {{--                        <div class="col-12 d-flex 12 pt-3" data-aos="fade-up">--}}
-                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                            <h3 class="TTBold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
                     {{--                                05</h3>--}}
                     {{--                            <div class="descr pl-lg-3">--}}
                     {{--                                <h5 class="TTBold text-white"--}}
@@ -500,7 +482,7 @@
                     {{--                <div class="col-4">--}}
                     {{--                    <div class="row">--}}
                     {{--                        <div class="col-12 d-flex 10 pt-3" data-aos="fade-up">--}}
-                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                            <h3 class="TTBold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
                     {{--                                02</h3>--}}
                     {{--                            <div class="descr pl-lg-3">--}}
                     {{--                                <h5 class="TTBold text-white"--}}
@@ -510,7 +492,7 @@
                     {{--                            </div>--}}
                     {{--                        </div>--}}
                     {{--                        <div class="col-12 d-flex 11 pt-3" data-aos="fade-up">--}}
-                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                            <h3 class="TTBold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
                     {{--                                04</h3>--}}
                     {{--                            <div class="descr pl-lg-3">--}}
                     {{--                                <h5 class="TTBold text-white"--}}
@@ -520,7 +502,7 @@
                     {{--                            </div>--}}
                     {{--                        </div>--}}
                     {{--                        <div class="col-12 d-flex 12 pt-3" data-aos="fade-up">--}}
-                    {{--                            <h3 class="robotobold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
+                    {{--                            <h3 class="TTBold pr-2" style="color: #C6972A; font-size: 2em;line-height: 31px;">--}}
                     {{--                                06</h3>--}}
                     {{--                            <div class="descr pl-lg-3">--}}
                     {{--                                <h5 class="TTBold text-white"--}}
@@ -542,10 +524,10 @@
             <div class="col-lg-6 col-md-10 pr-lg-5">
                 <h3 class="TTBold text-black pt-2 pb-lg-4 pt-lg-5 text-second"
                     style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;"
-                    data-aos="fade-up">{{ $content->name4 }}</h3>
+                    data-aos="fade-up">{{App::isLocale('ru') ? $content->name4 : $content->name4_kg  }}</h3>
                 <div class="col-lg-9 pt-lg-0 pt-md-5 px-0">
                     <p class="TTLight text-black pb-lg-3 pb-md-3 pb-1" style="font-size: 17px; line-height: 25px;"
-                       data-aos="fade-up">{{ $content->description4 }}</p>
+                       data-aos="fade-up">{{App::isLocale('ru') ? $content->description4 : $content->description4_kg  }}</p>
                     <form>
                         <div class="form-group d-flex col-lg-12 col-12 px-0">
                             <input class="form-control" type="text" data-aos="fade-up"
@@ -588,46 +570,46 @@
         </div>
         <div class="row mt-lg-5 pt-lg-5 pt-md-5 pt-5 text-md-left text-center">
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
+                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title1 }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 16px;line-height: 17px;">{{ $content->advant1 }}</p>
+                   style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant1 : $content->advant1_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
+                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title2 }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 16px;line-height: 17px;">{{ $content->advant2 }}</p>
+                   style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant2 : $content->advant2_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
+                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title3 }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 16px;line-height: 17px;">{{ $content->advant3 }}</p>
+                   style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant3 : $content->advant3_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
+                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title4 }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 16px;line-height: 17px;">{{ $content->advant4 }}</p>
+                   style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant4 : $content->advant4_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
+                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title5 }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 16px;line-height: 17px;">{{ $content->advant5 }}</p>
+                   style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant5 : $content->advant5_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
-                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
+                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
                     {{ $content->advant_title6 }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
-                   style="font-size: 16px;line-height: 17px;">{{ $content->advant6 }}</p>
+                   style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant6 : $content->advant6_kg  }}</p>
             </div>
         </div>
     </div>
@@ -680,7 +662,7 @@
 {{--        </div>--}}
 {{--        <div class="row m-4 pt-lg-5 pb-lg-5 pb-md-5">--}}
 {{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">--}}
-{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>--}}
+{{--                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>--}}
 {{--                <h5 class="TTBold text-black mb-0"--}}
 {{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
 {{--                <p class="TTRegular text-black pt-2"--}}
@@ -696,7 +678,7 @@
 {{--                </a>--}}
 {{--            </div>--}}
 {{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="fade-up">--}}
-{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>--}}
+{{--                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>--}}
 {{--                <h5 class="TTBold text-black mb-0"--}}
 {{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
 {{--                <p class="TTRegular text-black pt-2"--}}
@@ -712,7 +694,7 @@
 {{--                </a>--}}
 {{--            </div>--}}
 {{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">--}}
-{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>--}}
+{{--                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>--}}
 {{--                <h5 class="TTBold text-black mb-0"--}}
 {{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
 {{--                <p class="TTRegular text-black pt-2"--}}
@@ -728,7 +710,7 @@
 {{--                </a>--}}
 {{--            </div>--}}
 {{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5" data-aos="fade-up">--}}
-{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>--}}
+{{--                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>--}}
 {{--                <h5 class="TTBold text-black mb-0"--}}
 {{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
 {{--                <p class="TTRegular text-black pt-2"--}}
@@ -744,7 +726,7 @@
 {{--                </a>--}}
 {{--            </div>--}}
 {{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">--}}
-{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>--}}
+{{--                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>--}}
 {{--                <h5 class="TTBold text-black mb-0"--}}
 {{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
 {{--                <p class="TTRegular text-black pt-2"--}}
@@ -760,7 +742,7 @@
 {{--                </a>--}}
 {{--            </div>--}}
 {{--            <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4 pl-lg-3 pl-md-5 pb-lg-0 pb-md-0 pb-5" data-aos="fade-up">--}}
-{{--                <h3 class="robotobold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>--}}
+{{--                <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>--}}
 {{--                <h5 class="TTBold text-black mb-0"--}}
 {{--                    style="font-size: 1em;line-height: 20px; text-transform: uppercase;">{{ $news->name }}</h5>--}}
 {{--                <p class="TTRegular text-black pt-2"--}}

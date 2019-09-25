@@ -44,7 +44,7 @@ Route::get('/news', function () {
 //Route::get('/news_page', function () {
 //    return view('news_page');
 //});
-
+Route::get('/set-language/{lang}', 'LanguagesController@set')->name('set.language');
 Route::get('/news_page/{id}', 'NewsController@show')->name('news_page');
 
 
