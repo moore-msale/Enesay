@@ -6,14 +6,30 @@
     <?php
     $agent = New \Jenssegers\Agent\Agent();
     ?>
-    <a href="tel: +996705880575" class="d-xl-block d-lg-none d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone fa-3x"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-xl-block d-lg-none d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-3x"></i></a>
-    <a href="tel: +996705880575" class="d-xl-none d-md-block d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone fa-2x"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-xl-none d-md-block d-none position-fixed px-5 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-2x"></i></a>
-    <a href="tel: +996705880575" class="d-sm-none d-block position-fixed px-4 py-3 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone fa-lg"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-sm-none d-block position-fixed px-4 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-lg"></i></a>
-    <a href="tel: +996705880575" class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-left"><i class="fa text-white fa-phone fa-2x"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=996705880575" class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-right"><i class="fab text-white fa-whatsapp fa-2x"></i></a>
+    <a href="tel: +996705880575"
+       class="d-xl-block d-lg-none d-none position-fixed pl-5 pr-4 py-3 bg-success text-white btn-call btn-left"><i
+            class="fa text-white fa-phone fa-2x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575"
+       class="d-xl-block d-lg-none d-none position-fixed pr-5 pl-4 py-3 bg-success text-white btn-call btn-right"><i
+            class="fab text-white fa-whatsapp fa-2x"></i></a>
+    <a href="tel: +996705880575"
+       class="d-xl-none d-md-block d-none position-fixed pl-5 pr-4 py-3 bg-success text-white btn-call btn-left"><i
+            class="fa text-white fa-phone fa-2x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575"
+       class="d-xl-none d-md-block d-none position-fixed pr-5 pl-4 py-3 bg-success text-white btn-call btn-right"><i
+            class="fab text-white fa-whatsapp fa-2x"></i></a>
+    <a href="tel: +996705880575"
+       class="d-sm-none d-block position-fixed pl-4 pr-4 py-3 bg-success text-white btn-call btn-left"><i
+            class="fa text-white fa-phone fa-lg"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575"
+       class="d-sm-none d-block position-fixed pr-4 pl-4 py-3 bg-success text-white btn-call btn-right"><i
+            class="fab text-white fa-whatsapp fa-lg"></i></a>
+    <a href="tel: +996705880575"
+       class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-left"><i
+            class="fa text-white fa-phone fa-2x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=996705880575"
+       class="d-md-none d-sm-block d-none position-fixed px-4 py-3 bg-success text-white btn-call btn-right"><i
+            class="fab text-white fa-whatsapp fa-2x"></i></a>
     <div class="container-fluid align-items-center pt-lg-5 pt-md-5 pt-1 video-container example-classname panel-screen"
          id="1"
          style="background-image: url({{ asset('images/bg1.png') }});">
@@ -42,7 +58,8 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="row align-items-center justify-content-start flex-nowrap">
-                            <div class="col-lg-5 col-md-2 col-3 pr-0 pr-lg-2 mt-lg-0 mt-md-5 d-none d-md-block" data-aos="fade-up"><h1
+                            <div class="col-lg-5 col-md-2 col-3 pr-0 pr-lg-2 mt-lg-0 mt-md-5 d-none d-md-block"
+                                 data-aos="fade-up"><h1
                                     style="font-family: RobotoBold; font-size: 3.1em; line-height: 1.3em;text-transform: uppercase;color: #FFFFFF;">
                                     01</h1></div>
                             <div class="col-lg-7 col-md-2 col-3 pb-2 px-0 px-lg-0 mt-lg-0 mt-md-5 d-md-block d-none">
@@ -205,7 +222,8 @@
                 <div class="row pt-md-5 pt-3 mt-lg-0 mt-md-5 mt-2 mb-lg-0 mb-md-5 mb-5">
                     <div class="col-lg-6 col-md-6 text-center">
                         @if($content->locate2)
-                            <img class="img-fluid w-50" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img2)}}"
+                            <img class="img-fluid w-50" data-aos="fade-up"
+                                 src="{{asset('storage/'.$content->locate_img2)}}"
                                  alt="">
                             <p class="TTRegular text-black" data-aos="fade-up"
                                style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate2 : $content->locate2_kg  }}</p>
@@ -221,11 +239,13 @@
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
                         @if($content->locate4)
-                            <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img4)}}"
+                            <img class="img-fluid w-25" data-aos="fade-up"
+                                 src="{{asset('storage/'.$content->locate_img4)}}"
                                  alt="">
                             <p class="TTRegular text-black pt-2" data-aos="fade-up"
                                style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate4 : $content->locate4_kg  }}</p>
                         @endif
+
                         @if($content->locate5)
                             <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img5)}}"
                                  alt="">
@@ -533,7 +553,8 @@
                             <input class="form-control" type="text" data-aos="fade-up"
                                    placeholder="Введите номер телефона">
                             <button type="submit" class="btn-submit" style="border: 0; background: transparent;">
-                                <img style="width: 30px; height: auto; transform: translate(-10px, 8px);" src="{{asset('images/arrow.svg')}}" alt="">
+                                <img style="width: 30px; height: auto; transform: translate(-10px, 8px);"
+                                     src="{{asset('images/arrow.svg')}}" alt="">
                             </button>
                         </div>
                     </form>
