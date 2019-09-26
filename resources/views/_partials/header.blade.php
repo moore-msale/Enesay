@@ -53,7 +53,13 @@
                     <img class="w-100" src="{{asset('images/logo.png')}}" alt="">
                 </a>
             </div>
+
             <div class="col-auto my-auto ml-auto d-xl-none px-0">
+                <span class="nav-item p-0">
+                                    <a class="TTlight text-dark font-weight-bold"  style="font-size: 14px; color:#fefefe;" href="{{ route('set.language', App::isLocale('kg') ? 'ru' : 'kg') }}" id="">
+                                        {{ strtoupper(App::isLocale('kg') ? 'ru' : 'kg') }}
+                                    </a>
+                                </span>
                 <div class="hamburger hamburger--collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
