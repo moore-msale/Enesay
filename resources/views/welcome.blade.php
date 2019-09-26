@@ -209,15 +209,14 @@
                 </div>
             </div>
             <div class="col-lg-5 col-md-11 pl-md-5 pl-3 pt-lg-5 mt-lg-5 pt-2 mt-5">
-                <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">О
-                    проекте</h5>
+                <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">{{__('main.project') }}</h5>
                 <h3 class="TTBold text-black pt-2 text-second"
                     style="font-size: 1.7em; line-height: 1.2em; text-transform: uppercase;"
                     data-aos="fade-up">{{App::isLocale('ru') ? $content->name2 : $content->name2_kg  }}</h3>
                 <p class="TTRegular text-black pt-md-2 pt-2 pb-md-2 pb-2" style="font-size: 14px; line-height: 20px;"
                    data-aos="fade-up">{{App::isLocale('ru') ? $content->description2 : $content->description2_kg  }}</p>
                 <div data-aos="fade-up">
-                    <button class="btn btn-main-block"><a href="/about_us">Подробнее</a></button>
+                    <button class="btn btn-main-block"><a href="/about_us">{{__('main.more') }}</a></button>
                 </div>
                 <div class="row pt-md-5 pt-3 mt-lg-0 mt-md-5 mt-2 mb-lg-0 mb-md-5 mb-5">
                     <div class="col-lg-6 col-md-6 text-center">
@@ -226,16 +225,27 @@
                                  src="{{asset('storage/'.$content->locate_img2)}}"
                                  alt="">
                             <p class="TTRegular text-black" data-aos="fade-up"
-                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate2 : $content->locate2_kg  }}</p>
+                               style="font-size: 18px;">{!!App::isLocale('ru') ? $content->locate2 : $content->locate2_kg  !!}</p>
                         @endif
 
                         @if($content->locate3)
                             <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
                                  src="{{asset('storage/'.$content->locate_img3)}}" alt="">
                             <p class="TTRegular text-black pt-3" data-aos="fade-up"
-                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate3 : $content->locate3_kg  }}</p>
+                               style="font-size: 18px;">{!!  App::isLocale('ru') ? $content->locate3 : $content->locate3_kg  !!}</p>
                         @endif
-
+                            @if($content->locate6)
+                                <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
+                                     src="{{asset('storage/'.$content->locate_img6)}}" alt="">
+                                <p class="TTRegular text-black pt-3" data-aos="fade-up"
+                                   style="font-size: 18px;">{!! App::isLocale('ru') ? $content->locate6 : $content->locate6_kg   !!}</p>
+                            @endif
+                            @if($content->locate7)
+                                <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
+                                     src="{{asset('storage/'.$content->locate_img7)}}" alt="">
+                                <p class="TTRegular text-black pt-3" data-aos="fade-up"
+                                   style="font-size: 18px;">{!! App::isLocale('ru') ? $content->locate7 : $content->locate7_kg  !!}</p>
+                            @endif
                     </div>
                     <div class="col-lg-6 col-md-6 text-center ">
                         @if($content->locate4)
@@ -243,15 +253,27 @@
                                  src="{{asset('storage/'.$content->locate_img4)}}"
                                  alt="">
                             <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate4 : $content->locate4_kg  }}</p>
+                               style="font-size: 18px;">{!! App::isLocale('ru') ? $content->locate4 : $content->locate4_kg !!}</p>
                         @endif
 
                         @if($content->locate5)
                             <img class="img-fluid w-25" data-aos="fade-up" src="{{asset('storage/'.$content->locate_img5)}}"
                                  alt="">
                             <p class="TTRegular text-black pt-2" data-aos="fade-up"
-                               style="font-size: 18px;">{{App::isLocale('ru') ? $content->locate5 : $content->locate5_kg  }}</p>
+                               style="font-size: 18px;">{!! App::isLocale('ru') ? $content->locate5 : $content->locate5_kg  !!}</p>
                         @endif
+                            @if($content->locate8)
+                                <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
+                                     src="{{asset('storage/'.$content->locate_img8)}}" alt="">
+                                <p class="TTRegular text-black pt-3" data-aos="fade-up"
+                                   style="font-size: 18px;">{!! App::isLocale('ru') ? $content->locate8 : $content->locate8_kg  !!}</p>
+                            @endif
+                            @if($content->locate9)
+                                <img class="img-fluid mt-lg-2 mt-md-4 mt-0 w-25 pt-lg-0 pt-md-5" data-aos="fade-up"
+                                     src="{{asset('storage/'.$content->locate_img9)}}" alt="">
+                                <p class="TTRegular text-black pt-3" data-aos="fade-up"
+                                   style="font-size: 18px;">{!! App::isLocale('ru') ? $content->locate9 : $content->locate9_kg  !!}</p>
+                            @endif
                     </div>
                 </div>
             </div>
@@ -264,7 +286,7 @@
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-5">
                 <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">
-                    Галерея</h5>
+                    {{__('main.gallery') }}</h5>
                 <h3 class="TTBold text-black pt-2"
                     style="font-size: 2em; line-height: 1.2em; text-transform: uppercase;"
                     data-aos="fade-up">{{App::isLocale('ru') ? $content->name3 : $content->name3_kg  }}</h3>
@@ -278,7 +300,7 @@
                         <p class="TTRegular text-black pt-2 pb-2" data-aos="fade-up"
                            style="font-size: 14px; line-height: 20px;">{{App::isLocale('ru') ? $content->description3 : $content->description3_kg  }}</p>
                         <div data-aos="fade-up">
-                            <button class="btn btn-pictures"><a href="/gallery">Смотреть все фото</a></button>
+                            <button class="btn btn-pictures"><a href="/gallery">{{__('main.other') }}</a></button>
                         </div>
                     </div>
                 </div>
@@ -329,8 +351,7 @@
             <div class="backdrop"></div>
             <h3 class="TTBold position-relative text-white pt-2 text-lg-center text-md-left pb-lg-0 pb-0 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
                 data-aos="fade-up" id="plan"
-                style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">Генеральный
-                план</h3>
+                style="font-size: 2em; line-height: 1.2em; text-transform: uppercase; z-index: 2;">{{__('main.gen') }}</h3>
             <div class="row align-items-center justify-content-around position-relative" style="z-index: 2;">
                 <div class="col-12 col-lg-4 order-2 order-lg-0 text-light">
                     <div class="row">
@@ -342,9 +363,9 @@
                                     style="color: #C6972A; font-size: 2em;line-height: 31px;">{{ $loop->iteration < 10 ? '0'.$loop->iteration : $loop->iteration }}</h3>
                                 <div class="descr pl-lg-3 pl-3">
                                     <h5 class="TTBold text-white"
-                                        style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{ $build->title }}</h5>
+                                        style="font-size: 1em;line-height: 24px; text-transform: uppercase;">{{App::isLocale('ru') ? $build->title : $build->title_kg  }}</h5>
                                     @if(count($build->images))
-                                        <p class="small text-muted m-0">Нажмите для подробностей</p>
+                                        <p class="small text-muted m-0">{{__('main.more2') }}</p>
                                     @endif
                                     <p class="TTRegular text-white"
                                        style="font-size: 15px;line-height: 18px;">{{ $build->description }}</p>
@@ -551,7 +572,7 @@
                     <form>
                         <div class="form-group d-flex col-lg-12 col-12 px-0">
                             <input class="form-control" type="text" data-aos="fade-up"
-                                   placeholder="Введите номер телефона">
+                                   placeholder="{{__('main.number') }}">
                             <button type="submit" class="btn-submit" style="border: 0; background: transparent;">
                                 <img style="width: 30px; height: auto; transform: translate(-10px, 8px);"
                                      src="{{asset('images/arrow.svg')}}" alt="">
@@ -563,7 +584,7 @@
             <div class="col-lg-6 pt-lg-0 pt-md-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-4 col-6">
-                        <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">Продано</h4>
+                        <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">{{__('main.sales') }}</h4>
                         <div class="line"></div>
                         <div class="numbers">
                             <div class="number-item text-center pt-md-0 pt-4"><span
@@ -571,7 +592,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-6">
-                        <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">Резерв</h4>
+                        <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">{{__('main.reserve') }}</h4>
                         <div class="line"></div>
                         <div class="numbers">
                             <div class="number-item text-center pt-md-0 pt-4"><span
@@ -579,7 +600,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-6 pt-lg-0 pt-md-0 pt-5">
-                        <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">Свободно</h4>
+                        <h4 class="TTRegular text-black text-center pb-md-0 pb-4" data-aos="fade-up">{{__('main.free') }}</h4>
                         <div class="line"></div>
                         <div class="numbers">
                             <div class="number-item text-center pt-md-0 pt-4"><span
@@ -593,42 +614,42 @@
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">01</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title1 }}</h5>
+                    {{App::isLocale('ru') ? $content->advant_title1 : $content->advant_title1_kg  }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
                    style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant1 : $content->advant1_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">02</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title2 }}</h5>
+                    {{App::isLocale('ru') ? $content->advant_title2 : $content->advant_title2_kg  }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
                    style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant2 : $content->advant2_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">03</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title3 }}</h5>
+                    {{App::isLocale('ru') ? $content->advant_title3 : $content->advant_title3_kg  }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
                    style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant3 : $content->advant3_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">04</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title4 }}</h5>
+                    {{App::isLocale('ru') ? $content->advant_title4 : $content->advant_title4_kg  }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
                    style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant4 : $content->advant4_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">05</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title5 }}</h5>
+                    {{App::isLocale('ru') ? $content->advant_title5 : $content->advant_title5_kg  }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
                    style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant5 : $content->advant5_kg  }}</p>
             </div>
             <div class="col-lg-2 col-md-5 pt-lg-0 pt-md-5 pt-4" data-aos="fade-up">
                 <h3 class="TTBold mb-0" style="color: #C6972A; font-size: 1em;line-height: 31px;">06</h3>
                 <h5 class="TTBold text-black mb-2" style="font-size: 1em;line-height: 24px; text-transform: uppercase;">
-                    {{ $content->advant_title6 }}</h5>
+                    {{App::isLocale('ru') ? $content->advant_title6 : $content->advant_title6_kg  }}</h5>
                 <p class="TTRegular text-black px-md-0 px-5"
                    style="font-size: 16px;line-height: 17px;">{{App::isLocale('ru') ? $content->advant6 : $content->advant6_kg  }}</p>
             </div>

@@ -72,7 +72,7 @@
                         <li class="nav-item p-2">
                             <a href="/gallery" class="text-dark text-fut-bold" style="text-decoration: none;">{{__('main.gallery') }}</a>
                         </li>
-                        <li class="nav-item p-2">
+                        <li class="nav-item p-2 d-none">
                             <a href="/news" class="text-dark text-fut-bold" style="text-decoration: none;">{{__('main.news') }}</a>
                         </li>
                         @if($content->tel1)
@@ -127,7 +127,7 @@
     <a class="sf-medium pl-5" href="/">{{__('main.main') }}</a>
     <a class="sf-medium pl-5" href="/about_us"> {{__('main.about_us') }}</a>
     <a class="sf-medium pl-5" href="/gallery"> {{__('main.gallery') }}</a>
-    <a class="sf-medium pl-5" href="/news">{{__('main.news') }}</a>
+    <a class="sf-medium pl-5 d-none" href="/news">{{__('main.news') }}</a>
     @if($content->tel1)
         <a class="sf-medium pl-5" href="tel:{{ $content->tel1 }}">{{ $content->tel1 }}</a>
     @endif

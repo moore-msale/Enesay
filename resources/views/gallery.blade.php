@@ -21,16 +21,16 @@
         <div class="container">
             <div class="col-12 pt-lg-0 pt-5 px-0 mb-4" data-aos="flip-up">
                         <span>
-                        <a href="/"  style="color:#000000;">Главная</a>
+                        <a href="/"  style="color:#000000;">{{__('main.main') }}</a>
                         </span>
                 <span>
                             <i class="fas fa-arrow-right fa-xs"></i>
                         </span>
                 <span>
-                Галерея
+                {{__('main.gallery') }}
             </span>
                 <h2 class="TTBold text-uppercase" style="font-size: 300%; line-height: 140%; color: #000000;">
-                    Галерея
+                    {{__('main.gallery') }}
                 </h2>
             </div>
 

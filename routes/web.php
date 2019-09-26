@@ -22,7 +22,7 @@ Route::resource('image', 'ImageController')->only(['create', 'store']);
 Route::resource('plan', 'PlanController');
 Route::resource('build', 'BuildController');
 Route::resource('dot', 'DotController');
-
+Route::get('/plancreate','PlanController@create');
 // Ajax запрос в Controller
 Route::post('/mail', 'MailController@mail')->name('mail');
 Route::get('/photo', function () {

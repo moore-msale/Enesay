@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-8 col-12">
             <h2 class="TTBold text-white pb-4" data-aos="fade-right" style="font-size: 2em; text-transform: uppercase;">
-                Контакты</h2>
+                {{__('main.contact') }}</h2>
             <div class="contacts pt-4 pb-3 d-lg-flex justify-content-between d-none">
                 <div class="col-auto">
                     <ul class="nav flex-column">
@@ -103,10 +103,9 @@
         </div>
         <div class="col-lg-4">
             <h2 class="TTBold text-white pb-4 pt-lg-0 pt-3" data-aos="fade-right"
-                style="font-size: 2em; text-transform: uppercase;">Напишите нам</h2>
+                style="font-size: 2em; text-transform: uppercase;">{{__('main.write') }}</h2>
             <div class="form pt-4 pb-3" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
-                <p class="text-white TTMedium" data-aos="fade-right" style="font-size: 18px;">Свяжитесь с нами и мы
-                    ответим на все ваши вопросы</p>
+                <p class="text-white TTMedium" data-aos="fade-right" style="font-size: 18px;">{{__('main.call_to_us') }}</p>
                 <div class="send-success-mail p-4 d-none">
                     <i class="fas fa-check-circle" style="color:#00d920;"></i><span class="pl-2 text-fut-bold"
                                                                                     style="color:#fff;">Заявка успешно отправлена!</span>
@@ -114,22 +113,22 @@
                 <form data-aos="fade-right">
                     <div class="form-group">
                         <input class="w-100 mb-2 p-2" name="name" type="text" id="form-name"
-                               placeholder="Ваше имя*" required>
+                               placeholder="{{__('main.name') }}" required>
                     </div>
                     <div class="form-group">
                         <input class="w-100 mb-2 p-2" name="phone" type="tel" id="form-phone"
-                               placeholder="Ваш номер телефона*" required>
+                               placeholder="{{__('main.phone') }}" required>
                     </div>
                     <div class="form-group">
                         <input class="w-100 mb-2 p-2" name="email" type="email" id="form-email"
-                               placeholder="Введите E-mail*" required>
+                               placeholder="{{__('main.email') }}" required>
                     </div>
                     <div class="form-group">
                             <textarea class="w-100 mb-2 p-2" name="message" type="message" id="form-message"
-                                      placeholder="Сообщение*" required></textarea>
+                                      placeholder="{{__('main.message') }}" required></textarea>
                     </div>
                     <div class="form-group">
-                        <a id="ajax-message" class="btn text-white" href="#">Отправить</a>
+                        <a id="ajax-message" class="btn text-white" href="#">{{__('main.submit') }}</a>
                     </div>
                 </form>
             </div>
@@ -158,7 +157,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h2 class="mb-5" style="font-size: 25px; line-height: 120%; color: #000000;">
-                        Оставьте нам свою заявку
+                        {{__('main.feed') }}
                     </h2>
                     <div class="send-success-mail2 p-4 d-none">
                         <i class="fas fa-check-circle" style="color:#00d920;"></i><span class="pl-2 text-fut-bold"
@@ -166,27 +165,27 @@
                     </div>
                     <div class="send-error-mail2 p-4 d-none">
                         <i class="fas fa-exclamation-circle text-fut-bold text-white" style="color:#00d920;"></i><span
-                            class="pl-2" style="color:#000000;">Отзыв не был отправлен!</span>
+                            class="pl-2" style="color:#000000;">Заявка не была отправлена!</span>
                     </div>
                     <form id="callForm">
                         <div class="form-group">
                             <input class="w-100 mb-2 p-2" name="name" type="text" id="form-name2"
-                                   placeholder="Ваше имя*" required>
+                                   placeholder="{{__('main.name') }}*" required>
                         </div>
                         <div class="form-group">
                             <input class="w-100 mb-2 p-2" name="phone" type="tel" id="form-phone2"
-                                   placeholder="Ваш номер телефона*" required>
+                                   placeholder="{{__('main.phone') }}*" required>
                         </div>
                         <div class="form-group">
                             <input class="w-100 mb-2 p-2" name="email" type="email" id="form-email2"
-                                   placeholder="Введите E-mail*" required>
+                                   placeholder="{{__('main.email') }}*" required>
                         </div>
                         <div class="form-group">
                             <textarea class="w-100 mb-2 p-2" name="message" type="message" id="form-message2"
-                                      placeholder="Сообщение*" required></textarea>
+                                      placeholder="{{__('main.message') }}*" required></textarea>
                         </div>
                         <div class="form-group">
-                            <a id="ajax-message2" class="btn" href="#">Отправить</a>
+                            <a id="ajax-message2" class="btn" href="#">{{__('main.submit') }}</a>
                         </div>
                     </form>
 
