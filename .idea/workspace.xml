@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02ad502-24ae-404e-adb5-d4cdfc47b8f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/fullpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/fullpage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
@@ -209,7 +207,8 @@
       <workItem from="1569232890561" duration="1701000" />
       <workItem from="1569318381327" duration="1626000" />
       <workItem from="1569388583851" duration="10521000" />
-      <workItem from="1569993523911" duration="5512000" />
+      <workItem from="1569993523911" duration="6353000" />
+      <workItem from="1570013955758" duration="334000" />
     </task>
     <servers />
   </component>
@@ -221,7 +220,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

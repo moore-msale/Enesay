@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fullpage.css') }}">
 @endpush
 @section('content')
     <?php
@@ -45,8 +44,7 @@
             </video>
         @endif
 
-        <div class="row align-items-center pt-md-5 pt-0 pb-
-        md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative section" style="z-index: 2;" id="section1">
+        <div class="row align-items-center pt-md-5 pt-0 pb-md-5 pb-0 mt-5 pl-md-5 pl-2 position-relative " style="z-index: 2;" id="1">
             <div class="col-lg-8 pt-lg-0 pt-md-5 pt-0 pb-md-5 pb-0 mt-lg-0 mt-md-5 mt-0">
                 <div class="row pt-md-5 pt-0">
                     <div class="col-11 text-right pt-lg-0 pt-5 d-md-none d-block" data-aos="fade-up">
@@ -191,7 +189,7 @@
         </div>
     </div>
 
-    <div class="container-fluid example-classname panel-screen section" id="section2">
+    <div class="container-fluid example-classname panel-screen" id="2">
         <div class="row">
             <div class="col-lg-4 p-5 align-items-center d-lg-block d-md-none d-none" data-aos="fade-up">
                 <img class="img-fluid w-100" src="{{asset( 'storage/'.$content->image2)}}" alt="">
@@ -299,8 +297,7 @@
     </div>
 
     <div
-        class="container-fluid pl-lg-5 pl-md-5 px-md-5 example-classname panel-screen section fp-auto-height fp-section"
-        id="section3">
+        class="container-fluid pl-lg-5 pl-md-5 px-md-5 example-classname panel-screen" id="3">
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-5">
                 <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">
@@ -364,7 +361,7 @@
     </div>
 
     @if($plan)
-        <div class="container-fluid position-relative pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen section" id="section4"
+        <div class="container-fluid position-relative pt-lg-5 pt-5 pb-lg-5 pb-4 example-classname panel-screen" id="4"
              style="background-image:url({{ asset('images/bg4.png') }}); background-size: cover;">
             <div class="backdrop"></div>
             <h3 class="TTBold position-relative text-white pt-2 text-lg-center text-md-left pb-lg-0 pb-0 pt-lg-0 pt-md-5 pl-lg-0 pl-md-5 pl-3"
@@ -577,7 +574,7 @@
         </div>
     @endif
 
-    <div class="container-fluid example-classname p-5 panel-screen section fp-auto-height fp-section" id="section5"
+    <div class="container-fluid example-classname p-5 panel-screen" id="5"
          style="background-image: url({{ asset('images/bg5.png') }}); background-size: cover; background-position: center;">
         <div class="row align-items-end">
             <div class="col-lg-6 col-md-10 pr-lg-5">
@@ -835,7 +832,6 @@
 
 
     @push('scripts')
-        <script src="{{ asset('js/fullpage.js') }}"></script>
         <script src="{{ asset('js/tooltipster.bundle.min.js') }}"></script>
         <script src="{{ asset('js/jquery.scrollify2.js') }}"></script>
         <script>
@@ -884,7 +880,7 @@
         {{--// var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;--}}
         {{--// if(width > 800){--}}
         {{--$.scrollify({--}}
-        {{--section : ".example-classname",--}}
+        {{-- : ".example-classname",--}}
         {{--});--}}
         {{--// }--}}
         {{--});--}}
@@ -1050,4 +1046,4 @@
             </script>
         @endif
     @endpush
-@endsection
+@end
