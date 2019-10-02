@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02ad502-24ae-404e-adb5-d4cdfc47b8f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/fullpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/fullpage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/kg/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/kg/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ru/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -162,6 +161,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/public/js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,7 +209,7 @@
       <workItem from="1569232890561" duration="1701000" />
       <workItem from="1569318381327" duration="1626000" />
       <workItem from="1569388583851" duration="10521000" />
-      <workItem from="1569993523911" duration="3357000" />
+      <workItem from="1569993523911" duration="5512000" />
     </task>
     <servers />
   </component>
