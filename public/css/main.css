@@ -759,8 +759,8 @@
     background-image: url('/images/prev.png') !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
-    top: 85%;
-    right: 72%;
+    top: 80%;
+    right: 56%;
 }
 
 .owl-one .owl-nav .owl-prev span {
@@ -774,8 +774,8 @@
     background-image: url('/images/Arrow.png') !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
-    top: 85%;
-    right: 65%;
+    top: 80%;
+    right: 50%;
 }
 
 .owl-one .owl-nav .owl-next span {
