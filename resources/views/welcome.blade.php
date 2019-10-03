@@ -625,7 +625,7 @@
                                     class="value">{{ $content->number2 }}</span></div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 pt-lg-0 pt-md-0">
+                    <div class="col-lg-3 col-md-4 col-6">
                         <h4 class="TTRegular text-black text-center pb-md-0 pb-4"
                             data-aos="fade-up">{{__('main.all') }}</h4>
                         <div class="line"></div>
