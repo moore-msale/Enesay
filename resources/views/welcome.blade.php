@@ -296,8 +296,7 @@
         </div>
     </div>
 
-    <div
-        class="container-fluid pl-lg-5 pl-md-5 px-md-5 example-classname panel-screen" id="3">
+    <div class="container-fluid pl-lg-5 pl-md-5 px-md-5 pb-5 mb-4 example-classname panel-screen" id="3">
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-5">
                 <h5 class="TTMedium text-black" style="font-size: 13px; text-transform: uppercase;" data-aos="fade-up">
