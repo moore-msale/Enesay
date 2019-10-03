@@ -123,7 +123,7 @@
                             <div class="col-8">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
                                     {{__('main.connect_sale') }}</h3>
-                                <p class="TTLight text-white"
+                                <p class="TTLight text-white pb-3"
                                    style="font-size: 15px; line-height: 21px;">{{App::isLocale('ru') ? $content->call_text : $content->call_text_kg  }}</p>
                                 <div class="row align-items-center">
                                     <div class="col-2 pr-0">
@@ -141,7 +141,7 @@
                             <div class="col-6">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
                                     {{__('main.show_plan') }}</h3>
-                                <p class="TTLight text-white"
+                                <p class="TTLight text-white pb-3"
                                    style="font-size: 15px; line-height: 21px;">{{App::isLocale('ru') ? $content->gen_text : $content->gen_text_kg  }}</p>
                                 <div class="row align-items-center" id="pick"
                                      style="position: absolute; bottom:-10%; width:350px;">
@@ -158,7 +158,7 @@
                             <div class="col-6">
                                 <h3 class="TTBold text-white" style="font-size: 15px; text-transform: uppercase;">
                                     {{__('main.connect_sale') }}</h3>
-                                <p class="TTLight text-white"
+                                <p class="TTLight text-white pb-3"
                                    style="font-size: 15px; line-height: 21px;">{{App::isLocale('ru') ? $content->call_text : $content->call_text_kg  }}</p>
                                 <div class="row align-items-center"
                                      style="position: absolute; bottom:-10%; width:350px;">
