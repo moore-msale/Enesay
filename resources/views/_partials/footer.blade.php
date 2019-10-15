@@ -99,9 +99,7 @@
                 </div>
             </div>
             <div class="map d-block d-lg-none" data-aos="fade-right">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.542965254937!2d74.6194583151184!3d42.81914321397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5dc1a719029%3A0x1f743b3243454c9f!2zNyDRg9C7LiDQkNCw0LvRiyDQotC-0LrQvtC80LHQsNC10LLQsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1564117538498!5m2!1sru!2skg"
-                    width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa9dd55e837252e01c170b81086ed1256f60667e38748271eb5124d9b2981d319&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
         <div class="col-lg-4">
