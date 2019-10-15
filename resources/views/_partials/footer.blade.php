@@ -76,10 +76,15 @@
                                style="font-size: 16px; text-decoration: underline;"><p>{{ $content->tel1 }}</p></a>
                         @endif
                         @if($content->instagram)
-                            <a href="tel:{{ $content->instagram }}" class="text-white TTLight" data-aos="fade-right"
+                            <a href="{{ $content->instagram }}" class="text-white TTLight" data-aos="fade-right"
                                style="font-size: 16px; text-decoration: underline;">
-                                <i class="fab fa-instagram"></i>Instagram</a>
+                                <i class="fab fa-instagram mr-1 w-25 pb-4"></i>Instagram</a>
                         @endif
+                            @if($content->facebook)
+                                    <a href="{{ $content->facebook }}" class="text-white TTMedium"
+                                       data-aos="fade-right"
+                                       style="font-size: 16px;"><i class="fab fa-facebook-f fa-lg mr-1 w-25"></i>Facebook</a>
+                            @endif
                     </div>
                     <div class="col-md-4 col-6 px-md-2 px-0">
                         @if($content->tel2)
@@ -88,7 +93,7 @@
                         @endif
                         @if($content->address)
                             <a class="text-white TTLight" data-aos="fade-right"
-                               style="font-size: 16px;">{{ $content->address }}</a>
+                               style="font-size: 16px;"><p>{{ $content->address }}</p></a>
                         @endif
                     </div>
                 </div>
