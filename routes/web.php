@@ -48,6 +48,6 @@ Route::get('/set-language/{lang}', 'LanguagesController@set')->name('set.languag
 Route::get('/news_page/{id}', 'NewsController@show')->name('news_page');
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'moo'], function () {
     Voyager::routes();
 });
