@@ -149,6 +149,22 @@
              src="{{asset('images/logo.png')}}" alt="">
         <p class="TTLight" style="font-size: 16px;color: #959595;">© copyright 2019</p>
     </div>
+    <section class="">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-light py-4">
+                <div class="moore pt-5 col-md-8">
+                    <a href="https://to-moore.com/" style="
+    padding-right: 1%;
+">
+                        <img src="https://to-moore.com/whitemoore.png" width="120" height="auto" alt="Moore studio" style="padding-right: 1%;" >
+                    </a>
+                    <div class="mooretext"><a href="https://to-moore.com/" style="color:white!important;">Разработано и поддерживается<br> компанией MOORE STUDIO</a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 </div>
 
 
