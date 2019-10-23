@@ -36,11 +36,11 @@
         <div class="backdrop"></div>
         @if($agent->isPhone())
             <video class="vids-mb" autoplay muted loop controls="true" playsinline>
-                <source src="{{ asset('video/video_back2.mp4') }}" type="video/mp4">
+                <source src="{{ asset('video/video_back.mp4') }}" type="video/mp4">
             </video>
         @else
             <video class="vids-pc" autoplay muted loop>
-                <source src="{{ asset('video/video_back2.mp4') }}" type="video/mp4">
+                <source src="{{ asset('video/video_back.mp4') }}" type="video/mp4">
             </video>
         @endif
 
