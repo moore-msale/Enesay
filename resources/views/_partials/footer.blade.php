@@ -149,7 +149,7 @@
             <a href="https://to-moore.com/" style="padding-right: 1%;">
                 <img src="https://to-moore.com/whitemoore.png" width="100" height="auto" alt="Moore studio" style="padding-right: 1%;" >
             </a>
-            <div class="mooretext"><a href="https://to-moore.com/" style="color:white!important; font-size:0.8rem">Разработано и поддерживается<br> компанией MOORE STUDIO</a></div>
+            <div class="mooretext"><a href="https://to-moore.com/" style="color:white!important; font-size:0.8rem">Разработано и поддерживается<br/> компанией MOORE STUDIO</a></div>
         </div>
         
         <img class="img-fluid d-lg-none d-md-block d-none" style="height:100%; width: 25%;"
