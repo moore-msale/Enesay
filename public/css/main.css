@@ -718,6 +718,9 @@
     display: block !important;
     padding-top: 4%;
 }
+.moore{
+    flex-wrap: nowrap;
+}
 @media (max-width: 800px){
     .moore {
         padding-bottom: 10px;
