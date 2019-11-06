@@ -145,26 +145,17 @@
              src="{{asset('images/logo.png')}}" alt="">
         <img class="img-fluid d-lg-none d-md-none d-block" style="height:100%; width: 40%;"
              src="{{asset('images/logo.png')}}" alt="">
+        <div class="moore row justify-content-center align-items-center text-light translate-none translateY-none">
+            <a href="https://to-moore.com/" style="padding-right: 1%;">
+                <img src="https://to-moore.com/whitemoore.png" width="100" height="auto" alt="Moore studio" style="padding-right: 1%;" >
+            </a>
+            <div class="mooretext"><a href="https://to-moore.com/" style="color:white!important; font-size:0.8rem">Разработано и поддерживается<br> компанией MOORE STUDIO</a></div>
+        </div>
+        
         <img class="img-fluid d-lg-none d-md-block d-none" style="height:100%; width: 25%;"
              src="{{asset('images/logo.png')}}" alt="">
         <p class="TTLight" style="font-size: 16px;color: #959595;">© copyright 2019</p>
     </div>
-    <section class="">
-        <div class="container">
-            <div class="row justify-content-center align-items-center text-light translate-none translateY-none">
-                <div class="moore col-md-8">
-                    <a href="https://to-moore.com/" style="
-    padding-right: 1%;
-">
-                        <img src="https://to-moore.com/whitemoore.png" width="100" height="auto" alt="Moore studio" style="padding-right: 1%;" >
-                    </a>
-                    <div class="mooretext"><a href="https://to-moore.com/" style="color:white!important; font-size:0.8rem">Разработано и поддерживается<br> компанией MOORE STUDIO</a></div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
 </div>
 
 
