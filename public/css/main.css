@@ -726,6 +726,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    transform: translateY(-92%);
+}
+@media (max-width: 800px){
+    .moore {
+        transform: translateY(0%);
+    }
 }
 .mooretext{
     /*font-family: Roboto;*/

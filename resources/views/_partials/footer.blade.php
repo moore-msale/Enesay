@@ -151,7 +151,7 @@
     </div>
     <section class="">
         <div class="container">
-            <div class="row justify-content-center align-items-center text-light py-4">
+            <div class="row justify-content-center align-items-center text-light translate-none translateY-none">
                 <div class="moore col-md-8">
                     <a href="https://to-moore.com/" style="
     padding-right: 1%;
