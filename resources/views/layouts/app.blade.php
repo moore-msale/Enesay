@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Эне-Сай - Современная торговая улица Эне-Сай Luxury Village</title>
+    <title>Эне-Сай - Торгово-культурный комплекс Эне-Сай Luxury Village</title>
     <link rel="shortcut icon" href="/images/logo.png" type="image/png">
 
     <!-- Scripts -->
