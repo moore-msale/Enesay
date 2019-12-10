@@ -139,13 +139,13 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-between align-content-center pt-3 mt-4 ml-1 mr-1 pb-md-0 pb-0" id="copyright"
+    <div class="row justify-content-lg-between justify-content-center align-content-center pt-3 mt-4 ml-1 mr-1 pb-md-0 pb-5" id="copyright"
          style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
         <img class="img-fluid d-lg-block d-md-none d-none" style="height:100%; width: 10%;"
              src="{{asset('images/logo.png')}}" alt="">
         <img class="img-fluid d-lg-none d-md-none d-block" style="height:100%; width: 40%;"
              src="{{asset('images/logo.png')}}" alt="">
-        <div class="moore row justify-content-center align-items-center text-light">
+        <div class="moore row justify-content-center align-items-center text-light pt-lg-0 pt-4">
             <a href="https://to-moore.com/" style="padding-right: 1%;">
                 <img src="https://to-moore.com/whitemoore.png" width="100" height="auto" alt="Moore studio" style="padding-right: 1%;" >
             </a>
@@ -154,7 +154,7 @@
         
         <img class="img-fluid d-lg-none d-md-block d-none" style="height:100%; width: 25%;"
              src="{{asset('images/logo.png')}}" alt="">
-        <p class="TTLight" style="font-size: 16px;color: #959595;">© copyright 2019</p>
+        <p class="TTLight text-center" style="font-size: 16px;color: #959595;">© copyright 2019</p>
     </div>
 </div>
 
